@@ -1,0 +1,304 @@
+/* ESTILOS GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #003e4c;
+    --color-secondary:#f8b122;
+    --color-text-secondary:#808081;
+}
+
+.btn{
+    background-color: var(--color-primary);
+    color:#fff;    
+    font-weight: 500;
+    align-items: center;
+}
+
+body{    
+    background-color: #F2F3F7;
+    color: var(--color-text-secondary);
+}
+
+/* navegacion */
+
+nav{
+    background-color: var(--color-primary) !important;
+}
+
+.nav-item{
+    margin: 0 0.6em;
+    font-size: 1.15rem;
+}
+.nav-link{
+    color:#fff !important;
+}
+.nav-link.active{
+    color: var(--color-secondary) !important;
+    font-weight: 600;
+}
+.img-profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:  2px solid var(--color-secondary) ;
+}
+
+
+/* icono de notificacion */
+.pos-relative{
+    position: relative;
+}
+.notif:before{
+    content: '\025cf';
+    position: absolute;
+    color: var(--color-secondary);
+    bottom: 5px;
+    right: 3px;
+    font-size: 24px;
+}
+
+.posNotif.notif:before{
+    top: 14px;
+    right: -7px;
+}
+
+
+
+
+/* titulo de seccion */
+.title-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    border-bottom: 3px solid #F3B83F;
+}
+
+.span-tittle{
+    letter-spacing: .5rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+
+
+/* boton compartir */
+.container-btn{
+    display: flex;
+    align-items: center;
+}
+
+.compartir-text{
+    /* letter-spacing: .25rem; */
+    color: var(--color-primary);
+    padding-right: 10px;
+    font-size: .7rem;
+}
+
+.container-btn > a > i{
+    color: var(--color-primary);
+    font-size: 2rem;
+
+}
+
+
+
+/* .btn-compartir{
+    font-size: .8rem;
+    padding: 5px 20px;
+    margin-bottom: 25px ;
+} */
+
+
+
+/*  publicacion slider*/
+
+.badge-info{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    z-index: 101;
+    border-radius: .9rem;
+    padding: 9px 15px;
+    font-size: 1.1rem;
+    letter-spacing: .5rem;
+    text-align: center;
+    background-color: #1b555f;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 7px;
+}
+
+.carousel-indicators .active {
+    background-color: var(--color-secondary);
+}
+
+.img-carrousel{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+/* Publicacion informacion */
+.info-direccion{
+    text-align: start;
+}
+.info-direccion .card-title{
+    font-size: 1.5rem;
+}
+.info-direccion .card-text{
+    color: #ADADAD;
+}
+
+
+.info-valor{
+    text-align: end;
+}
+.info-valor .card-title{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+.info-valor .card-text{
+   font-weight: 600;
+   letter-spacing: .1rem;
+   font-size: .8rem;
+}
+
+.info-tipo .card-title{
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+.info-cantidad > span{
+    color: var(--color-primary);
+    font-weight: 600;
+    padding: 0 15px;
+}
+.info-cantidad > span > i{
+    color: var(--color-secondary);
+    padding-right:5px;
+}
+
+
+/* informacion servicios */
+
+.info-services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* inputs checkboxes */
+/* Centra el input personalizado con el texto */
+.custom-radio-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Modificador para dar la imagen de checkbox */
+.custom-radio-checkbox__show--checkbox {
+    background-image: url(/assets/img/radio-uncheck.png);
+}
+
+/* Oculta input original */
+.custom-radio-checkbox > .custom-radio-checkbox__input {
+    display: none;
+}
+
+/* Radio personalizado usando <span> */
+.custom-radio-checkbox > .custom-radio-checkbox__show {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: .5rem;
+    background-size: cover;
+}
+
+/* Cambia el checkbox personalizado cuando es pulsado */
+.custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--checkbox {
+    background-image: url(/assets/img/radio-check.png);
+}
+
+/* mapa */
+
+
+
+
+/* card contacto  */
+
+.card-title,
+.card-text{
+    color: var(--color-text-secondary);
+}
+
+#consulta{
+    width: 100%;
+    color: var(--color-text-secondary);
+    border: 1px solid #9f9fa1 !important;
+}
+
+
+.btn-consultar{
+    font-size: .8rem;
+    padding: 12px 20px;
+    margin-bottom: 25px ;
+}
+
+
+
+.consultado{
+    position: absolute;
+    z-index: 100;
+    background-color: #26565f;
+    color: #fff;
+    height: 100%;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    opacity: .95;
+}
+
+.consultado > i{
+    padding-top: 20% ;
+    font-size: 4.3rem;
+}
+
+.consultado > .card-title, .consultado > .card-text{
+    color: #fff;
+    padding: 20px 50px 0 50px;
+}
+
+/* Card Informacion */
+
+.table td{
+    font-size: .85rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    border: none;
+    border-bottom: 1px solid #dfdfe0;
+     
+}
+
+.separar-col{
+    padding-left: 1.2rem;
+    text-align: center;
+}
