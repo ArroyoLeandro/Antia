@@ -215,7 +215,7 @@ nav{
 
 /* Modificador para dar la imagen de checkbox */
 .custom-radio-checkbox__show--checkbox {
-    background-image: url(/assets/img/radio-uncheck.png);
+    background-image: url(assets/img/radio-uncheck.png);
 }
 
 /* Oculta input original */
@@ -234,7 +234,7 @@ nav{
 
 /* Cambia el checkbox personalizado cuando es pulsado */
 .custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--checkbox {
-    background-image: url(/assets/img/radio-check.png);
+    background-image: url(assets/img/radio-check.png);
 }
 
 /* mapa */
