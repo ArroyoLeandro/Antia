@@ -10,8 +10,6 @@
      <!-- Bootstrap -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-     <!-- Animate -->
-     <link rel="stylesheet" href="assets/css/animate.css">
      <!-- Style css -->
      <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -74,14 +72,13 @@
       <!-- CABECERA -->
       <div class="container">
         <div class="row">
-          
           <!-- titulo de seccion -->
           <div class="title-section">
               <span class="span-tittle">DETALLE DE LA PROPIEDAD</span>
              <span class="container-btn">
                <span class="compartir-text"><b>COMPARTIR EN</b> </span>
-               <a href="https://sistemasfa.com" target="_BLANK"><i class="fab fa-whatsapp-square"></i></a>
-             </buttoa>
+               <a href="https://api.whatsapp.com/send?phone=+541131193176"  target="_BLANK"><i class="fab fa-whatsapp-square"></i></a>
+             </span>
               <!-- <button class="btn-compartir btn">COMPARTIR</button> -->
           </div>
 
@@ -96,7 +93,13 @@
                 <li data-target="#carouselIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselIndicators" data-slide-to="2"></li>
               </ol>
-              <div class="carousel-inner">
+              <div class="carousel-inner pos-relative">
+                <span class="badge badge-info">VENTA</span>
+
+
+                <i class="fas fa-compress-alt expand-icon"></i>
+
+
                 <div class="carousel-item active">
                   <img src="assets/img/casa0.jpg" class="img-carrousel" alt="...">
                 </div>
@@ -436,12 +439,21 @@
 
           <!-- CONTACTO FORM -->
           <div class="col-md-4 mt-5">
-            <div class="card">
-              <div class="card-body">
+            <div class="card pos-relative">
+
+              <div class="consultado">
+                <i class="fas fa-bullhorn"></i>
+                <h5 class="card-title">Consulta Enviada</h5>
+                <p class="card-text">Te notificaremos cuando el usuario acepte tu solicitud.</p>
+              </div>
+
+              <div class="card-body ">
                 <h5 class="card-title">Comunicate con nosotros</h5>
                 <p class="card-text">Un asesor se comunicará con vos muy pronto.</p>
-                <textarea name="consulta" id="consulta" cols="30" rows="5">  Deja tu consulta</textarea>
-                <button class="btn btn-consultar btn-lg btn-block mt-3 px-3">CONSULTAR</button>
+                <!-- <form > -->
+                  <textarea name="consulta" id="consulta" cols="30" rows="5">  Deja tu consulta</textarea>
+                <button class="btn btn-consultar btn-lg btn-block mt-3 px-3" id="btn-consultar">CONSULTAR</button>
+                <!-- </form> -->
               </div>
             </div>
 
@@ -513,10 +525,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <!-- iconos -->
-    <script src="https://kit.fontawesome.com/f38737c7bd.js" crossorigin="anonymous"></script>
-<!-- main -->
-<script src="assets/js/main.js"></script>
+<!-- iconos -->
+<script src="https://kit.fontawesome.com/f38737c7bd.js" crossorigin="anonymous"></script>
+
+<script>
+
+</script>
+
 
 </body>
 </html>

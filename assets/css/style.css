@@ -144,6 +144,7 @@ nav{
     height: 10px;
     border-radius: 50%;
     margin: 0 7px;
+    cursor: pointer;
 }
 
 .carousel-indicators .active {

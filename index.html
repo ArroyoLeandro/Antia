@@ -10,8 +10,6 @@
      <!-- Bootstrap -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-     <!-- Animate -->
-     <link rel="stylesheet" href="assets/css/animate.css">
      <!-- Style css -->
      <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -97,6 +95,11 @@
               </ol>
               <div class="carousel-inner pos-relative">
                 <span class="badge badge-info">VENTA</span>
+
+
+                <i class="fas fa-compress-alt expand-icon"></i>
+
+
                 <div class="carousel-item active">
                   <img src="assets/img/casa0.jpg" class="img-carrousel" alt="...">
                 </div>
@@ -529,6 +532,11 @@
 
 $('#btn-consultar').click(()=>{
   $('.consultado').show();
+
+  setTimeout(function() { 
+    window.location.replace("https://arroyoleandro.github.io/Antia/index2.html");
+    }, 8000);
+
 });
 
 </script>
