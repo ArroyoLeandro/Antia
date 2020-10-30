@@ -45,8 +45,9 @@
       <li class="nav-item" >
         <a class="nav-link" href="#">Contactos</a>
       </li>
+     
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <div class="form-inline my-2 my-lg-0">
       <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link d-inline-block" href="#"><i class="fas fa-search pt-2"></i></a>
@@ -64,11 +65,11 @@
               </a>
             </li>
         </ul>
-    </form>
+      </div>
   </div>
 </nav>    
 <!-- MAIN -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="whatsapp">
       <!-- CABECERA -->
       <div class="container">
         <div class="row">
@@ -516,7 +517,17 @@
             </div>
           </div>
         </div>
-      </div>
+
+        <div class="card my-5">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://arroyoleandro.github.io/Antia/index.html" type="button" class="btn btn-secondary mx-3">DETALLE DE LA PROPIEDAD 1</a>
+            <button type="button" class="btn btn-secondary mx-3">DETALLE DE LA PROPIEDAD 2 (Clickear en boton "consultar")</button>
+            <a href="https://arroyoleandro.github.io/Antia/index2.html" type="button" class="btn btn-secondary mx-3">DETALLE DE LA PROPIEDAD 3</a>
+            <a href="https://arroyoleandro.github.io/Antia/propiedad-carga.html" type="button" class="btn btn-secondary mx-3">CARGA DE PROPIEDAD</a>
+          </div>
+        </div>
+        
+      </div><!-- fin container -->
     </div>
 
 
@@ -533,9 +544,9 @@
 $('#btn-consultar').click(()=>{
   $('.consultado').show();
 
-  setTimeout(function() { 
-    window.location.replace("https://arroyoleandro.github.io/Antia/index2.html");
-    }, 8000);
+  // setTimeout(function() { 
+  //   window.location.replace("https://arroyoleandro.github.io/Antia/index2.html");
+  //   }, 8000);
 
 });
 
