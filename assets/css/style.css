@@ -222,7 +222,7 @@ nav{
 
 /* Modificador para dar la imagen de checkbox */
 .custom-radio-checkbox__show--checkbox {
-    background-image: url(/assets/img/radio-uncheck.png);
+    background-image: url(../img/radio-uncheck.png);
 }
 
 /* Oculta input original */
@@ -241,7 +241,7 @@ nav{
 
 /* Cambia el checkbox personalizado cuando es pulsado */
 .custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--checkbox {
-    background-image: url(/assets/img/radio-check.png);
+    background-image: url(../img/radio-check.png);
 }
 
 /* mapa */
@@ -307,6 +307,12 @@ nav{
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: url(../img/info2.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-color: var(--color-primary);
+    background-size: contain;
+    border:  1px solid #fff;
 }
 .contact-card > .card-body{
     width: 100%;
@@ -329,6 +335,10 @@ nav{
     padding-top: 1.5rem;
 }
 
+.invert_icon{
+    transform: rotateY(180deg);
+}
+
 .info-icons{
     color: #fff;
     font-size: 1.55rem;
@@ -338,19 +348,21 @@ nav{
 }
 
 
-.card-footer{
+.card-footer2{
     width: 100%;
-    height: 100px;
+    height: 200px;
     padding: 0;
     border: none;
-    background-color: #fff;
     position: relative;
+    border-left: 1px solid rgba(0,0,0,.125);
+    border-right: 1px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid rgba(0,0,0,.125);
 
 }
 
 
-.img-logo{
-    margin: 20px auto;
+.img-logo-inmobiliaria{
+    margin: 40px auto 20px auto;
     height: 40px;
     width: auto;
 }
