@@ -16,7 +16,161 @@
 <body>
 
 <style>
-    
+    .card-header{
+      border: none;
+      background-color: #fff !important;
+    }
+    .btn-link.btn-block{
+      background-color: transparent;
+      color: var(--color-primary);
+      text-decoration: none !important;
+    }
+.custom-radio-checkbox__text{
+  font-size: .75rem;
+}
+
+
+
+/* Barra scroll servicios */
+.scrollbarContainer{
+  border: 1px solid var(--color-text-secondary);
+  border-radius: 10px;
+}
+.scrollbar{
+  height: 300px;;  
+  overflow-y: scroll;
+}
+
+
+.scrollbar::-webkit-scrollbar {
+    width: 10px !important;     /* Tamaño del scroll en vertical */
+}
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.scrollbar::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.scrollbar::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.scrollbar::-webkit-scrollbar-button:increment,.scrollbar::-webkit-scrollbar-button {
+    display: none;
+} 
+
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+
+/* list checkboxes flex */
+.flexing{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.accordion > .card{
+  border:none !important;
+}
+
+/* precio */
+.price{
+    color: var(--color-secondary);
+     font-weight: 700;
+}
+/* range bar */
+
+.middle{
+  position: relative;
+width: 100%;
+max-width: 500px;
+}
+
+.slider{
+  position: relative;
+  z-index: 1;
+  height: 10px;
+  margin: 0 15px;
+}
+
+.slider > .track{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: var(--color-text-secondary);
+}
+.slider > .range{
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #444;
+}
+
+.slider > .thumb{
+  position: absolute;
+  z-index: 3;
+  width: 25px;
+  height: 25px;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+}
+.slider > .thumb.left{
+  left: 25%;
+  top: 2px;
+  transform: translate(-15px, -10px);
+}
+.slider > .thumb.right{
+  right: 25%;
+  top: 2px;
+  transform: translate(15px, -10px);
+}
+
+input[type="range"]{
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  opacity: 0;
+}
+input[type="range"]::-webkit-slider-thumb{
+  pointer-events: all;
+  width: 25px;
+  height: 25px;
+  border-radius:0 ;
+  border: 0 none;
+  -webkit-appearance: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 </style>
 
 <!-- NAVEGACION -->
@@ -72,450 +226,491 @@
       <!-- CABECERA -->
       <div class="container">
         <div class="row">
-          <!-- titulo de seccion -->
-          <div class="title-section">
-              <span class="span-tittle">DETALLE DE LA PROPIEDAD</span>
-             <span class="container-btn">
-               <span class="compartir-text"><b>COMPARTIR EN</b> </span>
-               <a href="https://api.whatsapp.com/send?phone=+541131193176"  target="_BLANK"><i class="fab fa-whatsapp-square"></i></a>
-             </span>
-              <!-- <button class="btn-compartir btn">COMPARTIR</button> -->
-          </div>
+          
+           <!-- CONTACTO FORM -->
+           <div class="col-md-4 mt-4">
+            <div class="card">
 
-
-          <!-- carrouse -->
-          <div class="col-md-8 mt-5">
-
-            <!-- slider -->
-            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselIndicators" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner pos-relative">
-                <span class="badge badge-info">VENTA</span>
-
-
-                <i class="fas fa-compress-alt expand-icon"></i>
-
-
-                <div class="carousel-item active">
-                  <img src="assets/img/casa0.jpg" class="img-carrousel" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/img/casa1.jpg" class="img-carrousel" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/img/casa2.jpg" class="img-carrousel" alt="...">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-              </a>
-            </div>
-
-
-            <!-- informacion -->
-
-            <div class="card mt-4">
               <div class="card-body">
-                <div class="row">
-                  <div class="col-6">
-                    <div class="info-direccion">
-                      <h5 class="card-title">Florencia Ruiz, Palermo</h5>
-                      <p class="card-text"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                <h5 class="card-title">FILTROS DE BUSQUEDA</h5>
+                <hr>
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        - Ubicacion <i class="fas fa-chevron-down flt-right"></i>
+                        </button>
+                      </h2>
+                      <div class="flt-both"></div>
                     </div>
-                  </div>
-                  <div class="col-6 d-flex">
-                    <div class="ml-auto info-valor">
-                      <h5 class="card-title">$200.000</h5>
-                      <p class="card-text">VALOR DEL INMUEBLE</p>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <select class="form-control">
+                          <option selected>Provincia</option>
+                          <option>Default select</option>
+                          <option>Default select</option>
+                        </select>
+                        <select class="form-control mt-3">
+                          <option selected>Localidad</option>
+                          <option>Default select</option>
+                          <option>Default select</option>
+                        </select>
+                        <select class="form-control mt-3">
+                          <option selected>Barrio</option>
+                          <option>Default select</option>
+                          <option>Default select</option>
+                        </select>
+                        <select class="form-control mt-3">
+                          <option selected>Sub Barrio</option>
+                          <option>Default select</option>
+                          <option>Default select</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <!-- segundo -->
 
-                <div class="row mt-4">
-                  <div class="col-6">
-                    <div class="info-tipo">
-                      <p class="card-title"><i class="fas fa-home"></i> Fondo de comercio</p>
+
+                <hr>
+                <div class="accordion" id="accordionExample2">
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                        - Tipo de operacion <i class="fas fa-chevron-down flt-right"></i>
+                        </button>
+                      </h2>
+                      <div class="flt-both"></div>
                     </div>
+                
+                    <div id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordionExample2">
+                      <div class="card-body">
+                          <div class="row">
+                            <div class="col-6">
+                                <!--ITEM  -->
+                                <div class="item">
+                                  <div class="form-check">
+                                    <label class="custom-radio-checkbox">
+                                      <!-- Input oculto -->
+                                      <input class="custom-radio-checkbox__input" type="checkbox"  checked>
+                                      <!-- Imagen en sustitucion -->
+                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                      <!-- Texto -->
+                                      <span class="custom-radio-checkbox__text">Alquiler</span>
+                                    </label>
+                                  </div>
+
+                                  <div class="form-check">
+                                    <label class="custom-radio-checkbox">
+                                      <!-- Input oculto -->
+                                      <input class="custom-radio-checkbox__input" type="checkbox" >
+                                      <!-- Imagen en sustitucion -->
+                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                      <!-- Texto -->
+                                      <span class="custom-radio-checkbox__text">Venta</span>
+                                    </label>
+                                  </div>
+                                                                   
+                                  
+                                </div> <!-- FIN ITEM  -->
+                            </div>
+
+                            <div class="col-6">
+                              <div class="item">
+                                <div class="form-check">
+                                  <label class="custom-radio-checkbox">
+                                    <!-- Input oculto -->
+                                    <input class="custom-radio-checkbox__input" type="checkbox"  checked>
+                                    <!-- Imagen en sustitucion -->
+                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                    <!-- Texto -->
+                                    <span class="custom-radio-checkbox__text">[ X ]</span>
+                                  </label>
+                                </div>
+                                
+                              </div>
+                            </div>
+
+
+                          </div><!-- FIN ROW -->
+                      </div><!-- FIN card-body -->
+                    </div><!-- FIN collapse -->
                   </div>
-                  <div class="col-6 d-flex">
-                    <div class="ml-auto info-cantidad">
-                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
-                      <span><i class="fas fa-bath"></i>4</span>
-                      <span><i class="fas fa-bed"></i>2</span>
-                      <span><i class="fas fa-car"></i>1</span>
+                </div><!-- FIN acordion -->
+
+                <!-- TERCERO -->
+                <hr>
+                <div class="accordion" id="accordionExample2">
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                        - Tipo de propiedad <i class="fas fa-chevron-down flt-right"></i>
+                        </button>
+                      </h2>
+                      <div class="flt-both"></div>
                     </div>
+                
+                    <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordionExample3">
+                      <div class="card-body">
+                          <div class="row">
+                            <div class="col-6">
+                                <!--ITEM  -->
+                                <div class="item">
+                                  <div class="form-check">
+                                    <label class="custom-radio-checkbox">
+                                      <!-- Input oculto -->
+                                      <input class="custom-radio-checkbox__input" type="checkbox"  checked>
+                                      <!-- Imagen en sustitucion -->
+                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                      <!-- Texto -->
+                                      <span class="custom-radio-checkbox__text">Casa</span>
+                                    </label>
+                                  </div>
+
+                                  <div class="form-check">
+                                    <label class="custom-radio-checkbox">
+                                      <!-- Input oculto -->
+                                      <input class="custom-radio-checkbox__input" type="checkbox" >
+                                      <!-- Imagen en sustitucion -->
+                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                      <!-- Texto -->
+                                      <span class="custom-radio-checkbox__text">Isla</span>
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="custom-radio-checkbox">
+                                      <!-- Input oculto -->
+                                      <input class="custom-radio-checkbox__input" type="checkbox" >
+                                      <!-- Imagen en sustitucion -->
+                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                      <!-- Texto -->
+                                      <span class="custom-radio-checkbox__text">Quinta</span>
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="custom-radio-checkbox">
+                                      <!-- Input oculto -->
+                                      <input class="custom-radio-checkbox__input" type="checkbox" checked >
+                                      <!-- Imagen en sustitucion -->
+                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                      <!-- Texto -->
+                                      <span class="custom-radio-checkbox__text">Terreno</span>
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="custom-radio-checkbox">
+                                      <!-- Input oculto -->
+                                      <input class="custom-radio-checkbox__input" type="checkbox" >
+                                      <!-- Imagen en sustitucion -->
+                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                      <!-- Texto -->
+                                      <span class="custom-radio-checkbox__text">Casa PH</span>
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="custom-radio-checkbox">
+                                      <!-- Input oculto -->
+                                      <input class="custom-radio-checkbox__input" type="checkbox" >
+                                      <!-- Imagen en sustitucion -->
+                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                      <!-- Texto -->
+                                      <span class="custom-radio-checkbox__text">Campo</span>
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="custom-radio-checkbox">
+                                      <!-- Input oculto -->
+                                      <input class="custom-radio-checkbox__input" type="checkbox" >
+                                      <!-- Imagen en sustitucion -->
+                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                      <!-- Texto -->
+                                      <span class="custom-radio-checkbox__text">Hotel</span>
+                                    </label>
+                                  </div>
+                                                                   
+                                  
+                                </div> <!-- FIN ITEM  -->
+                            </div>
+
+                            <div class="col-6">
+                              <!--ITEM  -->
+                              <div class="item">
+                                <div class="form-check pl-0">
+                                  <label class="custom-radio-checkbox">
+                                    <!-- Input oculto -->
+                                    <input class="custom-radio-checkbox__input" type="checkbox">
+                                    <!-- Imagen en sustitucion -->
+                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                    <!-- Texto -->
+                                    <span class="custom-radio-checkbox__text ">Cochera</span>
+                                  </label>
+                                </div>
+
+                                <div class="form-check pl-0">
+                                  <label class="custom-radio-checkbox">
+                                    <!-- Input oculto -->
+                                    <input class="custom-radio-checkbox__input" type="checkbox" >
+                                    <!-- Imagen en sustitucion -->
+                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                    <!-- Texto -->
+                                    <span class="custom-radio-checkbox__text ">Fondo de comercio</span>
+                                  </label>
+                                </div>
+                                <div class="form-check pl-0">
+                                  <label class="custom-radio-checkbox">
+                                    <!-- Input oculto -->
+                                    <input class="custom-radio-checkbox__input" type="checkbox" >
+                                    <!-- Imagen en sustitucion -->
+                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                    <!-- Texto -->
+                                    <span class="custom-radio-checkbox__text ">Galpon</span>
+                                  </label>
+                                </div>
+                                <div class="form-check pl-0">
+                                  <label class="custom-radio-checkbox">
+                                    <!-- Input oculto -->
+                                    <input class="custom-radio-checkbox__input" type="checkbox" >
+                                    <!-- Imagen en sustitucion -->
+                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                    <!-- Texto -->
+                                    <span class="custom-radio-checkbox__text ">Local</span>
+                                  </label>
+                                </div>
+                                <div class="form-check pl-0">
+                                  <label class="custom-radio-checkbox">
+                                    <!-- Input oculto -->
+                                    <input class="custom-radio-checkbox__input" type="checkbox" >
+                                    <!-- Imagen en sustitucion -->
+                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                    <!-- Texto -->
+                                    <span class="custom-radio-checkbox__text ">Oficina</span>
+                                  </label>
+                                </div>
+                                <div class="form-check pl-0">
+                                  <label class="custom-radio-checkbox">
+                                    <!-- Input oculto -->
+                                    <input class="custom-radio-checkbox__input" type="checkbox" >
+                                    <!-- Imagen en sustitucion -->
+                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                    <!-- Texto -->
+                                    <span class="custom-radio-checkbox__text ">Edificio</span>
+                                  </label>
+                                </div>
+                                <div class="form-check pl-0">
+                                  <label class="custom-radio-checkbox">
+                                    <!-- Input oculto -->
+                                    <input class="custom-radio-checkbox__input" type="checkbox" >
+                                    <!-- Imagen en sustitucion -->
+                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                    <!-- Texto -->
+                                    <span class="custom-radio-checkbox__text ">Emprendimiento</span>
+                                  </label>
+                                </div>
+                                                                 
+                                
+                              </div> <!-- FIN ITEM  -->
+                            </div>
+
+
+                          </div><!-- FIN ROW -->
+                      </div><!-- FIN card-body -->
+                    </div><!-- FIN collapse -->
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Servicios -->
-            <div class="card mt-4">
-               <div class="card-body">
-                 <h5 class="card-title">Servicios del inmueble</h5>
-                    <div class="info-services">
-                      <!--ITEM  -->
-                      <div class="item">
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox"  checked>
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Gas</span>
-                          </label>
+                </div><!-- FIN acordion -->
+<!-- cuarto -->
+                    <hr>
+                    <div class="accordion" id="accordionExample3">
+                      <div class="card">
+                        <div class="card-header" id="heading3">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                            - Servicios <i class="fas fa-chevron-down flt-right"></i>
+                            </button>
+                          </h2>
+                          <div class="flt-both"></div>
                         </div>
 
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Agua Corriente</span>
-                          </label>
+                        <div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordionExample4">
+                          <div class="card-body">
+                              <div class="row">
+                                <div class="col-12">
+                                   <div class="container scrollbarContainer">
+                                    <ul class="list-group scrollbar mt-2">
+                                      <li class="list-group-item">
+                                        <div class="form-check">
+                                          <label class="custom-radio-checkbox flexing">
+                                            <span class="custom-radio-checkbox__text">Luz</span>
+                                            <!-- Input oculto -->
+                                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
+                                            <!-- Imagen en sustitucion -->
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                          </label>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check">
+                                          <label class="custom-radio-checkbox flexing">
+                                            <span class="custom-radio-checkbox__text">Cable</span>
+                                            <!-- Input oculto -->
+                                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
+                                            <!-- Imagen en sustitucion -->
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                          </label>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check">
+                                          <label class="custom-radio-checkbox flexing">
+                                            <span class="custom-radio-checkbox__text">Electricidad</span>
+                                            <!-- Input oculto -->
+                                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
+                                            <!-- Imagen en sustitucion -->
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                          </label>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check">
+                                          <label class="custom-radio-checkbox flexing">
+                                            <span class="custom-radio-checkbox__text">Gas natural</span>
+                                            <!-- Input oculto -->
+                                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
+                                            <!-- Imagen en sustitucion -->
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                          </label>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check">
+                                          <label class="custom-radio-checkbox flexing">
+                                            <span class="custom-radio-checkbox__text">Parrilla</span>
+                                            <!-- Input oculto -->
+                                            <input class="custom-radio-checkbox__input" type="checkbox" >
+                                            <!-- Imagen en sustitucion -->
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                          </label>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check">
+                                          <label class="custom-radio-checkbox flexing">
+                                            <span class="custom-radio-checkbox__text">Pileta</span>
+                                            <!-- Input oculto -->
+                                            <input class="custom-radio-checkbox__input" type="checkbox">
+                                            <!-- Imagen en sustitucion -->
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                          </label>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check">
+                                          <label class="custom-radio-checkbox flexing">
+                                            <span class="custom-radio-checkbox__text">Seguridad</span>
+                                            <!-- Input oculto -->
+                                            <input class="custom-radio-checkbox__input" type="checkbox">
+                                            <!-- Imagen en sustitucion -->
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                          </label>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check">
+                                          <label class="custom-radio-checkbox flexing">
+                                            <span class="custom-radio-checkbox__text">Agua Corriente</span>
+                                            <!-- Input oculto -->
+                                            <input class="custom-radio-checkbox__input" type="checkbox">
+                                            <!-- Imagen en sustitucion -->
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                          </label>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check">
+                                          <label class="custom-radio-checkbox flexing">
+                                            <span class="custom-radio-checkbox__text">Internet</span>
+                                            <!-- Input oculto -->
+                                            <input class="custom-radio-checkbox__input" type="checkbox">
+                                            <!-- Imagen en sustitucion -->
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                          </label>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check">
+                                          <label class="custom-radio-checkbox flexing">
+                                            <span class="custom-radio-checkbox__text">Alarma</span>
+                                            <!-- Input oculto -->
+                                            <input class="custom-radio-checkbox__input" type="checkbox">
+                                            <!-- Imagen en sustitucion -->
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                          </label>
+                                        </div>
+                                      </li>
+                                    </ul>
+
+                                    <button class="btn btn-block btn-aplicar">Aplicar</button>
+
+                                   </div>
+                                </div>
+                              </div><!-- FIN ROW -->
+                          </div><!-- FIN card-body -->
+                        </div><!-- FIN collapse -->
+                      </div>
+                    </div><!-- FIN acordion -->
+
+
+                    <hr>
+                      <div class="card">
+                        <div class="card-header">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button">
+                            - Monto <span class="price flt-right">U$S<span style="color:var(--color-text-secondary); padding-left:10px">$</span></span>
+                            </button>
+                          </h2>
+                          <div class="flt-both"></div>
                         </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Video Cable</span>
-                          </label>
+                        <div class="card-body middle">
+                          <div class="multi-range-slider">
+                            <input type="range" id="input-left" min="0" max="1000000" value="100000">
+                            <input type="range" id="input-right" min="0" max="1000000" value="500000">
+
+                            <div class="slider">
+                              <div class="track"></div>
+                              <div class="range"></div>
+                              <div class="thumb left"></div>
+                              <div class="thumb right"></div>
+                            </div>
+                            <div class="d-flex justify-content-between ">
+                              <span id="value-left"></span>
+                              <span id="value-right"></span>
+                            </div>
+                          </div>
                         </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Pavimento</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Cloacas</span>
-                          </label>
-                        </div>
-                      </div> <!-- FIN ITEM  -->
                     
-                      <!--ITEM  -->
-                      <div class="item">
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Electricidad</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Teléfono</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Internet</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox">
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Seguridad</span>
-                          </label>
-                        </div>
-                      </div> <!-- FIN ITEM  -->
-
-                      <!--ITEM  -->
-                      <div class="item">
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox">
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">SUM</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox">
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Pileta</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Jardin</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox">
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Solarium</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox">
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Alarma</span>
-                          </label>
-                        </div>
-                      </div> <!-- FIN ITEM  -->
-
-                      <!--ITEM  -->
-                      <div class="item">
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Baulera</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox">
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Lavadero</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox">
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Amuebleado</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox">
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Dependencia</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Parrilla</span>
-                          </label>
-                        </div>
-                      </div> <!-- FIN ITEM  -->
-
-                      <!--ITEM  -->
-                      <div class="item">
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Terraza</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox">
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Balcón</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox">
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Hidromasaje</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox">
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Patio</span>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="custom-radio-checkbox">
-                            <!-- Input oculto -->
-                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                            <!-- Imagen en sustitucion -->
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                            <!-- Texto -->
-                            <span class="custom-radio-checkbox__text">Sauna</span>
-                          </label>
-                        </div>
-                      </div> <!-- FIN ITEM  -->                      
-                    </div>
-               </div>
-            </div>
-
-            <!-- Mapa -->
-            <div class="card my-4">
-              <div class="card-body">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0429842433264!2d-58.53711078468646!3d-34.65361736764725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8665a70d681%3A0x1e482e4d5204df58!2sCharcas%201934%2C%20B1752BSB%20Lomas%20del%20Mirador%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1604001420268!5m2!1ses-419!2sar"
-                 width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                      </div>
+   
               </div>
             </div>
 
-          </div>
-
-          <!-- CONTACTO FORM -->
-          <div class="col-md-4 mt-5">
-            <div class="card pos-relative">
-
-              <div class="consultado">
-                <i class="fas fa-bullhorn"></i>
-                <h5 class="card-title">Consulta Enviada</h5>
-                <p class="card-text">Te notificaremos cuando el usuario acepte tu solicitud.</p>
-              </div>
-
-              <div class="card-body ">
-                <h5 class="card-title">Comunicate con nosotros</h5>
-                <p class="card-text">Un asesor se comunicará con vos muy pronto.</p>
-                <!-- <form > -->
-                  <textarea name="consulta" id="consulta" cols="30" rows="5">  Deja tu consulta</textarea>
-                <button class="btn btn-consultar btn-lg btn-block mt-3 px-3" id="btn-consultar">CONSULTAR</button>
-                <!-- </form> -->
-              </div>
-            </div>
-
-            <div class="card mt-3">
-              <div class="card-body">
-                <h5 class="card-title">Información</h5>
-                <table class="table">
-                  <tbody>
-                    <tr>
-                      <td>Propiedad ID</td>
-                      <td class="separar-col">00000000</td>
-                    </tr>
-                    <tr>
-                      <td>Expensas</td>
-                      <td class="separar-col">$0000</td>
-                    </tr>
-                    <tr>
-                      <td>Propiedad</td>
-                      <td class="separar-col">Casa</td>
-                    </tr>
-                    <tr>
-                      <td>Operacion</td>
-                      <td class="separar-col">Venta</td>
-                    </tr>
-                    <tr>
-                      <td>Estado</td>
-                      <td class="separar-col">Reservada</td>
-                    </tr>
-                    <tr>
-                      <td>Ambientes</td>
-                      <td class="separar-col">4</td>
-                    </tr>
-                    <tr>
-                      <td>Baños</td>
-                      <td class="separar-col">1</td>
-                    </tr>
-                    <tr>
-                      <td>Dormitorios</td>
-                      <td class="separar-col">2</td>
-                    </tr>
-                    <tr>
-                      <td>Cocheras</td>
-                      <td class="separar-col">1</td>
-                    </tr>
-                    <tr>
-                      <td>Superficie total</td>
-                      <td class="separar-col">100mt2</td>
-                    </tr>
-                    <tr>
-                      <td>Superficie cubierta</td>
-                      <td class="separar-col">100mt2</td>
-                    </tr>
-                    <tr>
-                      <td>Antiguedad</td>
-                      <td class="separar-col">Hasta 5 años</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
         </div>
+
+          <div class="col-md-8">
+
+            <!-- titulo de seccion -->
+            <div class="title-section">
+              <span class="span-tittle">PROPIEDADES</span>
+              <button class="btn-compartir btn">PUBLICAR PROPIEDAD</button>
+            </div>
+
+          </div>
+
+         
+
       </div>
     </div>
 
@@ -530,6 +725,73 @@
 
 <script>
 
+
+
+var inputLeft = document.getElementById('input-left');
+var inputRight = document.getElementById('input-right');
+
+var thumbLeft = document.querySelector(".slider > .thumb.left");
+var thumbRight = document.querySelector(".slider > .thumb.right");
+var range = document.querySelector(".slider > .range");
+
+
+$(document).ready(()=>{
+
+  document.getElementById('value-left').innerText = "$" + inputLeft.value;
+  document.getElementById('value-right').innerText = "$" + inputRight.value;
+
+});
+
+function setLeftValue(){
+var _this = inputLeft,
+      min = parseInt(_this.min),
+      max = parseInt(_this.max);
+
+_this.value = Math.min(parseInt(_this.value),parseInt(inputRight.value) -1);
+
+var percent = ((_this.value - min) / (max - min) ) * 100
+
+thumbLeft.style.left = percent + "%";
+range.style.left = percent + "%";
+
+
+}
+
+setLeftValue();
+
+
+function setRightValue(){
+var _this = inputRight,
+      min = parseInt(_this.min),
+      max = parseInt(_this.max);
+
+_this.value = Math.max(parseInt(_this.value),parseInt(inputLeft.value) -1);
+
+var percent = ((_this.value - min) / (max - min) ) * 100
+
+thumbRight.style.right = (100 - percent) + "%";
+range.style.right = (100 - percent) + "%";
+
+
+}
+
+setRightValue();
+
+
+
+
+inputLeft.addEventListener("input",setLeftValue);
+inputRight.addEventListener("input",setRightValue);
+
+
+inputLeft.addEventListener("mouseup", ()=>{
+  document.getElementById('value-left').innerText = "$" + inputLeft.value;
+});
+
+inputRight.addEventListener("mouseup", ()=>{
+  document.getElementById('value-right').innerText = "$" + inputRight.value;
+
+});
 
 </script>
 
