@@ -99,6 +99,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 40px;
     border-bottom: 3px solid #F3B83F;
 }
@@ -112,7 +113,6 @@ nav{
 
 
 
-/* boton compartir */
 .container-btn{
     display: flex;
     align-items: center;
@@ -130,7 +130,7 @@ nav{
     font-size: 2rem;
 
 }
-
+/* boton compartir */
 .btn-compartir{
     font-size: .8rem;
     padding: 5px 20px;
