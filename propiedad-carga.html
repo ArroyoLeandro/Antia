@@ -19,86 +19,6 @@
 </head>
 <body>
 
-<style>
-
-.info-services{
-    justify-content: flex-start;
-    /* space-evenly */
-
-}
-
-
-
-/* DropZone */
-
-.dropzoneCard{
-    position: absolute;
-    z-index: 100;
-    background-color: #3E97A3;
-    color: #fff !important;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    opacity: .95;
-}
-
-.dropzoneCard > i{
-  font-size: 6.3rem;
-}
-.dropzoneCard > .card-title{
-  font-size: 1.4rem;
-}
-.dropzoneCard > .card-title, .dropzoneCard > .card-text{
-    color: #fff;
-    padding: 10px 50px 0 50px;
-}
-
-
-/* carrousel */
-.swiper-container {
-    width: auto;
-    height: 390px;
-}
-.swiper-button-next{
-    width: calc(var(--swiper-navigation-size)/ 44 * 27);
-    height: var(--swiper-navigation-size);
-    margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-primary);
-    transform: rotate(90deg);
-    top: 97%;
-    left: 40%;
-    z-index: 110;
-}
-
-.swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 2rem;
-}
-
-
-.w_auto{
-  width: 70% !important;
-}
-
-.form-inline.d-flex{
-  justify-content: space-between;
-} 
-
-.btn.dropdown-toggle{
-  background-color: var(--color-text-secondary);
-}
-.dropdown-menu{
-  min-width: 5rem !important;
-  z-index: 1000;
-}
-
-    
-</style>
 
 <!-- NAVEGACION -->
 <nav class="navbar navbar-expand-lg">
@@ -166,7 +86,7 @@
               <div class="card-body">
                 <h5 class="card-title mb-4">Informacion general</h5>
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-sm-6 col-12">
                     <div class="form-group">
                       <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Tipo de operación</label>
                       <select class="form-control">
@@ -199,8 +119,10 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-6">
+
+                  </div><!-- col-6 -->
+
+                  <div class="col-sm-6 col-12">
 
                     <div class="form-group">
                       <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Tipo de Propiedad</label>
@@ -224,43 +146,23 @@
                         </div>
                       </div>
                     </div>
-                    <!-- <div class="form-group">
-                      <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Monto</label>
-                      <div class="input-group">
-                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                        <div class="input-group-append">
-                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">U$D</button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div role="separator" class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div> -->
-                    
 
-                  </div>
-                </div>
+                  </div><!-- col-6 -->
+                </div><!-- row -->
 
                   
-              </div>
-            </div>
+              </div><!-- card-body -->
+            </div><!-- card -->
 
             <div class="card mt-4">
               <div class="card-body">
                 <h5 class="card-title mb-4">Ubicacion del inmueble</h5>
-
                 <div class="row">
-                  <div class="col-12">
-                    
-
+                  <div class="col-12">                
                     <div class="form-group">
                       <div class="form-inline d-flex">
                         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Provincia</label>
-                          <select class="form-control w_auto">
+                          <select class="form-control w_70">
                               <option selected></option>
                               <option value="1">Uno</option>
                               <option value="2">Dos</option>
@@ -268,14 +170,11 @@
                             </select>
                       </div>
                     </div>
-
-
-
 
                     <div class="form-group">
                       <div class="form-inline d-flex">
                         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Localidad</label>
-                          <select class="form-control w_auto">
+                          <select class="form-control w_70">
                               <option selected></option>
                               <option value="1">Uno</option>
                               <option value="2">Dos</option>
@@ -283,10 +182,11 @@
                             </select>
                       </div>
                     </div>
+
                     <div class="form-group">
                       <div class="form-inline d-flex">
                         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Barrio</label>
-                          <select class="form-control w_auto">
+                          <select class="form-control w_70">
                               <option selected></option>
                               <option value="1">Uno</option>
                               <option value="2">Dos</option>
@@ -294,48 +194,101 @@
                             </select>
                       </div>
                     </div>
-                   <div class="form-group">
-                    <div class="form-inline d-flex">
-                      <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Sub Barrio</label>
-                        <select class="form-control w_auto">
+
+                    <div class="form-group">
+                      <div class="form-inline d-flex">
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Sub Barrio</label>
+                          <select class="form-control w_70">
                             <option selected></option>
                             <option value="1">Uno</option>
                             <option value="2">Dos</option>
                             <option value="3">Tres</option>
                           </select>
+                      </div>
                     </div>
-                   </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
 
+                  </div>
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
 
             <div class="card mt-4">
               <div class="card-body">
-                <h5 class="card-title" style="color: red; font-weight: 800; border-bottom: 2px solid red; text-align: center;">Resta hacer</h5>
+                <h5 class="card-title mb-4">Comodidades</h5>
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="form-group price-container">
+                      <label class="my-1 mr-2" for="ambiente-carga">Ambientes</label>
+                      <i class="fas fa-chevron-down btn-number" onclick="decrement('ambiente-carga')"></i>
+                      <input type="number" name="ambiente-carga" id="ambiente-carga" min="0" value="0" class="form-control input-price">
+                      <i class="fas fa-chevron-up btn-number" onclick="increment('ambiente-carga')"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="form-group price-container">
+                      <label class="my-1 mr-2" for="banio-carga">Baños</label>
+                      <i class="fas fa-chevron-down btn-number" onclick="decrement('banio-carga')"></i>
+                      <input type="number" name="banio-carga" id="banio-carga" min="0" value="0" class="form-control input-price">
+                      <i class="fas fa-chevron-up btn-number" onclick="increment('banio-carga')"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="form-group price-container">
+                      <label class="my-1 mr-2" for="dormitorio-carga">Dormitorios</label>
+                      <i class="fas fa-chevron-down btn-number" onclick="decrement('dormitorio-carga')"></i>
+                      <input type="number" name="dormitorio-carga" id="dormitorio-carga" min="0" value="0" class="form-control input-price">
+                      <i class="fas fa-chevron-up btn-number" onclick="increment('dormitorio-carga')"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="form-group price-container">
+                      <label class="my-1 mr-2" for="cochera-carga">Cocheras</label>
+                      <i class="fas fa-chevron-down btn-number" onclick="decrement('cochera-carga')"></i>
+                      <input type="number" name="cochera-carga" id="cochera-carga" min="0" value="0" class="form-control input-price">
+                      <i class="fas fa-chevron-up btn-number" onclick="increment('cochera-carga')"></i>
+                    </div>
+                  </div>
 
-               <img src="assets/img/falta.jpg" alt="" class="img-fluid">
+                  <div class="col-lg-6">
+                    <div class="form-group d-flex">                                          
+                      <label class="my-1 mr-2" for="">Sup. Total mt2</label>
+                      <input type="number" name="" id="" min="0" class="form-control w_50">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group d-flex">                                          
+                      <label class="my-1 mr-2" for="">Sup. Total mt2</label>
+                      <input type="number" name="" id="" min="0" class="form-control w_50">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <div class="form-inline d-flex">
+                        <label class="my-1 mr-2" for="">Antigüedad</label>
+                          <select class="form-control w_70">
+                            <option selected>Entre 2 y 5 años</option>
+                            <option value="1">Entre 6 y 10 años</option>
+                            <option value="2">Entre 11 y 20 años</option>
+                            <option value="3">Más de 20 años</option>
+                          </select>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- row -->
               </div>
             </div>
            
-          </div>
+          </div><!-- columna izquierda -->
 
           <!-- columna derecha -->
           <div class="col-md-6">
-
-
-
             <div class="card mt-4">
-              <div class="card-body">
-                
+              <div class="card-body">               
                 <h5 class="card-title">Fotos del inmueble</h5>
-
                 <div class="row">
                  
                   <!-- DROP ZONE -->
-                  <div class="col-md-9">
+                  <div class="col-md-9 col-12">
                    <div class="container" style="height: 350px;">
 
                       <div class="dropzoneCard">
@@ -350,11 +303,12 @@
                    
                   </div>
 
-                  <div class="col-md-3 pos-relative">
-                    <!-- Slider main container -->
-                  <div class="swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
+                  <div class="col-md-3 col-12 pos-relative">
+                    <div class="container-swiper pos-relative">
+                        <!-- Slider main container -->
+                    <div class="swiper-container">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide"><img src="assets/img/casa0.jpg" alt="" class="img-fluid"></div>
                         <div class="swiper-slide"><img src="assets/img/casa1.jpg" alt="" class="img-fluid"></div>
@@ -365,19 +319,18 @@
                         <div class="swiper-slide"><img src="assets/img/casa1.jpg" alt="" class="img-fluid"></div>
                         <div class="swiper-slide"><img src="assets/img/casa2.jpg" alt="" class="img-fluid"></div>
                         <div class="swiper-slide"><img src="assets/img/casa0.jpg" alt="" class="img-fluid"></div>
+                      </div>
+                      <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                    </div><!-- swiper-container -->
                     </div>
-                     <!-- Add Arrows -->
-                      <div class="swiper-button-next"></div>
-                  </div>
-                    
-                  </div>
-                </div>
+                  </div><!-- col-md-3 -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
 
-              </div>
-            </div>
-
-             <!-- Servicios -->
-             <div class="card mt-4">
+            <!-- Servicios -->
+            <div class="card mt-4">
               <div class="card-body">
                 <h5 class="card-title">Servicios del inmueble</h5>
                    <div class="info-services">
@@ -643,22 +596,20 @@
                      </div> <!-- FIN ITEM  -->                      
                    </div>
               </div>
-           </div>
+            </div><!-- card -->
 
-           <!-- Mapa -->
-           <div class="card my-4">
-             <div class="card-body">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0429842433264!2d-58.53711078468646!3d-34.65361736764725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8665a70d681%3A0x1e482e4d5204df58!2sCharcas%201934%2C%20B1752BSB%20Lomas%20del%20Mirador%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1604001420268!5m2!1ses-419!2sar"
-                width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-             </div>
-           </div>
+            <!-- Mapa -->
+            <div class="card my-4">
+              <div class="card-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0429842433264!2d-58.53711078468646!3d-34.65361736764725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8665a70d681%3A0x1e482e4d5204df58!2sCharcas%201934%2C%20B1752BSB%20Lomas%20del%20Mirador%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1604001420268!5m2!1ses-419!2sar"
+                  width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
 
-          </div>
-
-        </div>
-
-      </div>
-    </div>
+          </div><!-- col-md-6 -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </div><!-- container-fluid -->
 
 
 
@@ -693,14 +644,34 @@
       // Optional parameters
       direction: 'vertical',
       loop: true,
-      slidesPerView: 4,
+      slidesPerView: 1,
       spaceBetween: 0,
+      // Responsive breakpoints
+      breakpoints: {
+        // when window width is >= 768
+        768: {
+          slidesPerView: 5,
+          spaceBetween: 0
+        },
+        1040: {
+          slidesPerView: 3,
+          spaceBetween: 0
+        }
+      },
       navigation: {
         nextEl: '.swiper-button-next',
       },
 
       })
   });
+
+  // incrementar y decrementar inputs
+function increment(input){
+  $('#' + input ).val( parseInt($('#' + input ).val())  + 1);
+}
+function decrement(input){
+  parseInt($('#' + input ).val()) == 0 ? $('#' + input ).val(0) : $('#' + input ).val( parseInt($('#' + input ).val())  - 1);
+}
 
 </script>
 

@@ -36,7 +36,22 @@ hr{
     border: 0;
     border-top: 2px solid rgba(0,0,0,.1);
 }
-
+  /* eliminar estilo input number */
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+  }
+  
+  select{
+    border: 1px solid var(--color-text-secondary) !important;
+    border-radius: 10px !important;
+  }
+  
+  input[type=number] { 
+    -moz-appearance:textfield;
+    border: 1px solid var(--color-text-secondary);
+    border-radius: 10px;  
+  }
 
 .flt-right{
      float:right;
@@ -90,6 +105,12 @@ nav{
     right: -7px;
 }
 
+
+
+
+/*=================================
+  PAGINA DETALLE PROPIEDAD 1, 2 Y 3   
+================================ */
 
 
 
@@ -269,10 +290,11 @@ nav{
     background-image: url(../img/radio-check.png);
 }
 
-/* mapa */
 
 
-
+/*=================================
+  PAGINA DETALLE PROPIEDAD 3   
+================================ */
 
 /* card contacto  */
 
@@ -420,4 +442,343 @@ nav{
 .btn-aplicar{
     background-color:#3E97A3;
     margin: 10px 5px 5px 5px ;
+}
+
+
+
+
+
+
+/*=================================
+  PAGINA CARGAR PROPIEDAD 
+================================ */
+
+
+.info-services{
+    justify-content: flex-start;
+    /* space-evenly */
+
+}
+
+/* DropZone */
+
+.dropzoneCard{
+    position: absolute;
+    z-index: 100;
+    background-color: #3E97A3;
+    color: #fff !important;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: .95;
+}
+
+.dropzoneCard > i{
+  font-size: 6.3rem;
+}
+.dropzoneCard > .card-title{
+  font-size: 1.4rem;
+}
+.dropzoneCard > .card-title, .dropzoneCard > .card-text{
+    color: #fff;
+    padding: 10px 50px 0 50px;
+}
+
+
+/* carrousel */
+
+.swiper-container {
+    width: auto;
+    height: 390px;
+}
+.swiper-button-next{
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    transform: rotate(90deg);
+    top: 97%;
+    left: 40%;
+    z-index: 110;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 2rem;
+}
+
+/* formularios */
+.w_70{
+  width: 70% !important;
+}
+
+.form-inline.d-flex{
+   justify-content: space-between;
+} 
+
+.btn.dropdown-toggle{
+  background-color: var(--color-text-secondary);
+}
+.dropdown-menu{
+  min-width: 5rem !important;
+  z-index: 1000;
+}
+
+
+.w_50{
+    width: 50% !important;
+}
+
+
+
+/*=================================
+  PAGINA LISTADO DE PROPIEDADES   
+================================ */
+
+
+.card-header{
+    border: none;
+    background-color: #fff !important;
+  }
+  .btn-link.btn-block{
+    background-color: transparent;
+    color: var(--color-primary);
+    text-decoration: none !important;
+  }
+  .custom-radio-checkbox__text2{
+    font-size: .75rem;
+  }
+  
+ 
+  .btn.btn-link.btn-block.text-left{
+    font-size: 1.1rem;
+  }
+  
+  .form-group label{
+    font-weight: 600;
+  }
+  
+  /* Barra scroll servicios */
+  .scrollbarContainer{
+    border: 1px solid var(--color-text-secondary);
+    border-radius: 10px;
+  }
+  .scrollbar{
+    height: 300px;;  
+    overflow-y: scroll;
+  }
+  
+  
+  .scrollbar::-webkit-scrollbar {
+      width: 10px !important;     /* Tamaño del scroll en vertical */
+  }
+  /* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+  
+  .scrollbar::-webkit-scrollbar {
+      -webkit-appearance: none;
+  }
+  
+  .scrollbar::-webkit-scrollbar:vertical {
+      width:10px;
+  }
+  
+  .scrollbar::-webkit-scrollbar-button:increment,.scrollbar::-webkit-scrollbar-button {
+      display: none;
+  } 
+  
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+      background-color: #797979;
+      border-radius: 20px;
+      border: 2px solid #f1f2f3;
+  }
+  
+  .scrollbar::-webkit-scrollbar-track {
+      border-radius: 10px;  
+  }
+  
+  
+  /* list checkboxes flex */
+  .flexing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  
+  .accordion > .card{
+    border:none !important;
+  }
+  
+  /* precio */
+  .price{
+      color: var(--color-text-secondary);
+       font-weight: 700;
+  }
+  .price.active{
+    color: var(--color-secondary);
+  }
+  #ars{
+    padding-left:10px
+  }
+  .btn-number{
+    cursor: pointer;
+  }
+  .btn-number:hover{
+    color: var(--color-primary)
+  }
+  
+  .price-container {
+              position:relative;
+  }
+  .input-price{
+    padding-left:40%;
+    padding-right:25px;
+  }
+  
+  .price-container i{
+    position:absolute;
+    left:8px;
+    top:43px;
+  }
+  
+  .price-container i:last-child{
+    left: auto;
+    right:8px;
+    top:43px;
+  }
+  
+  
+  /* expensas */
+  .expensa-container{
+    position: relative;
+  }
+  #expensas{
+    padding-left: 60px;
+  }
+  .label-expensas{
+    position: absolute;
+    cursor: pointer;
+    left: 8px;
+    bottom: 0;
+  }
+  
+  /* cards propiedades */
+  .badge-info-tipo{
+    top: 30px;
+    padding: 7px 10px;
+    font-size: .6rem;
+    letter-spacing: .2rem;
+  }
+  .badge-venta{
+    background-color: #1b555f;
+  }
+  .badge-alquiler{
+    background-color: #3E97A3;
+  }
+  .description-card{
+    font-size: .8rem;
+    text-align: justify;
+  }
+  
+  .info-valor{
+    text-align: start;
+    margin-top: 1rem;
+  }
+  
+  .info-propiedad{
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem .5rem 0 .5rem;
+  }
+  
+  .info-propiedad > span{
+    color: var(--color-primary);
+      font-weight: 600;
+  }
+  .info-propiedad > span > i{
+      color: var(--color-secondary);
+      padding-right:8px;
+  }
+  
+  /* paginacion */
+  .btn-group > button{
+    margin: 0;
+    background-color: transparent;
+    color: var(--color-text-secondary);
+    border-top: 1px solid #3E97A3;
+    border-bottom: 1px solid #3E97A3;
+  }
+  .page-prev{
+    border-left: 1px solid #3E97A3;
+    border-radius: 10px;
+    color: var(--color-primary) !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+  }
+  .page-next {
+    border-right: 1px solid #3E97A3;
+    border-radius: 10px;
+    color: var(--color-primary) !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+  }
+  .btn-group > button.active{
+    background-color: #3E97A3;
+    color: #fff;
+  }
+  .pag-ini{
+    border-left: 1px solid #3E97A3;
+    border-radius: 10px;
+  }
+  .pag-fin{
+    border-right: 1px solid #3E97A3;
+    border-radius: 10px;
+  }
+  .cant-pag-active{
+    font-weight: 700;
+    color: var(--color-primary) !important;
+  
+  }
+  .color-secondary{
+    color: var(--color-secondary);
+  }
+  
+
+
+
+/*=================================
+  MEDIA QUERYS
+================================ */
+
+@media (max-width:500px){
+    .w_70{
+        width: 55% !important;
+    }
+}
+
+@media (max-width:768px){
+    .container-swiper{
+        width:100%;
+        padding-right:15px;
+        padding-left:15px;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    .swiper-container {
+        width: auto;
+        height: 220px;
+        margin-top: 2rem;
+    }
+    .dropzoneCard{
+        margin-right: 30px;
+    }
+    .w_50{
+        width:70% !important;
+    }
 }

@@ -15,236 +15,6 @@
 </head>
 <body>
 
-<style>
-.card-header{
-  border: none;
-  background-color: #fff !important;
-}
-.btn-link.btn-block{
-  background-color: transparent;
-  color: var(--color-primary);
-  text-decoration: none !important;
-}
-.custom-radio-checkbox__text{
-  font-size: .75rem;
-}
-
-
-/* eliminar estilo input number */
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-}
-
-select{
-  border: 1px solid var(--color-text-secondary) !important;
-  border-radius: 10px !important;
-}
-
-input[type=number] { 
-  -moz-appearance:textfield;
-  border: 1px solid var(--color-text-secondary);
-  border-radius: 10px;  
-}
-
-.btn.btn-link.btn-block.text-left{
-  font-size: 1.1rem;
-}
-
-.form-group label{
-  font-weight: 600;
-}
-
-/* Barra scroll servicios */
-.scrollbarContainer{
-  border: 1px solid var(--color-text-secondary);
-  border-radius: 10px;
-}
-.scrollbar{
-  height: 300px;;  
-  overflow-y: scroll;
-}
-
-
-.scrollbar::-webkit-scrollbar {
-    width: 10px !important;     /* Tamaño del scroll en vertical */
-}
-/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
-
-.scrollbar::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-
-.scrollbar::-webkit-scrollbar:vertical {
-    width:10px;
-}
-
-.scrollbar::-webkit-scrollbar-button:increment,.scrollbar::-webkit-scrollbar-button {
-    display: none;
-} 
-
-
-.scrollbar::-webkit-scrollbar-thumb {
-    background-color: #797979;
-    border-radius: 20px;
-    border: 2px solid #f1f2f3;
-}
-
-.scrollbar::-webkit-scrollbar-track {
-    border-radius: 10px;  
-}
-
-
-/* list checkboxes flex */
-.flexing{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-
-.accordion > .card{
-  border:none !important;
-}
-
-/* precio */
-.price{
-    color: var(--color-text-secondary);
-     font-weight: 700;
-}
-.price.active{
-  color: var(--color-secondary);
-}
-#ars{
-  padding-left:10px
-}
-.btn-number{
-  cursor: pointer;
-}
-.btn-number:hover{
-  color: var(--color-primary)
-}
-
-.price-container {
-			position:relative;
-}
-.input-price{
-  padding-left:40%;
-  padding-right:25px;
-}
-
-.price-container i{
-  position:absolute;
-  left:8px;
-  top:43px;
-}
-
-.price-container i:last-child{
-  left: auto;
-  right:8px;
-  top:43px;
-}
-
-
-/* expensas */
-.expensa-container{
-  position: relative;
-}
-#expensas{
-  padding-left: 60px;
-}
-.label-expensas{
-  position: absolute;
-  cursor: pointer;
-  left: 8px;
-  bottom: 0;
-}
-
-/* cards propiedades */
-.badge-info {
-    top: 30px;
-    padding: 7px 10px;
-    font-size: .6rem;
-    letter-spacing: .2rem;
-}
-.badge-venta{
-  background-color: #1b555f;
-}
-.badge-alquiler{
-  background-color: #3E97A3;
-}
-.description-card{
-  font-size: .8rem;
-  text-align: justify;
-}
-
-.info-valor{
-  text-align: start;
-  margin-top: 1rem;
-}
-
-.info-propiedad{
-  display: flex;
-  justify-content: space-between;
-  padding: .8rem .5rem 0 .5rem;
-}
-
-.info-propiedad > span{
-  color: var(--color-primary);
-    font-weight: 600;
-}
-.info-propiedad > span > i{
-    color: var(--color-secondary);
-    padding-right:8px;
-}
-
-/* paginacion */
-.btn-group > button{
-  margin: 0;
-  background-color: transparent;
-  color: var(--color-text-secondary);
-  border-top: 1px solid #3E97A3;
-  border-bottom: 1px solid #3E97A3;
-}
-.page-prev{
-  border-left: 1px solid #3E97A3;
-  border-radius: 10px;
-  color: var(--color-primary) !important;
-  font-size: 1.2rem !important;
-  font-weight: 600 !important;
-}
-.page-next {
-  border-right: 1px solid #3E97A3;
-  border-radius: 10px;
-  color: var(--color-primary) !important;
-  font-size: 1.2rem !important;
-  font-weight: 600 !important;
-}
-.btn-group > button.active{
-  background-color: #3E97A3;
-  color: #fff;
-}
-.pag-ini{
-  border-left: 1px solid #3E97A3;
-  border-radius: 10px;
-}
-.pag-fin{
-  border-right: 1px solid #3E97A3;
-  border-radius: 10px;
-}
-.cant-pag-active{
-  font-weight: 700;
-  color: var(--color-primary) !important;
-
-}
-.color-secondary{
-  color: var(--color-secondary);
-}
-
-
-
-</style>
-
 <!-- NAVEGACION -->
 <nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="#">
@@ -373,7 +143,7 @@ input[type=number] {
                                       <!-- Imagen en sustitucion -->
                                       <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                       <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text">Alquiler</span>
+                                      <span class="custom-radio-checkbox__text2">Alquiler</span>
                                     </label>
                                   </div>
 
@@ -384,7 +154,7 @@ input[type=number] {
                                       <!-- Imagen en sustitucion -->
                                       <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                       <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text">Venta</span>
+                                      <span class="custom-radio-checkbox__text2">Venta</span>
                                     </label>
                                   </div>
                                                                    
@@ -401,7 +171,7 @@ input[type=number] {
                                     <!-- Imagen en sustitucion -->
                                     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                     <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text">[ X ]</span>
+                                    <span class="custom-radio-checkbox__text2">[ X ]</span>
                                   </label>
                                 </div>
                                 
@@ -441,7 +211,7 @@ input[type=number] {
                                       <!-- Imagen en sustitucion -->
                                       <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                       <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text">Casa</span>
+                                      <span class="custom-radio-checkbox__text2">Casa</span>
                                     </label>
                                   </div>
 
@@ -452,7 +222,7 @@ input[type=number] {
                                       <!-- Imagen en sustitucion -->
                                       <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                       <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text">Isla</span>
+                                      <span class="custom-radio-checkbox__text2">Isla</span>
                                     </label>
                                   </div>
                                   <div class="form-check">
@@ -462,7 +232,7 @@ input[type=number] {
                                       <!-- Imagen en sustitucion -->
                                       <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                       <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text">Quinta</span>
+                                      <span class="custom-radio-checkbox__text2">Quinta</span>
                                     </label>
                                   </div>
                                   <div class="form-check">
@@ -472,7 +242,7 @@ input[type=number] {
                                       <!-- Imagen en sustitucion -->
                                       <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                       <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text">Terreno</span>
+                                      <span class="custom-radio-checkbox__text2">Terreno</span>
                                     </label>
                                   </div>
                                   <div class="form-check">
@@ -482,7 +252,7 @@ input[type=number] {
                                       <!-- Imagen en sustitucion -->
                                       <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                       <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text">Casa PH</span>
+                                      <span class="custom-radio-checkbox__text2">Casa PH</span>
                                     </label>
                                   </div>
                                   <div class="form-check">
@@ -492,7 +262,7 @@ input[type=number] {
                                       <!-- Imagen en sustitucion -->
                                       <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                       <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text">Campo</span>
+                                      <span class="custom-radio-checkbox__text2">Campo</span>
                                     </label>
                                   </div>
                                   <div class="form-check">
@@ -502,7 +272,7 @@ input[type=number] {
                                       <!-- Imagen en sustitucion -->
                                       <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                       <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text">Hotel</span>
+                                      <span class="custom-radio-checkbox__text2">Hotel</span>
                                     </label>
                                   </div>
                                                                    
@@ -520,7 +290,7 @@ input[type=number] {
                                     <!-- Imagen en sustitucion -->
                                     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                     <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text ">Cochera</span>
+                                    <span class="custom-radio-checkbox__text2 ">Cochera</span>
                                   </label>
                                 </div>
 
@@ -531,7 +301,7 @@ input[type=number] {
                                     <!-- Imagen en sustitucion -->
                                     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                     <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text ">Fondo de comercio</span>
+                                    <span class="custom-radio-checkbox__text2 ">Fondo de comercio</span>
                                   </label>
                                 </div>
                                 <div class="form-check pl-0">
@@ -541,7 +311,7 @@ input[type=number] {
                                     <!-- Imagen en sustitucion -->
                                     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                     <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text ">Galpon</span>
+                                    <span class="custom-radio-checkbox__text2 ">Galpon</span>
                                   </label>
                                 </div>
                                 <div class="form-check pl-0">
@@ -551,7 +321,7 @@ input[type=number] {
                                     <!-- Imagen en sustitucion -->
                                     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                     <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text ">Local</span>
+                                    <span class="custom-radio-checkbox__text2 ">Local</span>
                                   </label>
                                 </div>
                                 <div class="form-check pl-0">
@@ -561,7 +331,7 @@ input[type=number] {
                                     <!-- Imagen en sustitucion -->
                                     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                     <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text ">Oficina</span>
+                                    <span class="custom-radio-checkbox__text2 ">Oficina</span>
                                   </label>
                                 </div>
                                 <div class="form-check pl-0">
@@ -571,7 +341,7 @@ input[type=number] {
                                     <!-- Imagen en sustitucion -->
                                     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                     <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text ">Edificio</span>
+                                    <span class="custom-radio-checkbox__text2 ">Edificio</span>
                                   </label>
                                 </div>
                                 <div class="form-check pl-0">
@@ -581,7 +351,7 @@ input[type=number] {
                                     <!-- Imagen en sustitucion -->
                                     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                     <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text ">Emprendimiento</span>
+                                    <span class="custom-radio-checkbox__text2 ">Emprendimiento</span>
                                   </label>
                                 </div>
                                                                  
@@ -617,7 +387,7 @@ input[type=number] {
                                       <li class="list-group-item">
                                         <div class="form-check">
                                           <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text">Luz</span>
+                                            <span class="custom-radio-checkbox__text2">Luz</span>
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox" checked>
                                             <!-- Imagen en sustitucion -->
@@ -628,7 +398,7 @@ input[type=number] {
                                       <li class="list-group-item">
                                         <div class="form-check">
                                           <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text">Cable</span>
+                                            <span class="custom-radio-checkbox__text2">Cable</span>
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox" checked>
                                             <!-- Imagen en sustitucion -->
@@ -639,7 +409,7 @@ input[type=number] {
                                       <li class="list-group-item">
                                         <div class="form-check">
                                           <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text">Electricidad</span>
+                                            <span class="custom-radio-checkbox__text2">Electricidad</span>
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox" checked>
                                             <!-- Imagen en sustitucion -->
@@ -650,7 +420,7 @@ input[type=number] {
                                       <li class="list-group-item">
                                         <div class="form-check">
                                           <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text">Gas natural</span>
+                                            <span class="custom-radio-checkbox__text2">Gas natural</span>
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox" checked>
                                             <!-- Imagen en sustitucion -->
@@ -661,7 +431,7 @@ input[type=number] {
                                       <li class="list-group-item">
                                         <div class="form-check">
                                           <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text">Parrilla</span>
+                                            <span class="custom-radio-checkbox__text2">Parrilla</span>
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox" >
                                             <!-- Imagen en sustitucion -->
@@ -672,7 +442,7 @@ input[type=number] {
                                       <li class="list-group-item">
                                         <div class="form-check">
                                           <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text">Pileta</span>
+                                            <span class="custom-radio-checkbox__text2">Pileta</span>
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox">
                                             <!-- Imagen en sustitucion -->
@@ -683,7 +453,7 @@ input[type=number] {
                                       <li class="list-group-item">
                                         <div class="form-check">
                                           <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text">Seguridad</span>
+                                            <span class="custom-radio-checkbox__text2">Seguridad</span>
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox">
                                             <!-- Imagen en sustitucion -->
@@ -694,7 +464,7 @@ input[type=number] {
                                       <li class="list-group-item">
                                         <div class="form-check">
                                           <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text">Agua Corriente</span>
+                                            <span class="custom-radio-checkbox__text2">Agua Corriente</span>
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox">
                                             <!-- Imagen en sustitucion -->
@@ -705,7 +475,7 @@ input[type=number] {
                                       <li class="list-group-item">
                                         <div class="form-check">
                                           <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text">Internet</span>
+                                            <span class="custom-radio-checkbox__text2">Internet</span>
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox">
                                             <!-- Imagen en sustitucion -->
@@ -716,7 +486,7 @@ input[type=number] {
                                       <li class="list-group-item">
                                         <div class="form-check">
                                           <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text">Alarma</span>
+                                            <span class="custom-radio-checkbox__text2">Alarma</span>
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox">
                                             <!-- Imagen en sustitucion -->
@@ -910,7 +680,7 @@ input[type=number] {
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-venta">VENTA</span>
+                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
                     <div class="info-tipo">
@@ -936,7 +706,7 @@ input[type=number] {
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-alquiler">ALQUILER</span>
+                    <span class="badge badge-info badge-info-tipo badge-alquiler">ALQUILER</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
                     <div class="info-tipo">
@@ -962,7 +732,7 @@ input[type=number] {
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-venta">VENTA</span>
+                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
                     <div class="info-tipo">
@@ -988,7 +758,7 @@ input[type=number] {
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-venta">VENTA</span>
+                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
                     <div class="info-tipo">
@@ -1014,7 +784,7 @@ input[type=number] {
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-venta">VENTA</span>
+                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
                     <div class="info-tipo">
@@ -1040,7 +810,7 @@ input[type=number] {
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-alquiler">ALQUILER</span>
+                    <span class="badge badge-info badge-info-tipo badge-alquiler">ALQUILER</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
                     <div class="info-tipo">
@@ -1066,7 +836,7 @@ input[type=number] {
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-venta">VENTA</span>
+                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
                     <div class="info-tipo">
@@ -1092,7 +862,7 @@ input[type=number] {
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-venta">VENTA</span>
+                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
                     <div class="info-tipo">
@@ -1118,7 +888,7 @@ input[type=number] {
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-alquiler">ALQUILER</span>
+                    <span class="badge badge-info badge-info-tipo badge-alquiler">ALQUILER</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
                     <div class="info-tipo">
