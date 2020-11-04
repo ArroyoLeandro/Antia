@@ -16,7 +16,7 @@
 <body>
 
 <!-- NAVEGACION -->
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg navbar-dark">
   <a class="navbar-brand" href="#">
       <img src="assets/img/logo.jpg" alt="Logo" class="img-fluid" style="width: 200px;">
   </a>
@@ -69,604 +69,618 @@
       <div class="container-fluid">
         <div class="row">
           
-           <!-- CONTACTO FORM -->
-           <div class="col-md-4 col-lg-3 d-md-block d-sm-none mt-4">
-            <div class="card">
-
-              <div class="card-body">
-                <h5 class="card-title">FILTROS DE BUSQUEDA</h5>
-                <hr>
-                <div class="accordion" id="accordionExample">
-                  <div class="card">
-                    <div class="card-header" id="headingOne">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        - Ubicacion <i class="fas fa-chevron-down flt-right"></i>
-                        </button>
-                      </h2>
-                      <div class="flt-both"></div>
-                    </div>
-                
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                      <!-- <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample"> -->
-                      <div class="card-body">
-                        <select class="form-control">
-                          <option selected>Provincia</option>
-                          <option>Default select</option>
-                          <option>Default select</option>
-                        </select>
-                        <select class="form-control mt-3">
-                          <option selected>Localidad</option>
-                          <option>Default select</option>
-                          <option>Default select</option>
-                        </select>
-                        <select class="form-control mt-3">
-                          <option selected>Barrio</option>
-                          <option>Default select</option>
-                          <option>Default select</option>
-                        </select>
-                        <select class="form-control mt-3">
-                          <option selected>Sub Barrio</option>
-                          <option>Default select</option>
-                          <option>Default select</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
+           <!-- FILTROS -->
+          <div class="col-lg-3 col-md-6  col-12 mt-4">
+            <div class="accordion" id="accordionExample0">
+              <div class="card" >
+                <div class="card-header" id="heading0">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                    <h5 class="card-title">FILTROS DE BUSQUEDA <i class="fas fa-chevron-down flt-right"></i></h5> 
+                    </button>
+                  </h2>
+                  <div class="flt-both"></div>
                 </div>
-                <!-- segundo -->
-
-
-                <hr>
-                <div class="accordion" id="accordionExample2">
-                  <div class="card">
-                    <div class="card-header" id="heading2">
-                      
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                        - Tipo de operacion <i class="fas fa-chevron-down flt-right"></i>
-                        </button>
-                      </h2>
-                      <div class="flt-both"></div>
-                    </div>
-                
-                    <div id="collapse2" class="collapse " aria-labelledby="heading2" data-parent="#accordionExample2">
+            
+                <div id="collapse0" class="collapse show " aria-labelledby="heading0" data-parent="#accordionExample0">
+                  <div class="card-body">                  
+                    <div class="card"  style="border: none;">
                       <div class="card-body">
-                          <div class="row">
-                            <div class="col-6">
-                                <!--ITEM  -->
-                                <div class="item">
-                                  <div class="form-check">
-                                    <label class="custom-radio-checkbox">
-                                      <!-- Input oculto -->
-                                      <input class="custom-radio-checkbox__input" type="checkbox"  checked>
-                                      <!-- Imagen en sustitucion -->
-                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                      <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text2">Alquiler</span>
-                                    </label>
-                                  </div>
-
-                                  <div class="form-check">
-                                    <label class="custom-radio-checkbox">
-                                      <!-- Input oculto -->
-                                      <input class="custom-radio-checkbox__input" type="checkbox" >
-                                      <!-- Imagen en sustitucion -->
-                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                      <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text2">Venta</span>
-                                    </label>
-                                  </div>
-                                                                   
-                                  
-                                </div> <!-- FIN ITEM  -->
+                        <div class="accordion" id="accordionExample">
+                          <div class="card">
+                            <div class="card-header" id="headingOne">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                - Ubicacion <i class="fas fa-chevron-down flt-right"></i>
+                                </button>
+                              </h2>
+                              <div class="flt-both"></div>
                             </div>
-
-                            <div class="col-6">
-                              <div class="item">
-                                <div class="form-check">
-                                  <label class="custom-radio-checkbox">
-                                    <!-- Input oculto -->
-                                    <input class="custom-radio-checkbox__input" type="checkbox"  checked>
-                                    <!-- Imagen en sustitucion -->
-                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                    <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text2">[ X ]</span>
-                                  </label>
-                                </div>
-                                
+                        
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <select class="form-control">
+                                  <option selected>Provincia</option>
+                                  <option>Default select</option>
+                                  <option>Default select</option>
+                                </select>
+                                <select class="form-control mt-3">
+                                  <option selected>Localidad</option>
+                                  <option>Default select</option>
+                                  <option>Default select</option>
+                                </select>
+                                <select class="form-control mt-3">
+                                  <option selected>Barrio</option>
+                                  <option>Default select</option>
+                                  <option>Default select</option>
+                                </select>
+                                <select class="form-control mt-3">
+                                  <option selected>Sub Barrio</option>
+                                  <option>Default select</option>
+                                  <option>Default select</option>
+                                </select>
                               </div>
                             </div>
-
-
-                          </div><!-- FIN ROW -->
-                      </div><!-- FIN card-body -->
-                    </div><!-- FIN collapse -->
-                  </div>
-                </div><!-- FIN acordion -->
-
-                <!-- TERCERO -->
-                <hr>
-                <div class="accordion" id="accordionExample2">
-                  <div class="card">
-                    <div class="card-header" id="heading2">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                        - Tipo de propiedad <i class="fas fa-chevron-down flt-right"></i>
-                        </button>
-                      </h2>
-                      <div class="flt-both"></div>
-                    </div>
-                
-                    <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#accordionExample3">
-                      <div class="card-body">
-                          <div class="row">
-                            <div class="col-6">
-                                <!--ITEM  -->
-                                <div class="item">
-                                  <div class="form-check">
-                                    <label class="custom-radio-checkbox">
-                                      <!-- Input oculto -->
-                                      <input class="custom-radio-checkbox__input" type="checkbox"  checked>
-                                      <!-- Imagen en sustitucion -->
-                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                      <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text2">Casa</span>
-                                    </label>
-                                  </div>
-
-                                  <div class="form-check">
-                                    <label class="custom-radio-checkbox">
-                                      <!-- Input oculto -->
-                                      <input class="custom-radio-checkbox__input" type="checkbox" >
-                                      <!-- Imagen en sustitucion -->
-                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                      <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text2">Isla</span>
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <label class="custom-radio-checkbox">
-                                      <!-- Input oculto -->
-                                      <input class="custom-radio-checkbox__input" type="checkbox" >
-                                      <!-- Imagen en sustitucion -->
-                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                      <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text2">Quinta</span>
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <label class="custom-radio-checkbox">
-                                      <!-- Input oculto -->
-                                      <input class="custom-radio-checkbox__input" type="checkbox" checked >
-                                      <!-- Imagen en sustitucion -->
-                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                      <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text2">Terreno</span>
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <label class="custom-radio-checkbox">
-                                      <!-- Input oculto -->
-                                      <input class="custom-radio-checkbox__input" type="checkbox" >
-                                      <!-- Imagen en sustitucion -->
-                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                      <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text2">Casa PH</span>
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <label class="custom-radio-checkbox">
-                                      <!-- Input oculto -->
-                                      <input class="custom-radio-checkbox__input" type="checkbox" >
-                                      <!-- Imagen en sustitucion -->
-                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                      <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text2">Campo</span>
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <label class="custom-radio-checkbox">
-                                      <!-- Input oculto -->
-                                      <input class="custom-radio-checkbox__input" type="checkbox" >
-                                      <!-- Imagen en sustitucion -->
-                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                      <!-- Texto -->
-                                      <span class="custom-radio-checkbox__text2">Hotel</span>
-                                    </label>
-                                  </div>
-                                                                   
-                                  
-                                </div> <!-- FIN ITEM  -->
-                            </div>
-
-                            <div class="col-6">
-                              <!--ITEM  -->
-                              <div class="item">
-                                <div class="form-check pl-0">
-                                  <label class="custom-radio-checkbox">
-                                    <!-- Input oculto -->
-                                    <input class="custom-radio-checkbox__input" type="checkbox">
-                                    <!-- Imagen en sustitucion -->
-                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                    <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text2 ">Cochera</span>
-                                  </label>
-                                </div>
-
-                                <div class="form-check pl-0">
-                                  <label class="custom-radio-checkbox">
-                                    <!-- Input oculto -->
-                                    <input class="custom-radio-checkbox__input" type="checkbox" >
-                                    <!-- Imagen en sustitucion -->
-                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                    <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text2 ">Fondo de comercio</span>
-                                  </label>
-                                </div>
-                                <div class="form-check pl-0">
-                                  <label class="custom-radio-checkbox">
-                                    <!-- Input oculto -->
-                                    <input class="custom-radio-checkbox__input" type="checkbox" >
-                                    <!-- Imagen en sustitucion -->
-                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                    <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text2 ">Galpon</span>
-                                  </label>
-                                </div>
-                                <div class="form-check pl-0">
-                                  <label class="custom-radio-checkbox">
-                                    <!-- Input oculto -->
-                                    <input class="custom-radio-checkbox__input" type="checkbox" >
-                                    <!-- Imagen en sustitucion -->
-                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                    <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text2 ">Local</span>
-                                  </label>
-                                </div>
-                                <div class="form-check pl-0">
-                                  <label class="custom-radio-checkbox">
-                                    <!-- Input oculto -->
-                                    <input class="custom-radio-checkbox__input" type="checkbox" >
-                                    <!-- Imagen en sustitucion -->
-                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                    <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text2 ">Oficina</span>
-                                  </label>
-                                </div>
-                                <div class="form-check pl-0">
-                                  <label class="custom-radio-checkbox">
-                                    <!-- Input oculto -->
-                                    <input class="custom-radio-checkbox__input" type="checkbox" >
-                                    <!-- Imagen en sustitucion -->
-                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                    <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text2 ">Edificio</span>
-                                  </label>
-                                </div>
-                                <div class="form-check pl-0">
-                                  <label class="custom-radio-checkbox">
-                                    <!-- Input oculto -->
-                                    <input class="custom-radio-checkbox__input" type="checkbox" >
-                                    <!-- Imagen en sustitucion -->
-                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                    <!-- Texto -->
-                                    <span class="custom-radio-checkbox__text2 ">Emprendimiento</span>
-                                  </label>
-                                </div>
-                                                                 
-                                
-                              </div> <!-- FIN ITEM  -->
-                            </div>
-
-
-                          </div><!-- FIN ROW -->
-                      </div><!-- FIN card-body -->
-                    </div><!-- FIN collapse -->
-                  </div>
-                </div><!-- FIN acordion -->
-<!-- cuarto -->
-                    <hr>
-                    <div class="accordion" id="accordionExample3">
-                      <div class="card">
-                        <div class="card-header" id="heading3">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-                            - Servicios <i class="fas fa-chevron-down flt-right"></i>
-                            </button>
-                          </h2>
-                          <div class="flt-both"></div>
+                          </div>
                         </div>
-
-                        <div id="collapse4" class="collapse " aria-labelledby="heading4" data-parent="#accordionExample4">
-                          <div class="card-body">
-                              <div class="row">
-                                <div class="col-12">
-                                   <div class="container scrollbarContainer">
-                                    <ul class="list-group scrollbar mt-2">
-                                      <li class="list-group-item">
+                        <!-- fin primero -->
+        
+        
+                        <hr>
+                        <div class="accordion" id="accordionExample2">
+                          <div class="card">
+                            <div class="card-header" id="heading2">
+                              
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                - Tipo de operacion <i class="fas fa-chevron-down flt-right"></i>
+                                </button>
+                              </h2>
+                              <div class="flt-both"></div>
+                            </div>
+                        
+                            <div id="collapse2" class="collapse " aria-labelledby="heading2" data-parent="#accordionExample2">
+                              <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-6">
+                                        <!--ITEM  -->
+                                        <div class="item">
+                                          <div class="form-check">
+                                            <label class="custom-radio-checkbox">
+                                              <!-- Input oculto -->
+                                              <input class="custom-radio-checkbox__input" type="checkbox"  checked>
+                                              <!-- Imagen en sustitucion -->
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <!-- Texto -->
+                                              <span class="custom-radio-checkbox__text2">Alquiler</span>
+                                            </label>
+                                          </div>
+        
+                                          <div class="form-check">
+                                            <label class="custom-radio-checkbox">
+                                              <!-- Input oculto -->
+                                              <input class="custom-radio-checkbox__input" type="checkbox" >
+                                              <!-- Imagen en sustitucion -->
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <!-- Texto -->
+                                              <span class="custom-radio-checkbox__text2">Venta</span>
+                                            </label>
+                                          </div>
+                                                                           
+                                          
+                                        </div> <!-- FIN ITEM  -->
+                                    </div>
+        
+                                    <div class="col-6">
+                                      <div class="item">
                                         <div class="form-check">
-                                          <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text2">Luz</span>
+                                          <label class="custom-radio-checkbox">
                                             <!-- Input oculto -->
-                                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
+                                            <input class="custom-radio-checkbox__input" type="checkbox"  checked>
                                             <!-- Imagen en sustitucion -->
                                             <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <!-- Texto -->
+                                            <span class="custom-radio-checkbox__text2">[ X ]</span>
                                           </label>
                                         </div>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="form-check">
-                                          <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text2">Cable</span>
+                                        
+                                      </div>
+                                    </div>
+        
+        
+                                  </div><!-- FIN ROW -->
+                              </div><!-- FIN card-body -->
+                            </div><!-- FIN collapse -->
+                          </div>
+                        </div><!-- FIN acordion -->
+        
+                        <!-- Fin segundo -->
+                        <hr>
+                        <div class="accordion" id="accordionExample2">
+                          <div class="card">
+                            <div class="card-header" id="heading2">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                - Tipo de propiedad <i class="fas fa-chevron-down flt-right"></i>
+                                </button>
+                              </h2>
+                              <div class="flt-both"></div>
+                            </div>
+                        
+                            <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#accordionExample3">
+                              <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-6">
+                                        <!--ITEM  -->
+                                        <div class="item">
+                                          <div class="form-check">
+                                            <label class="custom-radio-checkbox">
+                                              <!-- Input oculto -->
+                                              <input class="custom-radio-checkbox__input" type="checkbox"  checked>
+                                              <!-- Imagen en sustitucion -->
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <!-- Texto -->
+                                              <span class="custom-radio-checkbox__text2">Casa</span>
+                                            </label>
+                                          </div>
+        
+                                          <div class="form-check">
+                                            <label class="custom-radio-checkbox">
+                                              <!-- Input oculto -->
+                                              <input class="custom-radio-checkbox__input" type="checkbox" >
+                                              <!-- Imagen en sustitucion -->
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <!-- Texto -->
+                                              <span class="custom-radio-checkbox__text2">Isla</span>
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <label class="custom-radio-checkbox">
+                                              <!-- Input oculto -->
+                                              <input class="custom-radio-checkbox__input" type="checkbox" >
+                                              <!-- Imagen en sustitucion -->
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <!-- Texto -->
+                                              <span class="custom-radio-checkbox__text2">Quinta</span>
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <label class="custom-radio-checkbox">
+                                              <!-- Input oculto -->
+                                              <input class="custom-radio-checkbox__input" type="checkbox" checked >
+                                              <!-- Imagen en sustitucion -->
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <!-- Texto -->
+                                              <span class="custom-radio-checkbox__text2">Terreno</span>
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <label class="custom-radio-checkbox">
+                                              <!-- Input oculto -->
+                                              <input class="custom-radio-checkbox__input" type="checkbox" >
+                                              <!-- Imagen en sustitucion -->
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <!-- Texto -->
+                                              <span class="custom-radio-checkbox__text2">Casa PH</span>
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <label class="custom-radio-checkbox">
+                                              <!-- Input oculto -->
+                                              <input class="custom-radio-checkbox__input" type="checkbox" >
+                                              <!-- Imagen en sustitucion -->
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <!-- Texto -->
+                                              <span class="custom-radio-checkbox__text2">Campo</span>
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <label class="custom-radio-checkbox">
+                                              <!-- Input oculto -->
+                                              <input class="custom-radio-checkbox__input" type="checkbox" >
+                                              <!-- Imagen en sustitucion -->
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <!-- Texto -->
+                                              <span class="custom-radio-checkbox__text2">Hotel</span>
+                                            </label>
+                                          </div>
+                                                                           
+                                          
+                                        </div> <!-- FIN ITEM  -->
+                                    </div>
+        
+                                    <div class="col-6">
+                                      <!--ITEM  -->
+                                      <div class="item">
+                                        <div class="form-check pl-0">
+                                          <label class="custom-radio-checkbox">
                                             <!-- Input oculto -->
-                                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
+                                            <input class="custom-radio-checkbox__input" type="checkbox">
                                             <!-- Imagen en sustitucion -->
                                             <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <!-- Texto -->
+                                            <span class="custom-radio-checkbox__text2 ">Cochera</span>
                                           </label>
                                         </div>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="form-check">
-                                          <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text2">Electricidad</span>
-                                            <!-- Input oculto -->
-                                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                                            <!-- Imagen en sustitucion -->
-                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="form-check">
-                                          <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text2">Gas natural</span>
-                                            <!-- Input oculto -->
-                                            <input class="custom-radio-checkbox__input" type="checkbox" checked>
-                                            <!-- Imagen en sustitucion -->
-                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="form-check">
-                                          <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text2">Parrilla</span>
+        
+                                        <div class="form-check pl-0">
+                                          <label class="custom-radio-checkbox">
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox" >
                                             <!-- Imagen en sustitucion -->
                                             <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <!-- Texto -->
+                                            <span class="custom-radio-checkbox__text2 ">Fondo de comercio</span>
                                           </label>
                                         </div>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="form-check">
-                                          <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text2">Pileta</span>
+                                        <div class="form-check pl-0">
+                                          <label class="custom-radio-checkbox">
                                             <!-- Input oculto -->
-                                            <input class="custom-radio-checkbox__input" type="checkbox">
+                                            <input class="custom-radio-checkbox__input" type="checkbox" >
                                             <!-- Imagen en sustitucion -->
                                             <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <!-- Texto -->
+                                            <span class="custom-radio-checkbox__text2 ">Galpon</span>
                                           </label>
                                         </div>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="form-check">
-                                          <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text2">Seguridad</span>
+                                        <div class="form-check pl-0">
+                                          <label class="custom-radio-checkbox">
                                             <!-- Input oculto -->
-                                            <input class="custom-radio-checkbox__input" type="checkbox">
+                                            <input class="custom-radio-checkbox__input" type="checkbox" >
                                             <!-- Imagen en sustitucion -->
                                             <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <!-- Texto -->
+                                            <span class="custom-radio-checkbox__text2 ">Local</span>
                                           </label>
                                         </div>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="form-check">
-                                          <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text2">Agua Corriente</span>
+                                        <div class="form-check pl-0">
+                                          <label class="custom-radio-checkbox">
                                             <!-- Input oculto -->
-                                            <input class="custom-radio-checkbox__input" type="checkbox">
+                                            <input class="custom-radio-checkbox__input" type="checkbox" >
                                             <!-- Imagen en sustitucion -->
                                             <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <!-- Texto -->
+                                            <span class="custom-radio-checkbox__text2 ">Oficina</span>
                                           </label>
                                         </div>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="form-check">
-                                          <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text2">Internet</span>
+                                        <div class="form-check pl-0">
+                                          <label class="custom-radio-checkbox">
                                             <!-- Input oculto -->
-                                            <input class="custom-radio-checkbox__input" type="checkbox">
+                                            <input class="custom-radio-checkbox__input" type="checkbox" >
                                             <!-- Imagen en sustitucion -->
                                             <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <!-- Texto -->
+                                            <span class="custom-radio-checkbox__text2 ">Edificio</span>
                                           </label>
                                         </div>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="form-check">
-                                          <label class="custom-radio-checkbox flexing">
-                                            <span class="custom-radio-checkbox__text2">Alarma</span>
+                                        <div class="form-check pl-0">
+                                          <label class="custom-radio-checkbox">
                                             <!-- Input oculto -->
-                                            <input class="custom-radio-checkbox__input" type="checkbox">
+                                            <input class="custom-radio-checkbox__input" type="checkbox" >
                                             <!-- Imagen en sustitucion -->
                                             <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <!-- Texto -->
+                                            <span class="custom-radio-checkbox__text2 ">Emprendimiento</span>
                                           </label>
                                         </div>
-                                      </li>
-                                    </ul>
-
-                                    <button class="btn btn-block btn-aplicar">Aplicar</button>
-
-                                   </div>
-                                </div>
-                              </div><!-- FIN ROW -->
-                          </div><!-- FIN card-body -->
-                        </div><!-- FIN collapse -->
-                      </div>
-                    </div><!-- FIN acordion -->
-
-<!-- fin cuarto -->
-                    <hr>
-                      <div class="card">
-                        <div class="card-header">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button">
-                            - Monto <span class="price flt-right" id="ars">AR$</span> <span class="flt-right price active" id="usd">U$S</span>
-                            </button>
-                          </h2>
-                          <div class="flt-both"></div>
-                        </div>
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col-6">
-                              <div class="form-group price-container">
-                                <label class="my-1 mr-2" for="price-min">Desde</label>
-                                <i class="fas fa-chevron-down btn-number" onclick="decrement('price-min')"></i>
-                                <input type="number" name="price-min" id="price-min" min="0" value="0" class="form-control input-price">
-                                <i class="fas fa-chevron-up btn-number" onclick="increment('price-min')"></i>
-                              </div>
-                            </div>
-                            <div class="col-6">
-                              <div class="form-group price-container">
-                                <label class="my-1 mr-2" for="price-max">Hasta</label>
-                                <i class="fas fa-chevron-down btn-number" onclick="decrement('price-max')"></i>
-                                <input type="number" name="price-max" id="price-max" min="0" value="2000" class="form-control input-price">
-                                <i class="fas fa-chevron-up btn-number" onclick="increment('price-max')"></i>
-                              </div>
-                            </div>
+                                                                         
+                                        
+                                      </div> <!-- FIN ITEM  -->
+                                    </div>
+        
+        
+                                  </div><!-- FIN ROW -->
+                              </div><!-- FIN card-body -->
+                            </div><!-- FIN collapse -->
                           </div>
-                        </div>
-                    
-                      </div>
-
-                      <!-- quinto acordeon -->
-   
-                      <hr>
-                      <div class="accordion" id="accordionExample5">
-                        <div class="card">
-                          <div class="card-header" id="heading5">
-                            <h2 class="mb-0">
-                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
-                              - Comodidades <i class="fas fa-chevron-down flt-right"></i>
-                              </button>
-                            </h2>
-                            <div class="flt-both"></div>
-                          </div>
-                      
-                          <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample5">
-                            <div class="card-body">
-                              <div class="row">
-                                <div class="col-6">
-                                  <div class="form-group price-container">
-                                    <label class="my-1 mr-2" for="ambiente">Ambientes</label>
-                                    <i class="fas fa-chevron-down btn-number" onclick="decrement('ambiente')"></i>
-                                    <input type="number" name="amb-min" id="ambiente" min="0" value="0" class="form-control input-price">
-                                    <i class="fas fa-chevron-up btn-number" onclick="increment('ambiente')"></i>
-                                  </div>
-                                  <div class="form-group price-container">
-                                    <label class="my-1 mr-2" for="dormitorio">Dormitorios</label>
-                                    <i class="fas fa-chevron-down btn-number" onclick="decrement('dormitorio')"></i>
-                                    <input type="number" name="dormitorio" id="dormitorio" min="0" value="0" class="form-control input-price">
-                                    <i class="fas fa-chevron-up btn-number" onclick="increment('dormitorio')"></i>
-                                  </div>
+                        </div><!-- FIN acordion -->
+                 <!-- Fin Tercero -->
+                            <hr>
+                            <div class="accordion" id="accordionExample3">
+                              <div class="card">
+                                <div class="card-header" id="heading3">
+                                  <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                    - Servicios <i class="fas fa-chevron-down flt-right"></i>
+                                    </button>
+                                  </h2>
+                                  <div class="flt-both"></div>
                                 </div>
-                                <div class="col-6">
-                                  <div class="form-group price-container">
-                                    <label class="my-1 mr-2" for="banio">Baños</label>
-                                    <i class="fas fa-chevron-down btn-number" onclick="decrement('banio')"></i>
-                                    <input type="number" name="banio" id="banio" min="0" value="0" class="form-control input-price">
-                                    <i class="fas fa-chevron-up btn-number" onclick="increment('banio')"></i>
-                                  </div>
-                                  <div class="form-group price-container">
-                                    <label class="my-1 mr-2" for="cochera">Cocheras</label>
-                                    <i class="fas fa-chevron-down btn-number" onclick="decrement('cochera')"></i>
-                                    <input type="number" name="cochera" id="cochera" min="0" value="0" class="form-control input-price">
-                                    <i class="fas fa-chevron-up btn-number" onclick="increment('cochera')"></i>
-                                  </div>
-                                </div>
-                              </div><!-- FIN ROW -->
-                            </div><!-- FIN card-body -->
-                          </div><!-- FIN collapse -->
-                        </div>
-                      </div><!-- FIN acordion -->
-<!-- fin quinto -->
-
-   <!-- sexto -->
-                    <hr>
-                    <div class="accordion" id="accordionExample6">
-                      <div class="card">
-                        <div class="card-header" id="heading6">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
-                            - Expensas <i class="fas fa-chevron-down flt-right"></i>
-                            </button>
-                          </h2>
-                          <div class="flt-both"></div>
-                        </div>
-
-                        <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample6">
-                          <div class="card-body">
-                            <div class="row">
-                              <div class="col-8">
-                                <div class="form-group expensa-container">
-                                  <label class="label-expensas" for="expensas">Total |</label>
-                                  <input type="number" name="expensas" id="expensas" min="0" class="form-control">
-                                </div>
+        
+                                <div id="collapse4" class="collapse " aria-labelledby="heading4" data-parent="#accordionExample4">
+                                  <div class="card-body">
+                                      <div class="row">
+                                        <div class="col-12">
+                                           <div class="container scrollbarContainer">
+                                            <ul class="list-group scrollbar mt-2">
+                                              <li class="list-group-item">
+                                                <div class="form-check">
+                                                  <label class="custom-radio-checkbox flexing">
+                                                    <span class="custom-radio-checkbox__text2">Luz</span>
+                                                    <!-- Input oculto -->
+                                                    <input class="custom-radio-checkbox__input" type="checkbox" checked>
+                                                    <!-- Imagen en sustitucion -->
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                  </label>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <div class="form-check">
+                                                  <label class="custom-radio-checkbox flexing">
+                                                    <span class="custom-radio-checkbox__text2">Cable</span>
+                                                    <!-- Input oculto -->
+                                                    <input class="custom-radio-checkbox__input" type="checkbox" checked>
+                                                    <!-- Imagen en sustitucion -->
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                  </label>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <div class="form-check">
+                                                  <label class="custom-radio-checkbox flexing">
+                                                    <span class="custom-radio-checkbox__text2">Electricidad</span>
+                                                    <!-- Input oculto -->
+                                                    <input class="custom-radio-checkbox__input" type="checkbox" checked>
+                                                    <!-- Imagen en sustitucion -->
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                  </label>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <div class="form-check">
+                                                  <label class="custom-radio-checkbox flexing">
+                                                    <span class="custom-radio-checkbox__text2">Gas natural</span>
+                                                    <!-- Input oculto -->
+                                                    <input class="custom-radio-checkbox__input" type="checkbox" checked>
+                                                    <!-- Imagen en sustitucion -->
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                  </label>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <div class="form-check">
+                                                  <label class="custom-radio-checkbox flexing">
+                                                    <span class="custom-radio-checkbox__text2">Parrilla</span>
+                                                    <!-- Input oculto -->
+                                                    <input class="custom-radio-checkbox__input" type="checkbox" >
+                                                    <!-- Imagen en sustitucion -->
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                  </label>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <div class="form-check">
+                                                  <label class="custom-radio-checkbox flexing">
+                                                    <span class="custom-radio-checkbox__text2">Pileta</span>
+                                                    <!-- Input oculto -->
+                                                    <input class="custom-radio-checkbox__input" type="checkbox">
+                                                    <!-- Imagen en sustitucion -->
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                  </label>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <div class="form-check">
+                                                  <label class="custom-radio-checkbox flexing">
+                                                    <span class="custom-radio-checkbox__text2">Seguridad</span>
+                                                    <!-- Input oculto -->
+                                                    <input class="custom-radio-checkbox__input" type="checkbox">
+                                                    <!-- Imagen en sustitucion -->
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                  </label>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <div class="form-check">
+                                                  <label class="custom-radio-checkbox flexing">
+                                                    <span class="custom-radio-checkbox__text2">Agua Corriente</span>
+                                                    <!-- Input oculto -->
+                                                    <input class="custom-radio-checkbox__input" type="checkbox">
+                                                    <!-- Imagen en sustitucion -->
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                  </label>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <div class="form-check">
+                                                  <label class="custom-radio-checkbox flexing">
+                                                    <span class="custom-radio-checkbox__text2">Internet</span>
+                                                    <!-- Input oculto -->
+                                                    <input class="custom-radio-checkbox__input" type="checkbox">
+                                                    <!-- Imagen en sustitucion -->
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                  </label>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <div class="form-check">
+                                                  <label class="custom-radio-checkbox flexing">
+                                                    <span class="custom-radio-checkbox__text2">Alarma</span>
+                                                    <!-- Input oculto -->
+                                                    <input class="custom-radio-checkbox__input" type="checkbox">
+                                                    <!-- Imagen en sustitucion -->
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                  </label>
+                                                </div>
+                                              </li>
+                                            </ul>
+        
+                                            <button class="btn btn-block btn-aplicar">Aplicar</button>
+        
+                                           </div>
+                                        </div>
+                                      </div><!-- FIN ROW -->
+                                  </div><!-- FIN card-body -->
+                                </div><!-- FIN collapse -->
                               </div>
-                            </div><!-- FIN ROW -->
-                          </div><!-- FIN card-body -->
-                        </div><!-- FIN collapse -->
+                            </div><!-- FIN acordion -->
+        
+                  <!-- fin cuarto -->
+                            <hr>
+                              <div class="card"  style="border: none;">
+                                <div class="card-header">
+                                  <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button">
+                                    - Monto <span class="price flt-right" id="ars">AR$</span> <span class="flt-right price active" id="usd">U$S</span>
+                                    </button>
+                                  </h2>
+                                  <div class="flt-both"></div>
+                                </div>
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <div class="form-group price-container">
+                                        <label class="my-1 mr-2" for="price-min">Desde</label>
+                                        <i class="fas fa-chevron-down btn-number" onclick="decrement('price-min')"></i>
+                                        <input type="number" name="price-min" id="price-min" min="0" value="0" class="form-control input-price">
+                                        <i class="fas fa-chevron-up btn-number" onclick="increment('price-min')"></i>
+                                      </div>
+                                    </div>
+                                    <div class="col-6">
+                                      <div class="form-group price-container">
+                                        <label class="my-1 mr-2" for="price-max">Hasta</label>
+                                        <i class="fas fa-chevron-down btn-number" onclick="decrement('price-max')"></i>
+                                        <input type="number" name="price-max" id="price-max" min="0" value="2000" class="form-control input-price">
+                                        <i class="fas fa-chevron-up btn-number" onclick="increment('price-max')"></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            
+                              </div>
+        
+                              <!-- quinto acordeon -->
+           
+                              <hr>
+                              <div class="accordion" id="accordionExample5">
+                                <div class="card">
+                                  <div class="card-header" id="heading5">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                      - Comodidades <i class="fas fa-chevron-down flt-right"></i>
+                                      </button>
+                                    </h2>
+                                    <div class="flt-both"></div>
+                                  </div>
+                              
+                                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample5">
+                                    <div class="card-body">
+                                      <div class="row">
+                                        <div class="col-6">
+                                          <div class="form-group price-container">
+                                            <label class="my-1 mr-2" for="ambiente">Ambientes</label>
+                                            <i class="fas fa-chevron-down btn-number" onclick="decrement('ambiente')"></i>
+                                            <input type="number" name="amb-min" id="ambiente" min="0" value="0" class="form-control input-price">
+                                            <i class="fas fa-chevron-up btn-number" onclick="increment('ambiente')"></i>
+                                          </div>
+                                          <div class="form-group price-container">
+                                            <label class="my-1 mr-2" for="dormitorio">Dormitorios</label>
+                                            <i class="fas fa-chevron-down btn-number" onclick="decrement('dormitorio')"></i>
+                                            <input type="number" name="dormitorio" id="dormitorio" min="0" value="0" class="form-control input-price">
+                                            <i class="fas fa-chevron-up btn-number" onclick="increment('dormitorio')"></i>
+                                          </div>
+                                        </div>
+                                        <div class="col-6">
+                                          <div class="form-group price-container">
+                                            <label class="my-1 mr-2" for="banio">Baños</label>
+                                            <i class="fas fa-chevron-down btn-number" onclick="decrement('banio')"></i>
+                                            <input type="number" name="banio" id="banio" min="0" value="0" class="form-control input-price">
+                                            <i class="fas fa-chevron-up btn-number" onclick="increment('banio')"></i>
+                                          </div>
+                                          <div class="form-group price-container">
+                                            <label class="my-1 mr-2" for="cochera">Cocheras</label>
+                                            <i class="fas fa-chevron-down btn-number" onclick="decrement('cochera')"></i>
+                                            <input type="number" name="cochera" id="cochera" min="0" value="0" class="form-control input-price">
+                                            <i class="fas fa-chevron-up btn-number" onclick="increment('cochera')"></i>
+                                          </div>
+                                        </div>
+                                      </div><!-- FIN ROW -->
+                                    </div><!-- FIN card-body -->
+                                  </div><!-- FIN collapse -->
+                                </div>
+                              </div><!-- FIN acordion -->
+                          <!-- fin quinto -->
+        
+                          <!-- sexto -->
+                            <hr>
+                            <div class="accordion" id="accordionExample6">
+                              <div class="card">
+                                <div class="card-header" id="heading6">
+                                  <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                    - Expensas <i class="fas fa-chevron-down flt-right"></i>
+                                    </button>
+                                  </h2>
+                                  <div class="flt-both"></div>
+                                </div>
+        
+                                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample6">
+                                  <div class="card-body">
+                                    <div class="row">
+                                      <div class="col-8">
+                                        <div class="form-group expensa-container">
+                                          <label class="label-expensas" for="expensas">Total |</label>
+                                          <input type="number" name="expensas" id="expensas" min="0" class="form-control">
+                                        </div>
+                                      </div>
+                                    </div><!-- FIN ROW -->
+                                  </div><!-- FIN card-body -->
+                                </div><!-- FIN collapse -->
+                              </div>
+                            </div><!-- FIN acordion -->
+                            <!-- fin SEXTO -->
+                        
+                      <!-- septimo -->
+                        <hr>
+                        <div class="accordion" id="accordionExample7">
+                          <div class="card">
+                            <div class="card-header" id="heading7">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                - Superficie en m2 <i class="fas fa-chevron-down flt-right"></i>
+                                </button>
+                              </h2>
+                              <div class="flt-both"></div>
+                            </div>
+        
+                            <div id="collapse7" class="collapse show" aria-labelledby="heading7" data-parent="#accordionExample7">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-6">
+                                    <div class="form-group">
+                                      <label class="my-1 mr-2" for="superficie-total">Total</label>
+                                      <input type="number" name="superficie-total" id="superficie-total" min="0" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="form-group">
+                                      <label class="my-1 mr-2" for="superficie-cubierta">Cubierta</label>
+                                      <input type="number" name="superficie-cubierta" id="superficie-cubierta" min="0" class="form-control">
+                                    </div>
+                                  </div>
+                                </div><!-- FIN ROW -->
+                              </div><!-- FIN card-body -->
+                            </div><!-- FIN collapse -->
+                          </div>
+                        </div><!-- FIN acordion -->
+                        <!-- fin septimo -->
+        
+                        <a href="#" class="btn btn-block btn-aplicar no-style">Aplicar Filtros</a>
+        
                       </div>
-                    </div><!-- FIN acordion -->
-                    <!-- fin SEXTO -->
-                
-              <!-- septimo -->
-                <hr>
-                <div class="accordion" id="accordionExample7">
-                  <div class="card">
-                    <div class="card-header" id="heading7">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
-                        - Superficie en m2 <i class="fas fa-chevron-down flt-right"></i>
-                        </button>
-                      </h2>
-                      <div class="flt-both"></div>
                     </div>
 
-                    <div id="collapse7" class="collapse show" aria-labelledby="heading7" data-parent="#accordionExample7">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-6">
-                            <div class="form-group">
-                              <label class="my-1 mr-2" for="superficie-total">Total</label>
-                              <input type="number" name="superficie-total" id="superficie-total" min="0" class="form-control">
-                            </div>
-                          </div>
-                          <div class="col-6">
-                            <div class="form-group">
-                              <label class="my-1 mr-2" for="superficie-cubierta">Cubierta</label>
-                              <input type="number" name="superficie-cubierta" id="superficie-cubierta" min="0" class="form-control">
-                            </div>
-                          </div>
-                        </div><!-- FIN ROW -->
-                      </div><!-- FIN card-body -->
-                    </div><!-- FIN collapse -->
-                  </div>
-                </div><!-- FIN acordion -->
-                <!-- fin septimo -->
-
-                <a href="#" class="btn btn-block btn-aplicar no-style">Aplicar Filtros</a>
 
 
 
+                  </div><!-- FIN card-body -->
+                </div><!-- FIN collapse -->
               </div>
-            </div>
+            </div><!-- FIN acordion -->
+          </div>
 
-        </div>
-
-          <div class="col-lg-9 col-md-8 col-sm-12 mb-5">
-
+          <!-- CONTENIDO -->
+          <div class="col-lg-9 col-md-6 col-12 mb-5">
             <!-- titulo de seccion -->
             <div class="title-section mb-3">
               <span class="span-tittle">PROPIEDADES</span>
@@ -913,7 +927,7 @@
               </div>    
              
               <div class="col-12 my-5 ">
-                <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-toolbar" role="toolbar">
                   <div ></div>
                   <div class="btn-group" role="group" aria-label="Primer grupo">
                     <button type="button" class="btn btn-aplicar page-prev"> <i class="fas fa-chevron-left"></i> </button>
@@ -975,6 +989,7 @@ function increment(input){
 function decrement(input){
   parseInt($('#' + input ).val()) == 0 ? $('#' + input ).val(0) : $('#' + input ).val( parseInt($('#' + input ).val())  - 1);
 }
+
 
 
 </script>

@@ -24,7 +24,10 @@
 .no-style:hover{
     color:#fff;
 }
-
+html, body
+{
+	height: 100%;
+}
 body{    
     background-color: #F2F3F7;
     color: var(--color-text-secondary);
@@ -85,6 +88,8 @@ nav{
     border-radius: 50%;
     border:  2px solid var(--color-secondary) ;
 }
+
+
 
 
 /* icono de notificacion */
@@ -201,6 +206,21 @@ nav{
     height: 450px;
     object-fit: cover;
 }
+
+
+/* imagen expansible */
+.modal-dialog.modal-lg{
+  width: 100vw !important;
+  max-width: 6100vw0vw !important;
+  height: 100vh !important;
+  max-height: 100vh !important;
+}
+.modal{
+  top: 25vh !important;
+}
+
+
+
 
 
 /* Publicacion informacion */
@@ -533,6 +553,12 @@ nav{
 
 
 
+.row .item{
+  margin: 10px 0;
+}
+
+
+
 /*=================================
   PAGINA LISTADO DE PROPIEDADES   
 ================================ */
@@ -752,11 +778,32 @@ nav{
 /*=================================
   MEDIA QUERYS
 ================================ */
+@media (min-width:453px){
+  .btn-toolbar{
+    justify-content: space-between !important;
+  }
+}
 
 @media (max-width:500px){
     .w_70{
         width: 55% !important;
     }
+    /* boton compartir */
+    .btn-compartir{
+      margin: 25px 0 ;
+    }
+    .container-btn {
+      margin: 25px 0 10px;
+    }
+
+    /* img expand */
+    .modal-dialog{
+      margin: 0 !important;
+    }
+
+    .btn-group, .btn-group-vertical {
+      padding: 1rem 0;
+  }
 }
 
 @media (max-width:768px){
@@ -778,4 +825,25 @@ nav{
     .w_50{
         width:70% !important;
     }
+
+
+    .info-cantidad > span{
+      padding: 0 9px;
+    } 
+
+}
+@media (max-width:992px){
+  /* navbar responsive */
+.navbar-nav {align-items: center;}
+
+.far.notif.posNotif{padding-left:10px;}
+
+.navbar-collapse > .form-inline{justify-content: center;}
+
+.nav-link.d-inline-block.pos-relative{margin:0 15px;}
+}
+@media (min-width:1280px){
+  .item.col-6.col-sm-4.col-lg-2{
+    max-width: 19.666667% !important;
+  }
 }
