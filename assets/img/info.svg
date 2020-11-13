@@ -13,7 +13,7 @@
    version="1.1"
    id="svg1424"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="info.svg">
+   sodipodi:docname="info2.svg">
   <defs
      id="defs1418" />
   <sodipodi:namedview
@@ -24,8 +24,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="615.10439"
-     inkscape:cy="679.87372"
+     inkscape:cx="837.96154"
+     inkscape:cy="394.15943"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -54,9 +54,9 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#ffffff;stroke:#f8b122;stroke-width:3.34156;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -2.9623658,143.94827 c 47.0300638,-12.62071 95.8861278,26.553 159.6433558,30.40446 67.39454,4.07119 179.92236,-58.8011 179.92236,-58.8011 L 336.17189,215.6569 H -3.8253028 Z"
-       id="path1426"
-       sodipodi:nodetypes="cscccc" />
+       style="fill:#f9f9f9;stroke:#f8b122;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M -0.37797618,134.18155 C 56.696428,77.107139 145.29404,136.50349 195.41368,134.93749 237.08106,133.63559 305.95295,83.035398 345.47024,62.366071 385.34418,41.510196 336.02083,219.98214 336.02083,219.98214 L -12.473214,217.33631 -15.875,121.70833 Z"
+       id="path1989"
+       sodipodi:nodetypes="csscccc" />
   </g>
 </svg>
