@@ -95,6 +95,7 @@ nav{
     background-color: var(--color-primary) !important;
 }
 
+
 .nav-item{
     margin: 0 0.6em;
     font-size: 1.15rem;
@@ -192,6 +193,9 @@ input busqueda NAV
   white-space: normal !important;
 }
 
+.dropdown-item  p{
+  font-size: 0.8rem;
+}
 
 .notif-box-icon{
   width: 45px;

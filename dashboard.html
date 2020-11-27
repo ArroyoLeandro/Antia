@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>INTIA</title>
+
+     <!-- ===== Bootstrap =====  -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- === Chart Js ==== -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+
+     <!-- ===== Style css =====  -->
+     <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+<body>
+
+
+    <style>
+/* ======== circulos cards ======== */
+        .circular{
+            height: 150px;
+            width: 150px;
+            position: relative;
+            margin: 0 auto;
+        }
+        .circular .inner{
+            position: absolute;
+            z-index: 6;
+            top: 50%;
+            left: 50%;
+            height: 140px;
+            width: 140px;
+            margin: -70px 0 0 -70px;
+            background: #fff;
+            border-radius: 100%;
+        }
+        .circular .text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--color-text-secondary);
+            z-index: 10;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        .circular .bar{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: #ccc;
+            border-radius:100%;
+            clip: rect(0px, 150px, 150px, 75px);
+        }
+        .circle .bar .progres{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius:100%;
+            clip: rect(0px, 150px, 100px, 0);
+        }
+        .circle .bar .progres.primary{
+            background: var(--color-secondary);
+        }
+        .circle .bar .progres.info{
+            background: var(--info);
+        }
+        .circle .bar .progres.red{
+            background: red;
+        }
+        
+        .circle .left .progres{
+            z-index: 1;
+            transform: rotate(90deg);
+        }
+        .circle .right{
+            z-index: 3;
+            transform: rotate(180deg);
+        }
+        
+        .td-style{
+            border: none !important;
+            padding: .35rem !important;
+        }
+
+
+
+
+/* ======== Tabs card Mensaje ======== */
+        .item-tab{
+            color: var(--color-text-secondary);
+            font-weight: 700;
+            background-color: #fff;
+            text-align: center;
+            
+            text-decoration: none !important;
+        }
+        .item-tab:hover{
+            color: var(--color-text-secondary);
+        }
+        .item-tab.active{
+            border-bottom:2px solid var(--color-primary);;
+        }
+        .nav-tabs{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            border: none;
+        }
+        .date{
+            text-align: right;
+        }
+        .tabClass{
+            background-color: #fff !important;
+            margin: 0 0 10px 0;
+        }
+
+
+        /* ======= Tabla tab =======*/
+        .ball{
+            position: relative;
+            width: 10px;
+            margin: 0;
+            padding: 0;
+            border: none !important;
+        }
+        .ball::before{
+            content: '\025cf';
+            position: absolute;
+            top: -5px;
+            left: 5px;
+            font-size: 24px;
+            color: var(--color-secondary);
+        }
+        .ball.info::before{
+            color:#17a2b8 !important;
+        }
+        .ball.primary::before{
+            color:var(--color-primary) !important;
+        }
+        .ball.danger::before{
+            color:red !important;
+        }
+
+        /* ======== SECOND CIRCULAR ======== */
+        .circular.second .bar{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: red;
+            border-radius:100%;
+            clip: rect(0px, 150px, 150px, 0);
+        }
+        .circle.second .bar .progres{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius:100%;
+            clip: rect(0px, 150px, 125px, 0);
+        }
+        .circle.second .bar .progres.primary{
+            background: var(--color-secondary);
+        }
+        .circle.second .bar .progres.info{
+            background: var(--info);
+        }
+        .circle.second .bar .progres.red{
+            background: red;
+        }
+        
+        .circle.second .left .progres{
+            z-index: 1;
+        }
+        .circle.second .right{
+            z-index: 3;
+            transform: rotate(360deg);
+        }
+     
+        </style>
+
+
+
+<!-- ===== NAVEGACION ====== -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">
+      <img src="assets/img/logo.jpg" alt="Logo" class="img-fluid" style="width: 200px;">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Propiedades</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" href="#">Solicitudes</a>
+      </li>
+      <li class="nav-item pos-relative" >
+        <a class="nav-link" href="#">Mensajes<i class="far notif posNotif"></i></a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" href="#">Contactos</a>
+      </li>
+     
+    </ul>
+
+    <!-- ===== ICONOS NAVEGACION ====== -->
+    <div class="form-inline my-2 my-lg-0">
+      <ul class="navbar-nav">
+          <li class="nav-item active d-flex">            
+            <div class="nav-link d-inline-block pos-relative m-1 pt-2">
+              <div class="search-container">
+                <input type="text" name="search" id="search" placeholder="Search..." class="search-text" autocomplete="off">
+                <a href="#" class="search-icon">
+                  <i class="fas fa-search pt-2" style="cursor: pointer;"></i>
+                </a>
+              </div>
+            </div>          
+
+            <div class="nav-item notificacion dropdown m-1 pt-2">
+              <a class="nav-link d-inline-block pos-relative dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >
+                <i class="far fa-bell pt-2"></i>
+                <i class="far bell notif"></i>
+              </a>
+              <div class="dropdown-menu navegacion">
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="notif-box-icon home">
+                      <i class="fas fa-home"></i>
+                    </div>
+                    <p class="ml-3">La propiedad <b>Florencia Ruiz, Palermo</b> ha sido reservada</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="notif-box-icon user">
+                      <i class="far fa-user"></i>
+                    </div>
+                    <p class="ml-3">Su contacto <b> Norberto Riccitelli </b> ha actualizado su numero de teléfono</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="notif-box-icon email d-inline-block">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <p class="ml-3 d-inline-block"><b>Florencia Marina</b> ha contestado a su consulta por una propiedad</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+  
+            <div class="nav-item dropdown m-1 pt-2">
+              <a class="nav-link d-inline-block dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-cog pt-2"></i>
+              </a>
+              <div class="dropdown-menu config navegacion">
+                <a class="dropdown-item" href="#">Configuración general</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Configuración edición</a>
+              </div>
+            </div>
+
+          </li>
+
+          <li class="nav-item dropdown ml-4">
+            <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile">
+              <span class="mx-1">Norberto Riccitelli</span>
+            </a>
+            <div class="dropdown-menu navegacion w-100">
+              <a class="dropdown-item" href="#">Perfil</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Cerrar Sesión</a>
+            </div>
+          </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>    
+<!-- ====== MAIN ======-->
+    <div class="container-fluid" id="whatsapp">
+      <!--====== CABECERA ======-->
+      <div class="container">
+        <div class="row">
+          <!-- titulo de seccion -->
+          <div class="title-section">
+              <span class="span-tittle">ANALISIS Y ESTADISTICAS</span>
+          </div>
+
+<div class="container">
+    <div class="row">  
+        <div class="col-lg-6 mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">Mensajes</h5>
+                    <canvas id="mainChart" width="100%" height="50%"></canvas>
+                    <table class="table mt-3">
+                        <tbody style="display: flex; flex-direction: row; justify-content: flex-end;" >
+                          <tr>
+                            <td class="ball "></td>
+                            <td class="td-style">Aceptados</td>
+                          </tr>
+                          <tr>
+                            <td class="ball info"></td>
+                            <td class="td-style">Rechazados</td>
+                          </tr>                        
+                        </tbody>
+                      </table>
+                    <div class="tabs mt-4">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav class="tabClass mb-5"> 
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                                <a class="item-tab active" id="nav-semanal-tab" data-toggle="tab" href="#nav-semanal" role="tab" aria-controls="nav-semanal" aria-selected="true">Semanal</a>
+                                                <a class="item-tab" id="nav-mensual-tab" data-toggle="tab" href="#nav-mensual" role="tab" aria-controls="nav-mensual" aria-selected="false">Mensual</a>
+                                                <a class="item-tab" id="nav-anual-tab" data-toggle="tab" href="#nav-anual" role="tab" aria-controls="nav-anual" aria-selected="false">Anual</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="date">
+                                                <span>14 al 21 - MARZO</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-semanal" role="tabpanel" aria-labelledby="nav-semanal-tab">
+                                       <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                                <!-- circular inicio -->
+                                                <div class="circular second">
+                                                    <div class="inner"></div>
+                                                    <div class="text">
+                                                        <h2 class="m-0">120</h2>
+                                                        <p class="m-0">Totales</p>
+                                                    </div>
+                                                    <div class="circle second">
+                                                        <div class="bar left">
+                                                            <div class="progres primary"></div>
+                                                        </div>
+                                                        <div class="bar right">
+                                                            <div class="progres primary"></div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <!-- circular fin -->
+                                           </div>
+                                           <div class="col-md-6 col-sm-12">
+                                            <table class="table mt-3">
+                                                <tbody>
+                                                  <tr>
+                                                    <td class="ball "></td>
+                                                    <td class="td-style">Aceptados</td>
+                                                    <td class="separar-col td-style">105</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="ball info"></td>
+                                                    <td class="td-style">Rechazados</td>
+                                                    <td class="separar-col td-style">15</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="ball primary"></td>
+                                                    <td class="td-style">Enviados</td>
+                                                    <td class="separar-col td-style">105</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="ball danger"></td>
+                                                    <td class="td-style">No Leidos</td>
+                                                    <td class="separar-col td-style">15</td>
+                                                  </tr>
+                                                 
+                                                </tbody>
+                                              </table>
+                                           </div>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane fade " id="nav-mensual" role="tabpanel" aria-labelledby="nav-mensual-tab">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <!-- circular inicio -->
+                                                <div class="circular second">
+                                                    <div class="inner"></div>
+                                                    <div class="text">
+                                                        <h2 class="m-0">65</h2>
+                                                        <p class="m-0">Totales</p>
+                                                    </div>
+                                                    <div class="circle second">
+                                                        <div class="bar left">
+                                                            <div class="progres primary"></div>
+                                                        </div>
+                                                        <div class="bar right">
+                                                            <div class="progres primary"></div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <!-- circular fin -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                             <table class="table mt-3">
+                                                 <tbody>
+                                                   <tr>
+                                                     <td class="ball "></td>
+                                                     <td class="td-style">Aceptados</td>
+                                                     <td class="separar-col td-style">105</td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td class="ball info"></td>
+                                                     <td class="td-style">Rechazados</td>
+                                                     <td class="separar-col td-style">15</td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td class="ball primary"></td>
+                                                     <td class="td-style">Enviados</td>
+                                                     <td class="separar-col td-style">105</td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td class="ball danger"></td>
+                                                     <td class="td-style">No Leidos</td>
+                                                     <td class="separar-col td-style">15</td>
+                                                   </tr>
+                                                  
+                                                 </tbody>
+                                               </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-anual" role="tabpanel" aria-labelledby="nav-anual-tab">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <!-- circular inicio -->
+                                                <div class="circular second">
+                                                    <div class="inner"></div>
+                                                    <div class="text">
+                                                        <h2 class="m-0">85</h2>
+                                                        <p class="m-0">Totales</p>
+                                                    </div>
+                                                    <div class="circle second">
+                                                        <div class="bar left">
+                                                            <div class="progres primary"></div>
+                                                        </div>
+                                                        <div class="bar right">
+                                                            <div class="progres primary"></div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <!-- circular fin -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                             <table class="table mt-3">
+                                                 <tbody>
+                                                   <tr>
+                                                     <td class="ball "></td>
+                                                     <td class="td-style">Aceptados</td>
+                                                     <td class="separar-col td-style">105</td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td class="ball info"></td>
+                                                     <td class="td-style">Rechazados</td>
+                                                     <td class="separar-col td-style">15</td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td class="ball primary"></td>
+                                                     <td class="td-style">Enviados</td>
+                                                     <td class="separar-col td-style">105</td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td class="ball danger"></td>
+                                                     <td class="td-style">No Leidos</td>
+                                                     <td class="separar-col td-style">15</td>
+                                                   </tr>
+                                                  
+                                                 </tbody>
+                                               </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Propiedades</h5>
+                            <!-- circular inicio -->
+                            <div class="circular">
+                                <div class="inner"></div>
+                                <div class="text">
+                                    <h2 class="m-0">53</h2>
+                                    <p class="m-0">Activas</p>
+                                </div>
+                                <div class="circle">
+                                    <div class="bar left">
+                                        <div class="progres primary"></div>
+                                    </div>
+                                    <div class="bar right">
+                                        <div class="progres primary"></div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- circular fin -->
+                            <table class="table mt-3">
+                                <tbody>
+                                  <tr>
+                                    <td class="td-style">Venta</td>
+                                    <td class="separar-col td-style">115</td>
+                                  </tr>
+                                  <tr >
+                                    <td class="td-style">Alquiler</td>
+                                    <td class="separar-col td-style">15</td>
+                                  </tr>
+                                  <tr >
+                                    <td class="td-style">Alquiler temporario</td>
+                                    <td class="separar-col td-style">5</td>
+                                  </tr>
+                                 
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Perfiles de busqueda</h5>
+                            <!-- circular inicio -->
+                            <div class="circular">
+                                <div class="inner"></div>
+                                <div class="text">
+                                    <h2 class="m-0">15</h2>
+                                    <p class="m-0">Activas</p>
+                                </div>
+                                <div class="circle">
+                                    <div class="bar left">
+                                        <div class="progres info"></div>
+                                    </div>
+                                    <div class="bar right">
+                                        <div class="progres info"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- circular fin -->
+                            <table class="table mt-3">
+                                <tbody>
+                                <tr>
+                                    <td class="td-style">Zonas</td>
+                                    <td class="separar-col td-style">105</td>
+                                </tr>
+                                <tr >
+                                    <td class="td-style">CABA</td>
+                                    <td class="separar-col td-style">15</td>
+                                </tr>
+                                <tr >
+                                    <td class="td-style">GBA y Provincia</td>
+                                    <td class="separar-col td-style">5</td>
+                                </tr>
+                                
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Contactos</h5>
+                            <canvas id="secondChart" width="100%" height="80%"></canvas>
+
+                            <div class="contactos mt-4">
+                               <div class="d-flex justify-content-between mb-4">
+                                   <div class="contactos-increm" style="font-size: .8rem; font-weight: 600;">Incremento mensual</div>
+                                   <div class="contactos-increm" style="font-size: .8rem; font-weight: 600;">Abril 2020</div>
+                               </div>
+                               <div class="numb d-inline-block mr-1">
+                                <div class="d-flex">
+                                    <h2 style="margin: 0; padding:0;">120</h2>
+                                    <i class="fas fa-angle-up" style="padding: 5px 0 0 5px;font-size: 2.1rem; color:#40AF80"></i>
+                                 </div>
+                                 <span style="margin: 0; padding:0; font-size:.8rem;">Agregados</span>
+                               </div>
+                               <div class="numb d-inline-block mx-4">
+                                <div class="d-flex">
+                                    <h2 style="margin: 0; padding:0;">1</h2>
+                                    <i class="fas fa-angle-down" style="padding: 5px 0 0 5px;font-size: 2.1rem; color:#E54333"></i>
+                                 </div>
+                                 <span style="margin: 0; padding:0; font-size:.8rem;">Eliminados</span>
+                               </div>
+
+                               <div class="info-contact mt-4" style="font-size: .9rem;">
+                                   <span><b>+14,15% nuevos contactos </b>en relacion a su ultimo mes</span>
+                               </div>
+                             
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-5">Solicitudes</h5>
+                            <!-- circular inicio -->
+                            <div class="circular">
+                                <div class="inner"></div>
+                                <div class="text">
+                                    <h2 class="m-0">40</h2>
+                                    <p class="m-0">Activas</p>
+                                </div>
+                                <div class="circle">
+                                    <div class="bar left">
+                                        <div class="progres red"></div>
+                                    </div>
+                                    <div class="bar right">
+                                        <div class="progres red"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- circular fin -->
+                            <table class="table mt-5">
+                                <tbody>
+                                <tr>
+                                    <td class="td-style">Activas</td>
+                                    <td class="separar-col td-style">105</td>
+                                </tr>
+                                <tr >
+                                    <td class="td-style">Rechazadas</td>
+                                    <td class="separar-col td-style">15</td>
+                                </tr>
+                                <tr >
+                                    <td class="td-style">Pendientes</td>
+                                    <td class="separar-col td-style">5</td>
+                                </tr>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="container-fluid mt-4 py-4 bg-light">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-lg-3 mt-4">
+          <h3 class="color-primary">Ayuda</h3>
+          <p class="color-text-secondary">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ratione sequi nemo. Nobis, similique ab. Qui, eligendi neque fugiat.
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-3 offset-lg-1 footer-contact mt-4">
+          <h3 class="color-primary">Contacto</h3>
+          <!-- <p><i class="fas fa-map-marker-alt"></i> Direccion de ejemplo 12 palermo</p> -->
+          <p class="color-text-secondary"><i class="fas fa-phone"></i> Telefono: <a href="tel:01134543456" class="no-style color-text-secondary">011-3454 3456</a></p>
+          <p class="color-text-secondary"><i class="fas fa-envelope"></i> Email: <a href="mailto:example@domain.com" class="no-style color-text-secondary">example@domain.com</a></p>
+        </div>
+        <div class="col-md-4 col-lg-3 footer-social mt-4">
+          <p class="mt-3">
+            <a href="#" class="no-style"><i class="fab fa-twitter footer-icon"></i></a> 
+            <a href="#" class="no-style"><i class="fab fa-linkedin footer-icon"></i></a>
+            <a href="#" class="no-style"><i class="fab fa-facebook-f footer-icon"></i></a> 
+            <a href="#" class="no-style"><i class="fab fa-instagram footer-icon"></i></a> 
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2" style="padding-top: 3rem !important;">
+         <a href="#" class=""><img class="img-fluid logo-footer" src="assets/img/logo_dibrand.svg" alt="logo-footer"></a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- iconos -->
+<script src="https://kit.fontawesome.com/f38737c7bd.js" crossorigin="anonymous"></script>
+
+
+<!-- ====== CHART JS ========= -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+
+
+<script>
+    var MainChart = document.getElementById('mainChart').getContext('2d');
+
+var graficoPrincipal = new Chart(MainChart, {
+    type: 'line',
+    data: {
+        labels: ['ENE', 'FEB', 'MAR', 'ABR', 'MAY', 'JUN'],
+        datasets: [
+            
+        {
+            label:'Rechazados',
+            lineTension:0,
+            fill:true,
+            backgroundColor:"rgba(23, 162, 184,0.8)",
+            borderColor:"rgba(23, 162, 184,0)",
+            borderCapStyle:"butt",
+            borderDash:[],
+            borderDashOffset:0.0,
+            borderJoinStyle:'miter',
+            pointBorderColor:"rgba(23, 162, 184,1)",
+            pointBackgroundColor:"#fff",
+            pointBorderWidth:2,
+            pointHoverRadius:5,
+            pointHoverBackgroundColor:"rgba(23, 162, 184,1)",
+            pointHoverBorderColor:"rgba(23, 162, 184,1)",
+            pointHoverBorderWidht:2,
+            pointRadius:1,
+            pointHitRadius:10,
+            data: [0,10,13,32,60,32],
+        },
+        {
+            label:'Aceptados',
+            lineTension:0,
+            fill:true,
+            backgroundColor:"rgba(248, 177, 34,0.8)",
+            borderColor:"rgba(248, 177, 34,0)",
+            borderCapStyle:"butt",
+            borderDash:[],
+            borderDashOffset:0.0,
+            borderJoinStyle:'miter',
+            pointBorderColor:"rgba(248, 177, 34,1)",
+            pointBackgroundColor:"#fff",
+            pointBorderWidth:2,
+            pointHoverRadius:5,
+            pointHoverBackgroundColor:"rgba(248, 177, 34,1)",
+            pointHoverBorderColor:"rgba(248, 177, 34,1)",
+            pointHoverBorderWidht:2,
+            pointRadius:1,
+            pointHitRadius:10,
+            data: [10,15,20,6,25,42],
+        }
+    ]
+    },
+    options: {
+        legend: {
+            display: false
+        }
+        
+    }
+});
+
+
+
+    
+var SecondChart = document.getElementById('secondChart').getContext('2d');
+
+var graficoSecundario = new Chart(SecondChart, {
+    type: 'bar',
+    data: {
+        labels: ['F', 'M', 'A', 'E', 'F', 'M','A'],
+        datasets: [{
+            label: '',
+            data: [17, 45, 30, 50, 35, 20, 47],
+            backgroundColor: [
+                'rgba(128, 128, 129, 0.8)',
+                'rgba(128, 128, 129, 0.8)',
+                'rgba(128, 128, 129, 0.8)',
+                'rgba(128, 128, 129, 0.8)',
+                'rgba(128, 128, 129, 0.8)',
+                'rgba(128, 128, 129, 0.8)',
+                'rgba(0, 62, 76, 1)'
+            ],
+            borderColor: [
+                'rgba(128, 128, 129, 0.8)',
+                'rgba(128, 128, 129, 0.8)',
+                'rgba(128, 128, 129, 0.8)',
+                'rgba(128, 128, 129, 0.8)',
+                'rgba(128, 128, 129, 0.8)',
+                'rgba(128, 128, 129, 0.8)',
+                'rgba(0, 62, 76, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        legend: {
+            display: false
+        }
+    }
+});
+
+graficoSecundario.options.scales.yAxes[0] = {ticks: {min: 0, max: 60, stepValue: 10}}
+
+
+
+</script>
+
+</body>
+</html>
