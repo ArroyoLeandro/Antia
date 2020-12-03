@@ -17,7 +17,7 @@
 
 <!-- ===== NAVEGACION ====== -->
 <nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="dashboard.html">
       <img src="assets/img/logo.jpg" alt="Logo" class="img-fluid" style="width: 200px;">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,21 +27,20 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Dashboard</a>
+        <a class="nav-link active" href="dashboard.html">Dashboard</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Propiedades</a>
+        <a class="nav-link" href="propiedad-listado.html">Propiedades</a>
       </li>
-      <li class="nav-item" >
+      <li class="nav-item">
         <a class="nav-link" href="#">Solicitudes</a>
       </li>
-      <li class="nav-item pos-relative" >
+      <li class="nav-item pos-relative">
         <a class="nav-link" href="#">Mensajes<i class="far notif posNotif"></i></a>
       </li>
-      <li class="nav-item" >
-        <a class="nav-link" href="#">Contactos</a>
+      <li class="nav-item">
+        <a class="nav-link" href="contacto-listado.html">Contactos</a>
       </li>
-     
     </ul>
 
     <!-- ===== ICONOS NAVEGACION ====== -->
@@ -97,21 +96,21 @@
                 <i class="fas fa-cog pt-2"></i>
               </a>
               <div class="dropdown-menu config navegacion">
-                <a class="dropdown-item" href="#">Configuración general</a>
+                <a class="dropdown-item" href="configuracion-principal.html">Configuración general</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Configuración edición</a>
+                <a class="dropdown-item" href="configuracion-editar.html">Configuración edición</a>
               </div>
             </div>
 
           </li>
 
-          <li class="nav-item dropdown ml-4">
+          <li class="nav-item dropdown ml-4 mt-2">
             <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
               <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile">
               <span class="mx-1">Norberto Riccitelli</span>
             </a>
             <div class="dropdown-menu navegacion w-100">
-              <a class="dropdown-item" href="#">Perfil</a>
+              <a class="dropdown-item" href="contacto-ficha.html">Perfil</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Cerrar Sesión</a>
             </div>
@@ -198,9 +197,9 @@
                             </div>
                         
                             <div id="collapse2" class="collapse " aria-labelledby="heading2" data-parent="#accordionExample2">
-                              <div class="card-body">
+                              <div class="card-body px-0">
                                   <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-6 px-0">
                                         <!--ITEM  -->
                                         <div class="item">
                                           <div class="form-check">
@@ -210,7 +209,7 @@
                                               <!-- Imagen en sustitucion -->
                                               <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                               <!-- Texto -->
-                                              <span class="custom-radio-checkbox__text2">Alquiler</span>
+                                              <span class="custom-radio-checkbox__text2">Venta</span>
                                             </label>
                                           </div>
         
@@ -221,7 +220,7 @@
                                               <!-- Imagen en sustitucion -->
                                               <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                               <!-- Texto -->
-                                              <span class="custom-radio-checkbox__text2">Venta</span>
+                                              <span class="custom-radio-checkbox__text2">Alquiler</span>
                                             </label>
                                           </div>
                                                                            
@@ -229,7 +228,7 @@
                                         </div> <!-- FIN ITEM  -->
                                     </div>
         
-                                    <div class="col-6">
+                                    <div class="col-6 px-0">
                                       <div class="item">
                                         <div class="form-check">
                                           <label class="custom-radio-checkbox">
@@ -238,7 +237,7 @@
                                             <!-- Imagen en sustitucion -->
                                             <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                             <!-- Texto -->
-                                            <span class="custom-radio-checkbox__text2">[ X ]</span>
+                                            <span class="custom-radio-checkbox__text2">Alquiler Temporario</span>
                                           </label>
                                         </div>
                                         
@@ -266,9 +265,9 @@
                             </div>
                         
                             <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#accordionExample3">
-                              <div class="card-body">
+                              <div class="card-body px-0">
                                   <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-6 px-0">
                                         <!--ITEM  -->
                                         <div class="item">
                                           <div class="form-check">
@@ -342,12 +341,21 @@
                                               <span class="custom-radio-checkbox__text2">Hotel</span>
                                             </label>
                                           </div>
-                                                                           
+                                          <div class="form-check">
+                                            <label class="custom-radio-checkbox">
+                                              <!-- Input oculto -->
+                                              <input class="custom-radio-checkbox__input" type="checkbox">
+                                              <!-- Imagen en sustitucion -->
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <!-- Texto -->
+                                              <span class="custom-radio-checkbox__text2 ">Cochera</span>
+                                            </label>
+                                          </div>                           
                                           
                                         </div> <!-- FIN ITEM  -->
                                     </div>
         
-                                    <div class="col-6">
+                                    <div class="col-6 px-0">
                                       <!--ITEM  -->
                                       <div class="item">
                                         <div class="form-check pl-0">
@@ -357,7 +365,7 @@
                                             <!-- Imagen en sustitucion -->
                                             <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
                                             <!-- Texto -->
-                                            <span class="custom-radio-checkbox__text2 ">Cochera</span>
+                                            <span class="custom-radio-checkbox__text2 ">Departamento</span>
                                           </label>
                                         </div>
         
@@ -576,30 +584,48 @@
                   <!-- fin cuarto -->
                             <hr>
                               <div class="card"  style="border: none;">
-                                <div class="card-header">
-                                  <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button">
-                                    - Monto <span class="price flt-right" id="ars">AR$</span> <span class="flt-right price active" id="usd">U$S</span>
+                                <div class="card-header d-flex">
+                                  <button class="btn btn-link btn-block text-left" type="button">
+                                    - Monto
                                     </button>
-                                  </h2>
+                                  <!-- <h2 class="mb-0"> </h2> -->
+                                  <div class="form-check price flt-right" style="margin-top: .7rem;">
+                                    <label class="custom-radio-checkbox flexing">
+                                      <!-- Input oculto -->
+                                      <input class="custom-radio-checkbox__input" type="radio" checked name="MontoRadios">
+                                      <!-- Imagen en sustitucion -->
+                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                      <span class="custom-radio-checkbox__text2">Pesos</span>
+                                    </label>
+                                  </div>
+                                  <div class="form-check price flt-right" style="margin-top: .7rem;">
+                                    <label class="custom-radio-checkbox flexing">
+                                      <!-- Input oculto -->
+                                      <input class="custom-radio-checkbox__input" type="radio" name="MontoRadios">
+                                      <!-- Imagen en sustitucion -->
+                                      <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                      <span class="custom-radio-checkbox__text2">Dolares</span>
+                                    </label>
+                                  </div>
+                                  
                                   <div class="flt-both"></div>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body py-0">
                                   <div class="row">
                                     <div class="col-6">
                                       <div class="form-group price-container">
                                         <label class="my-1 mr-2" for="price-min">Desde</label>
-                                        <i class="fas fa-chevron-down btn-number" onclick="decrement('price-min')"></i>
-                                        <input type="number" name="price-min" id="price-min" min="0" value="0" class="form-control input-price">
-                                        <i class="fas fa-chevron-up btn-number" onclick="increment('price-min')"></i>
+                                        <!-- <i class="fas fa-chevron-down btn-number" onclick="decrement('price-min')"></i> -->
+                                        <input type="number" name="price-min" id="price-min" min="0" placeholder="Desde" class="form-control pl-3">
+                                        <!-- <i class="fas fa-chevron-up btn-number" onclick="increment('price-min')"></i> -->
                                       </div>
                                     </div>
                                     <div class="col-6">
                                       <div class="form-group price-container">
                                         <label class="my-1 mr-2" for="price-max">Hasta</label>
-                                        <i class="fas fa-chevron-down btn-number" onclick="decrement('price-max')"></i>
-                                        <input type="number" name="price-max" id="price-max" min="0" value="2000" class="form-control input-price">
-                                        <i class="fas fa-chevron-up btn-number" onclick="increment('price-max')"></i>
+                                        <!-- <i class="fas fa-chevron-down btn-number" onclick="decrement('price-max')"></i> -->
+                                        <input type="number" name="price-max" id="price-max" min="0" placeholder="Hasta" class="form-control pl-3">
+                                        <!-- <i class="fas fa-chevron-up btn-number" onclick="increment('price-max')"></i> -->
                                       </div>
                                     </div>
                                   </div>
@@ -675,11 +701,17 @@
                                 <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample6">
                                   <div class="card-body">
                                     <div class="row">
-                                      <div class="col-8">
-                                        <div class="form-group expensa-container">
-                                          <label class="label-expensas" for="expensas">Total |</label>
-                                          <input type="number" name="expensas" id="expensas" min="0" class="form-control">
+                                      <div class="col-12">
+                                        <div class="input-group mb-3">
+                                          <div class="input-group-prepend">
+                                            <select class="form-control btn dropdown-toggle text-dark" style="border: none !important; border-radius: 0 !important;">
+                                              <option selected class="dropdown-item text-dark">U$D</option>
+                                              <option class="dropdown-item text-dark">AR$</option>
+                                            </select>
+                                          </div>
+                                          <input type="number" name="expensas" id="expensas" min="0" class="form-control"  aria-label="expensa" aria-describedby="basic-addon">
                                         </div>
+
                                       </div>
                                     </div><!-- FIN ROW -->
                                   </div><!-- FIN card-body -->
@@ -727,10 +759,6 @@
         
                       </div>
                     </div>
-
-
-
-
                   </div><!-- FIN card-body -->
                 </div><!-- FIN collapse -->
               </div>
@@ -754,7 +782,7 @@
                   <div class="card-body container pos-relative">
                     <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
+                    <a href="propiedad-detalle1.html" class="no-style"><a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a></a>
                     <div class="info-tipo">
                       <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
                       <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
@@ -780,7 +808,7 @@
                   <div class="card-body container pos-relative">
                     <span class="badge badge-info badge-info-tipo badge-alquiler">ALQUILER</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
+                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
                       <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
                       <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
@@ -806,7 +834,7 @@
                   <div class="card-body container pos-relative">
                     <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
+                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
                       <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
                       <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
@@ -832,7 +860,7 @@
                   <div class="card-body container pos-relative">
                     <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
+                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
                       <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
                       <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
@@ -858,7 +886,7 @@
                   <div class="card-body container pos-relative">
                     <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
+                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
                       <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
                       <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
@@ -884,7 +912,7 @@
                   <div class="card-body container pos-relative">
                     <span class="badge badge-info badge-info-tipo badge-alquiler">ALQUILER</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
+                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
                       <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
                       <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
@@ -910,7 +938,7 @@
                   <div class="card-body container pos-relative">
                     <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
+                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
                       <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
                       <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
@@ -936,7 +964,7 @@
                   <div class="card-body container pos-relative">
                     <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
+                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
                       <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
                       <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
@@ -962,7 +990,7 @@
                   <div class="card-body container pos-relative">
                     <span class="badge badge-info badge-info-tipo badge-alquiler">ALQUILER</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5>
+                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
                       <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
                       <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
@@ -1065,19 +1093,6 @@
 <script>
 
 
-// cambiar tipo de moneda (cambia el color del span)
-$('#ars').click(()=>{
-  if (!$('#ars').hasClass('active')){
-    $('#ars').addClass('active');
-    $('#usd').removeClass('active');
-  }
-});
-$('#usd').click(()=>{
-  if (!$('#usd').hasClass('active')){
-    $('#usd').addClass('active');
-      $('#ars').removeClass('active');
-  }
-});
 
 // incrementar y decrementar inputs
 function increment(input){

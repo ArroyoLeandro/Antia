@@ -1,212 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="assets/img/favicon.ico">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>INTIA</title>
 
-     <!-- Bootstrap -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-     <!-- Style css -->
-     <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-<body>
-
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <style>
-        .modal-header .close {
-            position: absolute;
-            right: 0;
-            margin: 0px;
-            color: #fff !important;
-            opacity: .8;
-        }
-        .icon-box{
-            position: absolute;
-            color: var(--color-primary);
-        }
-        
-        .modal-creditos1-header > .icon-box{
-            top: 45%;
-            left: 44%;
-            font-size: 3.5rem;
-        }
-        .modal-creditos2-header > .icon-box{
-            top: 47%;
-            left: 45%;
-            font-size: 3.5rem;
-        }
+      .modal-header .close {
+        position: absolute;
+        right: 0;
+        margin: 0px;
+        color: #fff !important;
+        opacity: 0.8;
+      }
+      .icon-box {
+        position: absolute;
+        color: var(--color-primary);
+      }
 
-        .modal-eliminar-header > .icon-box{
-            top: 47%;
-            left: 44%;
-            font-size: 3.5rem;
-        }
+      .modal-creditos1-header > .icon-box {
+        top: 45%;
+        left: 44%;
+        font-size: 3.5rem;
+      }
+      .modal-creditos2-header > .icon-box {
+        top: 47%;
+        left: 45%;
+        font-size: 3.5rem;
+      }
 
-        @media (max-width:500px){
-            .icon-box {
-                font-size: 3rem !important;
-            }
-        }
-        .modal-header, .modal-body, .modal-footer{
-            border: none !important;
-        }
-        .modal-eliminar-body{
-            background-color: #fff;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        .modal-eliminar-footer{
-            display: flex;
-            justify-content: center;
-        }
-        .modal-eliminar-footer a{
-            text-decoration: none !important;
-            width: 35%;
-        }
-        
-        .modal-eliminar-footer > .btn-danger{
-            background-color: red;
-        }
-        .modal-eliminar-footer > .btn-outline-info{
-            background-color: transparent;
-            border: 1px solid var(--color-primary);
-            color: var(--color-primary);
-        }
+      .modal-eliminar-header > .icon-box {
+        top: 47%;
+        left: 44%;
+        font-size: 3.5rem;
+      }
 
+      @media (max-width: 500px) {
+        .icon-box {
+          font-size: 3rem !important;
+        }
+      }
+      .modal-header,
+      .modal-body,
+      .modal-footer {
+        border: none !important;
+      }
+      .modal-eliminar-body {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .modal-eliminar-footer {
+        display: flex;
+        justify-content: center;
+      }
+      .modal-eliminar-footer a {
+        text-decoration: none !important;
+        width: 35%;
+      }
 
-        .modal-creditos-body{
-            text-align: center;
-            justify-content: center;
-        }
+      .modal-eliminar-footer > .btn-danger {
+        background-color: red;
+      }
+      .modal-eliminar-footer > .btn-outline-info {
+        background-color: transparent;
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+      }
 
-        .modal-creditos-footer{
-            justify-content: center !important;
-        }
-        .modal-creditos-footer > .btn{
-            width: 60%;
-            letter-spacing: .2rem;
-        }
-        .modal-creditos-footer > .btn:hover{
-            color:#fff !important;
-        }
+      .modal-creditos-body {
+        text-align: center;
+        justify-content: center;
+      }
+
+      .modal-creditos-footer {
+        justify-content: center !important;
+      }
+      .modal-creditos-footer > .btn {
+        width: 60%;
+        letter-spacing: 0.2rem;
+      }
+      .modal-creditos-footer > .btn:hover {
+        color: #fff !important;
+      }
     </style>
 
-
-<div class="container">
-    <div style="margin-top:30%;display: flex; justify-content: space-evenly; align-items: center; flex-direction: row;">
-        
+    <div class="container">
+      <div style="margin-top: 30%; display: flex; justify-content: space-evenly; align-items: center; flex-direction: row">
         <div class="text-center">
-            <a href="#modal-creditos-1" class="btn" data-toggle="modal">Modal Consumiste tu credito</a>
+          <a href="#modal-creditos-1" class="btn" data-toggle="modal">Modal Consumiste tu credito</a>
         </div>
         <div class="text-center">
-            <a href="#modal-creditos-2" class="btn" data-toggle="modal">Modal Limite de credito</a>
+          <a href="#modal-creditos-2" class="btn" data-toggle="modal">Modal Limite de credito</a>
         </div>
         <div class="text-center">
-            <a href="#modal-eliminar" class="btn" data-toggle="modal">Modal Eliminar propiedad</a>
+          <a href="#modal-eliminar" class="btn" data-toggle="modal">Modal Eliminar propiedad</a>
         </div>
+      </div>
     </div>
-</div>
 
+    <!-- =========== Modal Sin Creditos =========== -->
+    <div id="modal-creditos-1" class="modal fade">
+      <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+          <div class="modal-header p-0 pos-relative modal-creditos1-header">
+            <object type="image/svg+xml" data="assets/img/modals.svg" height="100%" width="100%"></object>
+            <div class="icon-box">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body modal-creditos-body">
+            <h4 class="modal-title">Consumiste tu crédito</h4>
+            <p>Carga más para poder realizar esta operación</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<!-- =========== Modal Sin Creditos =========== -->
-<div id="modal-creditos-1" class="modal fade">
-	<div class="modal-dialog modal-confirm" >
-		<div class="modal-content" >
-            <div class="modal-header p-0 pos-relative modal-creditos1-header">
-                <object
-                type="image/svg+xml"
-                data="assets/img/modals.svg"
-                height="100%"
-                width="100%">
-                </object> 
-				<div class="icon-box">
-                    <i class="fas fa-hand-holding-usd"></i>
-				</div>				
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			</div>
-			<div class="modal-body modal-creditos-body">                
-				<h4 class="modal-title">Consumiste tu crédito</h4>	
-				<p>Carga más para poder realizar esta operación</p>
-			</div>
-		</div>
-	</div>
-</div> 
+    <!-- =========== Modal Sin Creditos =========== -->
+    <div id="modal-creditos-2" class="modal fade">
+      <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+          <div class="modal-header p-0 pos-relative modal-creditos2-header">
+            <object type="image/svg+xml" data="assets/img/modals.svg" height="100%" width="100%"></object>
+            <div class="icon-box">
+              <i class="fas fa-coins"></i>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body modal-creditos-body">
+            <h4 class="modal-title">Limite de crédito</h4>
+            <p>Se ha llegado al limite del plan contratado, cambia a un plan acorde a tus necesidades</p>
+          </div>
+          <div class="modal-footer modal-creditos-footer">
+            <a href="#" class="btn">VER TODOS LOS PLANES</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-<!-- =========== Modal Sin Creditos =========== -->
-<div id="modal-creditos-2" class="modal fade">
-	<div class="modal-dialog modal-confirm" >
-		<div class="modal-content" >
-            <div class="modal-header p-0 pos-relative modal-creditos2-header">
-                <object
-                type="image/svg+xml"
-                data="assets/img/modals.svg"
-                height="100%"
-                width="100%">
-                </object> 
-				<div class="icon-box">
-                    <i class="fas fa-coins"></i>
-				</div>				
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			</div>
-			<div class="modal-body modal-creditos-body">                
-				<h4 class="modal-title">Limite de crédito</h4>	
-				<p>Se ha llegado al limite del plan contratado, cambia a un plan acorde a tus necesidades</p>
-			</div>
-			<div class="modal-footer modal-creditos-footer">
-				<a href="#" class="btn">VER TODOS LOS PLANES</a>
-			</div>
-		</div>
-	</div>
-</div> 
-
-
-
-<!-- =========== Modal Eliminar Propiedad =========== -->
-<div id="modal-eliminar" class="modal fade">
-	<div class="modal-dialog modal-confirm" >
-		<div class="modal-content" >
-            <div class="modal-header p-0 pos-relative modal-eliminar-header">
-                <object
-                type="image/svg+xml"
-                data="assets/img/modals.svg"
-                height="100%"
-                width="100%">
-                </object> 
-				<div class="icon-box">
-                    <i class="fas fa-home"></i>
-				</div>				
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			</div>
-			<div class="modal-body modal-eliminar-body">                
-				<h4 class="modal-title">Eliminar propiedad</h4>	
-				<p>¿Estas seguro que quieres eliminar esta propiedad?</p>
-			</div>
-			<div class="modal-footer modal-eliminar-footer">
-				<a href="#" class="btn btn-danger">Eliminar</a>
-				<a href="#" class="btn btn-outline-info" data-dismiss="modal">Cancelar</a>
-			</div>
-		</div>
-	</div>
-</div> 
-
+    <!-- =========== Modal Eliminar Propiedad =========== -->
+    <div id="modal-eliminar" class="modal fade">
+      <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+          <div class="modal-header p-0 pos-relative modal-eliminar-header">
+            <object type="image/svg+xml" data="assets/img/modals.svg" height="100%" width="100%"></object>
+            <div class="icon-box">
+              <i class="fas fa-home"></i>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body modal-eliminar-body">
+            <h4 class="modal-title">Eliminar propiedad</h4>
+            <p>¿Estas seguro que quieres eliminar esta propiedad?</p>
+          </div>
+          <div class="modal-footer modal-eliminar-footer">
+            <a href="#" class="btn btn-danger">Eliminar</a>
+            <a href="#" class="btn btn-outline-info" data-dismiss="modal">Cancelar</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- bootstrap -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-
-<!-- iconos -->
-<script src="https://kit.fontawesome.com/f38737c7bd.js" crossorigin="anonymous"></script>
-
-</body>
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/f38737c7bd.js" crossorigin="anonymous"></script>
+  </body>
 </html>

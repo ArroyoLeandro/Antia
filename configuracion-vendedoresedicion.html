@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>INTIA</title>
 
-    <!-- Bootstrap -->
+    <!-- ===== Bootstrap =====  -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -15,10 +15,23 @@
       crossorigin="anonymous"
     />
 
-    <!-- Style css -->
+    <!-- ===== Style css =====  -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <style>
+      .input-default {
+        border: 1px solid #ced4da !important;
+        border-radius: 0.25rem !important;
+      }
+      .bg-inf {
+        background-color: #7db9c1;
+      }
+
+      .select > option.active {
+        color: var(--color-primary);
+      }
+    </style>
     <!-- ===== NAVEGACION ====== -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="dashboard.html">
@@ -138,164 +151,138 @@
         </div>
       </div>
     </nav>
-    <!-- MAIN -->
+
+    <!-- ====== MAIN ======-->
     <div class="container-fluid">
-      <!-- CABECERA -->
+      <!--====== CABECERA ======-->
       <div class="container">
         <div class="row">
           <!-- titulo de seccion -->
           <div class="title-section">
-            <span class="span-tittle">DETALLE DEL CONTACTO</span>
-            <a href="contacto-carga.html" class="no-style"><button class="btn-compartir btn">EDITAR CONTACTO</button></a>
+            <span class="span-tittle">MI PERFIL: VENDEDOR</span>
+
+            <span class="container-btn">
+              <button class="btn-compartir btn mx-4">GUARDAR</button>
+              <a href="configuracion-principal.html" class="no-style btn-compartir btn">CANCELAR</a>
+            </span>
           </div>
 
-          <!-- columna izquierda -->
-          <div class="col-md-4 mt-4">
-            <div class="card ficha-card">
-              <div class="card-body pb-0">
-                <h5 class="card-title color-primary my-0 ficha-card-name" style="font-weight: 600; letter-spacing: 2px">Norberto Riccitelli</h5>
-                <p class="card-text color-primary ficha-card-sub">INTERESADO</p>
-                <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" />
-
-                <div class="ficha-card-info mt-3">
-                  <h5 class="card-title mt-3">Información</h5>
-                  <p class="color-text-secondary">
-                    <i class="fas fa-envelope mr-3" style="font-size: 1.4rem"></i>
-                    <a href="mailto:example@domain.com" class="no-style color-text-secondary" style="font-size: 1.1rem"> example@domain.com</a>
-                  </p>
-                  <p class="color-text-secondary">
-                    <i class="fas fa-phone mr-3" style="font-size: 1.4rem; transform: rotateY(180deg)"></i>
-                    <a href="tel:01134543456" class="no-style color-text-secondary">011-3454 3456</a>
-                  </p>
-                  <p class="color-text-secondary">
-                    <i class="fab fa-whatsapp mr-3" style="font-size: 1.4rem"></i>
-                    <a href="https://api.whatsapp.com/send?phone=+5401134543456" class="no-style color-text-secondary">011-3454 3456</a>
-                  </p>
-                  <p class="color-text-secondary">
-                    <i class="fas fa-map-marker-alt mr-3" style="font-size: 1.4rem"></i>
-                    <span class="no-style color-text-secondary">Charcas 1934, Palermo, Capital Federal</span>
-                  </p>
-                </div>
-              </div>
-              <!-- ==FIN CARD BODY == -->
-
-              <div class="ficha-card-footer pb-4">
-                <div class="container">
-                  <h5 class="ficha-card-perfiles mb-2 pt-3">Perfiles de busqueda</h5>
-                  <div class="ficha-card-badge scrollbar">
-                    <span class="badge badge-light">Exaltacion de la Cruz</span>
-                    <span class="badge badge-light">Valor $100000</span>
-                    <span class="badge badge-light">Exaltacion de la Cruz</span>
-                    <span class="badge badge-light">Valor $10000</span>
-                    <span class="badge badge-light">Valor $100000</span>
-                    <span class="badge badge-light">Exaltacion de la Cruz</span>
-                    <span class="badge badge-light">Exaltacion de la Cruz</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- columna izquierda -->
-
-          <!-- columna derecha -->
-          <div class="col-md-8 mt-4">
-            <div class="card">
+          <div class="col-md-8 mt-5">
+            <!-- ====== INFORMACION  ====== -->
+            <div class="card pos-relative">
               <div class="card-body">
-                <h5 class="card-title color-text-secondary mb-2 timeline-title">Timeline</h5>
-                <div class="container-fluid">
-                  <div class="timeline">
-                    <div class="timeline-body">
-                      <div class="timeline-item">
-                        <i class="fas fa-home"></i>
-                        <div class="dates">
-                          <p class="date">AHORA</p>
-                          <p class="time">13:40</p>
-                        </div>
-                        <div class="content">
-                          <h5 class="title">La propiedad Florencia Ruiz, Palermo ha sido reservada</h5>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil modi atque consequuntur accusantium tempora laborum</p>
+                <div class="row mt-2">
+                  <div class="col-lg-7 col-md-12">
+                    <h5 class="card-title mb-4">Información general</h5>
+                    <div class="row">
+                      <div class="col-md-6 col-12 px-1">
+                        <div class="form-group">
+                          <label for="">Nombre</label>
+                          <input type="text" class="form-control input-default" />
                         </div>
                       </div>
-
-                      <div class="timeline-item">
-                        <i class="fas fa-user"></i>
-                        <div class="dates">
-                          <p class="date">23 FEB 2020</p>
-                          <p class="time">13:40</p>
-                        </div>
-                        <div class="content">
-                          <h5 class="title">Su contacto ha actualizado su numero de teléfono</h5>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil modi atque consequuntur accusantium tempora laborum</p>
+                      <div class="col-md-6 col-12 px-1">
+                        <div class="form-group">
+                          <label for="">Apellido</label>
+                          <input type="text" class="form-control input-default" />
                         </div>
                       </div>
-
-                      <div class="timeline-item">
-                        <i class="fas fa-envelope"></i>
-                        <div class="dates">
-                          <p class="date">30 NOV 2020</p>
-                          <p class="time">13:40</p>
-                        </div>
-                        <div class="content">
-                          <h5 class="title">Florencia Marina ha contestado a su consulta</h5>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil modi atque consequuntur accusantium tempora laborum</p>
+                      <div class="col-md-6 col-12 px-1">
+                        <div class="form-group">
+                          <label for="">Celular</label>
+                          <input type="number" class="form-control input-default" />
                         </div>
                       </div>
-
-                      <div class="timeline-item">
-                        <i class="fas fa-user"></i>
-                        <div class="dates">
-                          <p class="date">16 MAY 2020</p>
-                          <p class="time">13:40</p>
+                      <div class="col-md-6 col-12 px-1">
+                        <div class="form-group">
+                          <label for="">Teléfono</label>
+                          <input type="number" class="form-control input-default" />
                         </div>
-                        <div class="content">
-                          <h5 class="title">Su contacto ha actualizado su numero de teléfono</h5>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil modi atque consequuntur accusantium tempora laborum</p>
+                      </div>
+                      <div class="col-md-6 col-12 px-1">
+                        <div class="form-group">
+                          <label for="">Whatsapp</label>
+                          <input type="number" class="form-control input-default" />
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-12 px-1">
+                        <div class="form-group">
+                          <label for="">Email</label>
+                          <input type="email" class="form-control input-default" />
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <!-- card -->
+                  <div class="col-lg-5 col-md-12 d-flex d-lg-block justify-content-center mt-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="d-flex justify-content-between">
+                          <h5 class="card-title mb-4">Foto de Perfil</h5>
+                          <a href="#" class="no-style color-text-secondary"> <i class="fas fa-edit"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="container-fluid px-0">
+                          <div class="text-white text-center p-4" style="background-color: #288b99">
+                            <i class="fas fa-file-upload" style="font-size: 3.5rem !important"></i>
+                            <p class="card-text text-white">
+                              Archivo JPG
+                              <br />
+                              <small>220x100 PX RECOMENDADA</small>
+                            </p>
 
-            <div class="card mt-4">
-              <div class="card-body">
-                <div class="container-fluid actividad-card">
-                  <div class="actividad-card-head d-flex justify-content-between">
-                    <i class="fas fa-pen"></i>
-                    <div class="actividad-titulo">
-                      <h5>Cargue una nueva actividad</h5>
-                      <p>Agregará un item a su timelapse</p>
-                    </div>
-                    <div class="actividad-boton">
-                      <button type="button" class="btn btn-agregar">AGREGAR</button>
+                            <h5 class="card-title text-white">Cargar Archivo</h5>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="actividad-card-content pt-4">
-                    <form>
-                      <div class="form-group">
-                        <input class="form-control" type="text" name="title" placeholder="Titulo" />
-                      </div>
-                      <div class="form-group">
-                        <textarea class="form-control" rows="3">Descripción</textarea>
-                      </div>
-                    </form>
-                  </div>
+                  <!-- fin col-lg-5 -->
                 </div>
               </div>
             </div>
           </div>
-          <!-- col-md-6 -->
+
+          <div class="col-md-4 mt-5">
+            <div class="card pos-relative">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title mb-4">Mi cuenta</h5>
+                  <a href="#" class="no-style color-text-secondary"> <i class="fas fa-edit"></i></a>
+                </div>
+                <form>
+                  <div class="form-group">
+                    <label for="inputName">Nombre</label>
+                    <input type="text" class="form-control" id="inputName" aria-describedby="Name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="inputLastName">Apellido</label>
+                    <input type="text" class="form-control" id="inputLastName" aria-describedby="LastName" />
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail">Correo</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="Email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword1">Nueva contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword1" />
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword2">Repetir contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword2" />
+                  </div>
+                  <button type="submit" class="btn btn-compartir w-100 py-2 mb-0" style="font-size: 1rem">GUARDAR DATOS</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- row -->
+        <!-- fin row -->
       </div>
-      <!-- container -->
+      <!-- fin container -->
     </div>
-    <!-- container-fluid -->
 
-    <!-- ====== FOOTER ====== -->
-
+    <!-- ===== FOOTER ===== -->
     <footer class="container-fluid mt-4 py-4 bg-light">
       <div class="footer-top">
         <div class="container">
@@ -308,7 +295,6 @@
             </div>
             <div class="col-md-3 col-lg-3 offset-lg-1 footer-contact mt-4">
               <h3 class="color-primary">Contacto</h3>
-              <!-- <p><i class="fas fa-map-marker-alt"></i> Direccion de ejemplo 12 palermo</p> -->
               <p class="color-text-secondary"><i class="fas fa-phone"></i> Telefono: <a href="tel:01134543456" class="no-style color-text-secondary">011-3454 3456</a></p>
               <p class="color-text-secondary">
                 <i class="fas fa-envelope"></i> Email: <a href="mailto:example@domain.com" class="no-style color-text-secondary">example@domain.com</a>
