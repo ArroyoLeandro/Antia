@@ -1,0 +1,63 @@
+
+============ TERMINADAS ============ 
+5 vistas en propiedades
+	 - (carga propiedad, detalle propiedad (3), listado de propiedades)
+
+3 modales
+	 - (modal aviso, modal limite credito, eliminar propiedad)
+
+1 pagina principal 
+	 - (Dashboard)
+
+1 generales
+ 	- (modificaciones generales en navegacion y vistas especificas)
+
+3 vistas en contacto 
+	- (listado de contactos, carga o edicion de contacto, ficha de contacto.)
+
+2 configuracion
+	 - (configuracion general, configuracion edicion)
+
+2 vendedores
+	 - (vendedor edicion, vendedor perfil )
+
+
+
+
+============ MAQUETANDO ============ 
+
+3 vistas de mensajes
+	 - (listado de mensajes [listo], mensaje abierto [proceso])
+
+-contactos tiene cambios en contacto-carga.html
+-propiedades corregir problemas de servicios (mala estructura html)
+
+============ FALTA MAQUETAR ============ 
+
+
+============ FUERA DEL PRESUPUESTO ============ 
+
+1 vista de solicitudes
+
+	 - [listado de solicitudes] 
+
+1 vista en contacto
+
+	- [perfil de busqueda]
+
+
+
+
+
+
+============ NO TENEMOS DISEÑOS ============ 
+
+1 Email Notificaciones
+	 - (Email notificaciones)
+
+-pantallas front
+	 *sitio one page
+	 *pantalla login y registro
+	 *email confirmacion registro
+	 *pantalla confirmando el registro
+
