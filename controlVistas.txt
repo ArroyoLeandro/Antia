@@ -24,23 +24,32 @@
 3 vistas de mensajes [corregir responsive]
 	 - (listado de mensajes [listo], mensaje abierto [proceso])
 
+1 vista en contacto
 
+	- [perfil de busqueda] [comprobar responsive]
 
 ============ MAQUETANDO ============ 
 
--contactos tiene cambios en contacto-carga.html
 -propiedades corregir problemas de servicios (mala estructura html)
 
-============ FALTA MAQUETAR ============ 
-============ FUERA DEL PRESUPUESTO ============ 
 
 1 vista de solicitudes
 
 	 - [listado de solicitudes] 
 
-1 vista en contacto
 
-	- [perfil de busqueda]
+============ FALTA MAQUETAR ============ 
+============ FUERA DEL PRESUPUESTO ============ 
+============ NO TENEMOS DISEÑOS ============ 
+
+1 Email Notificaciones
+	 - (Email notificaciones)
+
+-pantallas front
+	 *sitio one page
+	 *pantalla login y registro
+	 *email confirmacion registro
+	 *pantalla confirmando el registro
 
 
 
@@ -61,13 +70,4 @@ PROPIEDADES:
 CONFIGURACIÓN GENERAL:
 -Intentar respetar el diseño, ej: si hay un vector y al lado va la dirección de email que no queden en dos renglones por separado, lo mismo en CONFIGURACIÓN VENDEDOR. O mismo el numero de telefono que quede todo en un mismo renglon. [listo]
 
-============ NO TENEMOS DISEÑOS ============ 
 
-1 Email Notificaciones
-	 - (Email notificaciones)
-
--pantallas front
-	 *sitio one page
-	 *pantalla login y registro
-	 *email confirmacion registro
-	 *pantalla confirmando el registro

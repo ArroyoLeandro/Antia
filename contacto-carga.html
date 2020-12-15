@@ -167,11 +167,12 @@
                       <div class="form-group ficha-card">
                         <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile my-0" />
                       </div>
-                      <a href="#" class="no-style"><small id="emailHelp" class="form-text text-muted text-center font-weight-bold">Cambiar imagen</small></a>
+                      <a href="#" class="no-style"><small title="Cambiar imagen" class="form-text text-muted text-center font-weight-bold">Cambiar imagen</small></a>
                       <!-- </div> -->
                       <div class="form-group mt-5">
-                        <select class="form-control input-default">
-                          <option selected>Tipo de contacto</option>
+                        <label for="inputTipo" title="Tipo de contacto" class="font-weight-normal">Tipo de contacto</label>
+                        <select class="form-control input-default" id="inputTipo">
+                          <option selected></option>
                           <option value="1">Uno</option>
                           <option value="2">Dos</option>
                           <option value="3">Tres</option>
@@ -183,22 +184,28 @@
                         <h5 class="card-title color-text-secondary px-2 mt-4 mb-3">Informacion general</h5>
                         <div class="row ml-1">
                           <div class="form-group px-1 col-6">
-                            <input type="text" class="form-control input-default" placeholder="Nombre" />
+                            <label for="inputName" title="Nombre" class="font-weight-normal">Nombre</label>
+                            <input type="text" class="form-control input-default" id="inputName" />
                           </div>
                           <div class="form-group px-1 col-6">
-                            <input type="text" class="form-control input-default" placeholder="Apellido" />
+                            <label for="inputApellido" title="Apellido" class="font-weight-normal">Apellido</label>
+                            <input type="text" class="form-control input-default" id="inputApellido" />
                           </div>
                           <div class="form-group px-1 col-6">
-                            <input type="email" class="form-control input-default" placeholder="Email" />
+                            <label for="inputEmail" title="Email" class="font-weight-normal">Email</label>
+                            <input type="email" class="form-control input-default" id="inputEmail" />
                           </div>
                           <div class="form-group px-1 col-6">
-                            <input type="number" class="form-control input-default" placeholder="Telefono" />
+                            <label for="inputTelefono" title="Telefono" class="font-weight-normal">Telefono</label>
+                            <input type="number" class="form-control input-default" id="inputTelefono" />
                           </div>
                           <div class="form-group px-1 col-6">
-                            <input type="number" class="form-control input-default" placeholder="Celular" />
+                            <label for="inputCelular" title="Celular" class="font-weight-normal">Celular</label>
+                            <input type="number" class="form-control input-default" id="inputCelular" />
                           </div>
                           <div class="form-group px-1 col-6">
-                            <input type="number" class="form-control input-default" placeholder="WhatsApp" />
+                            <label for="inputWhatsApp" title="WhatsApp" class="font-weight-normal">WhatsApp</label>
+                            <input type="number" class="form-control input-default" id="inputWhatsApp" />
                           </div>
                         </div>
                       </div>
@@ -206,36 +213,53 @@
                         <h5 class="card-title color-text-secondary mb-4 px-2">Ubicacion</h5>
                         <div class="row ml-1">
                           <div class="form-group col-6 px-1">
-                            <select class="form-control input-default">
-                              <option selected>Pais</option>
+                            <label for="inputPais" title="Pais" class="font-weight-normal">Pais</label>
+                            <select class="form-control input-default" id="inputPais">
+                              <option selected></option>
                               <option value="1">Uno</option>
                               <option value="2">Dos</option>
                               <option value="3">Tres</option>
                             </select>
                           </div>
                           <div class="form-group col-6 px-1">
-                            <select class="form-control input-default">
-                              <option selected>Provincia</option>
+                            <label for="inputProvincia" title="Provincia" class="font-weight-normal">Provincia</label>
+                            <select class="form-control input-default" id="inputProvincia">
+                              <option selected></option>
                               <option value="1">Uno</option>
                               <option value="2">Dos</option>
                               <option value="3">Tres</option>
                             </select>
                           </div>
-                          <div class="form-group col-12 px-1">
-                            <select class="form-control input-default">
-                              <option selected>Localidad</option>
-                              <option value="1">Uno</option>
-                              <option value="2">Dos</option>
-                              <option value="3">Tres</option>
-                            </select>
+
+                          <div class="form-group inline-group col-12 px-1">
+                            <div class="row">
+                              <div class="col-2">
+                                <label for="inputLocalidad" title="Localidad" class="font-weight-normal pt-1">Localidad</label>
+                              </div>
+                              <div class="col-10">
+                                <select class="form-control input-default" id="inputLocalidad">
+                                  <option selected></option>
+                                  <option value="1">Uno</option>
+                                  <option value="2">Dos</option>
+                                  <option value="3">Tres</option>
+                                </select>
+                              </div>
+                            </div>
                           </div>
-                          <div class="form-group col-12 px-1">
-                            <select class="form-control input-default">
-                              <option selected>Barrio</option>
-                              <option value="1">Uno</option>
-                              <option value="2">Dos</option>
-                              <option value="3">Tres</option>
-                            </select>
+                          <div class="form-group inline-group col-12 px-1">
+                            <div class="row">
+                              <div class="col-2">
+                                <label for="inputBarrio" title="Barrio" class="font-weight-normal pt-1">Barrio</label>
+                              </div>
+                              <div class="col-10">
+                                <select class="form-control input-default" id="inputBarrio">
+                                  <option selected></option>
+                                  <option value="1">Uno</option>
+                                  <option value="2">Dos</option>
+                                  <option value="3">Tres</option>
+                                </select>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -244,20 +268,51 @@
                         <h5 class="card-title color-text-secondary mb-4 px-2">Direccion</h5>
                         <div class="row ml-1">
                           <div class="form-group col-8 px-1">
-                            <input type="text" class="form-control input-default" placeholder="Direccion" />
+                            <div class="row">
+                              <div class="col-3">
+                                <label for="inputDireccion" title="Direccion" class="font-weight-normal pt-1">Direccion</label>
+                              </div>
+                              <div class="col-9">
+                                <input type="text" class="form-control input-default" id="inputDireccion" />
+                              </div>
+                            </div>
                           </div>
                           <div class="form-group col-4 px-1">
-                            <input type="number" class="form-control input-default" placeholder="N°" />
+                            <div class="row">
+                              <div class="col-2">
+                                <label for="inputNum" title="Número" class="font-weight-normal pt-1">N°</label>
+                              </div>
+                              <div class="col-9">
+                                <input type="number" class="form-control input-default" id="inputNum" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group col-12 px-1">
+                            <div class="row">
+                              <div class="col-1 pr-0">
+                                <label for="inputPiso" title="Piso" class="font-weight-normal pt-1">Piso</label>
+                              </div>
+                              <div class="col-4 pr-0">
+                                <input type="number" class="form-control input-default" id="inputPiso" />
+                              </div>
+                              <div class="col-1 pr-0">
+                                <label for="inputDepto" title="Departamento" class="font-weight-normal d-flex justify-content-center pt-1">Dpto</label>
+                              </div>
+                              <div class="col-3 pr-0">
+                                <input type="number" class="form-control input-default" id="inputDepto" />
+                              </div>
+                              <div class="col-1 pr-0">
+                                <label for="inputCodigo" title="codigo postal" class="font-weight-normal d-flex justify-content-center pt-1">C.P</label>
+                              </div>
+                              <div class="col-2 pr-0">
+                                <input type="number" class="form-control input-default" id="inputCodigo" />
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="form-group col-4 px-1">
                           </div>
                           <div class="form-group col-4 px-1">
-                            <input type="number" class="form-control input-default" placeholder="Piso" />
-                          </div>
-                          <div class="form-group col-4 px-1">
-                            <input type="number" class="form-control input-default" placeholder="Depto" />
-                          </div>
-                          <div class="form-group col-4 px-1">
-                            <input type="number" class="form-control input-default" placeholder="Codigo Postal" />
-                          </div>
+                          </div> -->
                         </div>
                       </div>
                     </div>

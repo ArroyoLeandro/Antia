@@ -105,6 +105,10 @@ input[type="number"] {
 .bg-badge {
   background: #3e97a3 !important;
 }
+
+.bg-inf {
+  background-color: #7db9c1;
+}
 /* navegacion */
 
 nav {
