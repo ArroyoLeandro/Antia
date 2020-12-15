@@ -1,4 +1,3 @@
-
 ============ TERMINADAS ============ 
 5 vistas en propiedades
 	 - (carga propiedad, detalle propiedad (3), listado de propiedades)
@@ -22,19 +21,17 @@
 	 - (vendedor edicion, vendedor perfil )
 
 
+3 vistas de mensajes [corregir responsive]
+	 - (listado de mensajes [listo], mensaje abierto [proceso])
+
 
 
 ============ MAQUETANDO ============ 
-
-3 vistas de mensajes
-	 - (listado de mensajes [listo], mensaje abierto [proceso])
 
 -contactos tiene cambios en contacto-carga.html
 -propiedades corregir problemas de servicios (mala estructura html)
 
 ============ FALTA MAQUETAR ============ 
-
-
 ============ FUERA DEL PRESUPUESTO ============ 
 
 1 vista de solicitudes
@@ -47,8 +44,22 @@
 
 
 
+===============CORRECCIONES DE LAS PRIMERAS VISTAS ENTREGADAS ================================
+
+DASHBOARD 
+-respetar tipografias: estan todas en bold y en diseño no son todas asi. [listo] 
+-El cuadro no marca lo mismo que en el diseño, no pasa nada con esto,no? Esto nos parece que no pasa nada, o sea va a cambiar todo el tiempo, es solo un ejemplo,, pero por las dudas queriamos confirmarlo. [no afecta nada porque son graficos dinamicos] 
+-El cuadro de CONTACTO es distinto el diseño. Fijate que tiene lineas verticales que no habia en diseño, arranca en 15 y no en cero. [listo]
 
 
+CONFIGURACION VENDEDOR PRINCIPAL: 
+Los botones de guardar y cancelar no van, iria editar perfil [LISTO]
+
+PROPIEDADES:
+-Revisar la disposición de los filtros. Fijate que en algunos no esta alineado el titulo con la flechita para abrir. [LISTO]
+
+CONFIGURACIÓN GENERAL:
+-Intentar respetar el diseño, ej: si hay un vector y al lado va la dirección de email que no queden en dos renglones por separado, lo mismo en CONFIGURACIÓN VENDEDOR. O mismo el numero de telefono que quede todo en un mismo renglon. [listo]
 
 ============ NO TENEMOS DISEÑOS ============ 
 
@@ -60,4 +71,3 @@
 	 *pantalla login y registro
 	 *email confirmacion registro
 	 *pantalla confirmando el registro
-

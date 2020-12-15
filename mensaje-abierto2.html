@@ -82,44 +82,17 @@
         margin-right: 10%;
       }
 
-      .chat-form-input {
-        width: 70%;
-      }
-      .chat-form-button {
-        width: 30%;
-      }
-      .input-text textarea {
-        background-color: #fbfbfb;
+      .div-options {
+        position: absolute;
         width: 100%;
-        height: 50px;
-        border: none;
-        border-bottom: 0;
-        border-radius: 3px;
-        resize: none;
-        padding: 10px;
-        color: #333;
-        font-size: 1rem;
-      }
-      .input-text textarea:focus {
+        height: 150px;
         background: #fff;
-        border: none;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        border-top: 0;
+        margin-top: -3px;
+        display: none;
       }
-      .input-text textarea::-webkit-scrollbar {
-        width: 5px;
-      }
-      .input-text textarea::-webkit-scrollbar-thumb {
-        border-radius: 5px;
-        background-color: rgba(0, 0, 0, 0.2);
-      }
-      /* .chat-form {
-        display: flex;
-        align-items: flex-start;
-      }
-      
-      .chat-form button {
-        padding: 10px 35px;
-        margin: 0 10px;
-      } */
     </style>
     <!-- ===== NAVEGACION ====== -->
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -251,7 +224,7 @@
             <span class="span-tittle mb-3" style="letter-spacing: 0.3rem">MENSAJE PERSONAL</span>
           </div>
           <div class="col-12 mt-5">
-            <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <div class="alert alert-info alert-dismissible fade show" role="alert" style="background: #bae7e8 !important">
               <i class="fas fa-check-double"></i>
               <strong>Operacion exitosa! </strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, facere?
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -318,41 +291,82 @@
                           <p class="chat-msj">Lorem doloipsum ipsum amet..</p>
                           <small>18/03/2020 13:40 AM</small>
                         </div>
-                        <div class="chat friend">
-                          <div class="no-image bg-warning d-none d-lg-block">
-                            <h2 class="text-no-image">NR</h2>
-                          </div>
-                          <p class="chat-msj">Lorem ipsum dolor sit amet.</p>
-                          <small>18/03/2020 13:40 AM</small>
-                        </div>
                         <div class="chat me">
                           <div class="no-image bg-primary d-none d-lg-block">
                             <h2 class="text-no-image text-white"><i class="fa fa-user" aria-hidden="true"></i></h2>
                           </div>
-                          <p class="chat-msj">Lorem doloipsum ipsum amet..</p>
-                          <small class="text-danger font-weight-bold">ERROR AL ENVIAR - REINTENTAR</small>
+                          <div class="chat-msj">
+                            <div class="card bg-transparent border-0">
+                              <div class="card-body p-2">
+                                <div class="row">
+                                  <div class="col-12 col-md-6 p-0">
+                                    <img src="assets/img/casa0.jpg" alt="propiedad" class="img-fluid" />
+                                  </div>
+                                  <div class="col-12 col-md-6">
+                                    <div class="info-direccion">
+                                      <p class="card-text font-weight-bold color-text-secondary h4">Charcas 194, CABA</p>
+                                      <div class="info-tipo">
+                                        <p class="card-title"><i class="fas fa-home"></i> Fondo de comercio</p>
+                                      </div>
+                                      <h5 class="card-title color-primary">$200.000</h5>
+                                    </div>
+                                    <div class="info-cantidad">
+                                      <span class="font-weight-normal p-0"><i class="fas fa-ruler-combined"></i> 280mt</span>
+                                      <span class="font-weight-normal"><i class="fas fa-bath"></i>4</span>
+                                      <span class="font-weight-normal"><i class="fas fa-bed"></i>2</span>
+                                      <span class="font-weight-normal"><i class="fas fa-car"></i>1</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <small>18/03/2020 13:40 AM</small>
                         </div>
                       </div>
-                      <div class="card mt-3 d-flex align-items-center justify-content-between flex-column flex-sm-row p-2">
-                        <div class="chat-form-input">
-                          <div class="input-text">
-                            <textarea></textarea>
-                          </div>
-                          <div class="badge-list text-center text-sm-left">
-                            <span class="badge text-white p-1 bg-badge">
-                              Adj-imagen01
-                              <a href="#" class="no-style ml-2 flt-right">X</a>
-                            </span>
-                            <span class="badge text-white p-1 bg-badge">
-                              Adj-imagen01
-                              <a href="#" class="no-style ml-2 flt-right">X</a>
-                            </span>
+                      <div class="card mt-3 d-flex align-items-center justify-content-between flex-column flex-sm-row p-2 row">
+                        <div class="col-12 col-md-6 px-0 position-relative">
+                          <input
+                            type="text"
+                            class="form-control search-propiedad"
+                            id="inputSearch"
+                            style="padding-right: 35px"
+                            autocomplete="off"
+                            placeholder="Buscar tu propiedad"
+                          />
+                          <i class="fa fa-home color-primary" aria-hidden="true" style="position: absolute; right: 10px; top: 10px"></i>
+                          <div class="div-options" id="div-option">
+                            <ul class="no-style p-4">
+                              <li>
+                                <a href="#" class="no-style search-option">
+                                  <p class="card-text color-text-secondary">Charcas 194, CABA</p>
+                                </a>
+                                <hr class="my-2" />
+                              </li>
+
+                              <li>
+                                <a href="#" class="no-style search-option">
+                                  <p class="card-text color-text-secondary">Charcas 194, CABA</p>
+                                </a>
+                                <hr class="my-2" />
+                              </li>
+
+                              <li>
+                                <a href="#" class="no-style search-option">
+                                  <p class="card-text color-text-secondary">Charcas 194, CABA</p>
+                                </a>
+                                <hr class="my-2" />
+                              </li>
+                            </ul>
                           </div>
                         </div>
-                        <div class="chat-form-button d-flex justify-content-center align-items-center flex-column flex-lg-row">
+                        <!-- <div class="col-12 col-md-6 d-flex flex-column flex-md-row justify-content-around px-0">
+                          <button type="button" class="btn">NUEVA PROPIEDAD</button>
+                          <button type="button" class="btn">ENVIAR</button>
+                        </div> -->
+                        <div class="col-12 col-md-6 chat-form-button d-flex justify-content-center align-items-center flex-column flex-lg-row">
                           <div class="icons justify-content-between mx-lg-2 my-2 my-lg-0">
-                            <a href="#" class="no-style ml-2 flt-right"><i class="fas fa-paperclip color-primary" style="font-size: 1.2rem"></i></a>
-                            <a href="#" class="no-style ml-2 flt-right"><i class="fa fa-home color-primary" style="font-size: 1.2rem" aria-hidden="true"></i></a>
+                            <button type="button" class="btn btn-agregar">NUEVA PROPIEDAD</button>
                           </div>
                           <button type="button" class="btn btn-agregar">ENVIAR</button>
                         </div>
@@ -417,5 +431,35 @@
 
     <!-- iconos -->
     <script src="https://kit.fontawesome.com/f38737c7bd.js" crossorigin="anonymous"></script>
+
+    <script>
+      const inputSearch = document.getElementById("inputSearch");
+      const divOptions = document.getElementById("div-option");
+
+      document.getElementById("inputSearch").addEventListener("keyup", buscar);
+
+      function buscar() {
+        filter = inputSearch.value.toUpperCase();
+        li = divOptions.getElementsByTagName("li");
+
+        //recorro elementos li
+
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          textValue = a.textValue || a.innerText;
+
+          if (textValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+            divOptions.style.display = "block";
+
+            if (inputSearch.value === "") {
+              divOptions.style.display = "none";
+            }
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+    </script>
   </body>
 </html>

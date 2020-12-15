@@ -84,6 +84,7 @@
         .td-style{
             border: none !important;
             padding: .35rem !important;
+            font-weight: normal !important;
         }
 
 
@@ -95,14 +96,15 @@
             font-weight: 700;
             background-color: #fff;
             text-align: center;
-            
+            font-weight: normal !important;
             text-decoration: none !important;
         }
         .item-tab:hover{
             color: var(--color-text-secondary);
         }
         .item-tab.active{
-            border-bottom:2px solid var(--color-primary);;
+            border-bottom:2px solid var(--color-primary);
+            font-weight: bold !important;
         }
         .nav-tabs{
             display: flex;
@@ -717,11 +719,11 @@
 var graficoPrincipal = new Chart(MainChart, {
     type: 'line',
     data: {
-        labels: ['ENE', 'FEB', 'MAR', 'ABR', 'MAY', 'JUN'],
+        labels: ['ENE', 'FEB', 'MAR', 'ABR', 'MAY', 'JUN'], // datos horizontal
         datasets: [
             
         {
-            label:'Rechazados',
+            label:'Rechazados',//texto a mostrar
             lineTension:0,
             fill:true,
             backgroundColor:"rgba(23, 162, 184,0.8)",
@@ -739,10 +741,10 @@ var graficoPrincipal = new Chart(MainChart, {
             pointHoverBorderWidht:2,
             pointRadius:1,
             pointHitRadius:10,
-            data: [0,10,13,32,60,32],
+            data: [0,10,13,32,60,32],//data de los puntos a mostrar en grafico
         },
         {
-            label:'Aceptados',
+            label:'Aceptados', //texto a mostrar
             lineTension:0,
             fill:true,
             backgroundColor:"rgba(248, 177, 34,0.8)",
@@ -760,14 +762,30 @@ var graficoPrincipal = new Chart(MainChart, {
             pointHoverBorderWidht:2,
             pointRadius:1,
             pointHitRadius:10,
-            data: [10,15,20,6,25,42],
+            data: [10,15,20,6,25,42],//data de los puntos a mostrar en grafico
         }
     ]
     },
     options: {
         legend: {
             display: false
-        }
+        },
+        scales: {
+                xAxes: [{
+                            gridLines: {
+                                display:false
+                            }
+                }],
+                yAxes: [{
+                            gridLines: {
+                                display:true
+                            },
+                            ticks: {
+                                min: 0,
+                                stepSize: 15
+                            }     
+                }]
+       }
         
     }
 });
@@ -808,12 +826,26 @@ var graficoSecundario = new Chart(SecondChart, {
     options: {
         legend: {
             display: false
-        }
+        },
+        scales: {
+                xAxes: [{
+                            gridLines: {
+                                display:false
+                            }
+                }],
+                yAxes: [{
+                            gridLines: {
+                                display:true
+                            } ,
+                            ticks: {
+                                min: 0,
+                                max:60,
+                                stepSize: 15
+                            }  
+                }]
+       }
     }
 });
-
-graficoSecundario.options.scales.yAxes[0] = {ticks: {min: 0, max: 60, stepValue: 10}}
-
 
 
 </script>

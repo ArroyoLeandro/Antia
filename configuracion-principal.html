@@ -19,6 +19,33 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <style>
+      .ficha-card p {
+        border-bottom: 0;
+        padding: 0;
+      }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        .resize-font i {
+          font-size: 1rem !important;
+          margin-right: 0 !important;
+        }
+        .resize-font a {
+          font-size: 0.69rem !important;
+        }
+      }
+
+      @media (min-width: 500px) and (max-width: 768px) {
+        .ml-30percent {
+          margin-left: 30%;
+        }
+      }
+
+      @media (max-width: 499px) {
+        .ml-30percent {
+          margin-left: 15%;
+        }
+      }
+    </style>
     <!-- ===== NAVEGACION ====== -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="dashboard.html">
@@ -159,60 +186,60 @@
                     <h5 class="card-title mb-4">Información general</h5>
                     <div class="row">
                       <div class="col-4">
-                        <span>Cuit</span>
+                        <span class="text-nowrap">Cuit</span>
                       </div>
                       <div class="col-8 d-flex justify-content-center">
-                        <span>20-0000000-4</span>
+                        <span class="text-nowrap">20-0000000-4</span>
                       </div>
                     </div>
                     <hr class="mb-2" />
                     <div class="row">
                       <div class="col-4">
-                        <span>Matrícula</span>
+                        <span class="text-nowrap">Matrícula</span>
                       </div>
                       <div class="col-8 d-flex justify-content-center">
-                        <span>002-3442</span>
+                        <span class="text-nowrap">002-3442</span>
                       </div>
                     </div>
                     <hr class="mb-2" />
                     <div class="row">
                       <div class="col-4">
-                        <span>Colegio</span>
+                        <span class="text-nowrap">Colegio</span>
                       </div>
                       <div class="col-8 d-flex justify-content-center">
-                        <span>Lomas de zamora</span>
+                        <span class="text-nowrap">Lomas de zamora</span>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 mt-5 col-md-6">
                     <div class="row">
-                      <div class="col-4 pr-0 text-right">
+                      <div class="col-5 col-md-4 pr-0 text-right">
                         <i class="fa fa-phone mr-2" aria-hidden="true" style="transform: rotate(90deg); padding: 5px"></i>
                       </div>
-                      <div class="col-8 pl-0">
-                        <span>1161595480</span>
+                      <div class="col-7 col-md-8 pl-0">
+                        <span class="text-nowrap">1161595480</span>
                       </div>
                     </div>
                     <hr class="mb-2" />
                     <div class="row">
-                      <div class="col-4 pr-0 text-right">
+                      <div class="col-5 col-md-4 pr-0 text-right">
                         <i class="fas fa-mobile-alt mr-2" aria-hidden="true" style="padding: 5px"></i>
                       </div>
-                      <div class="col-8 pl-0">
-                        <span>1161595480</span>
+                      <div class="col-7col-md-8 pl-0">
+                        <span class="text-nowrap">1161595480</span>
                       </div>
                     </div>
                     <hr class="mb-2" />
                     <div class="row">
-                      <div class="col-4 pr-0 text-right">
+                      <div class="col-5 col-md-4 pr-0 text-right">
                         <i class="fab fa-whatsapp mr-2" aria-hidden="true" style="padding: 5px"></i>
                       </div>
-                      <div class="col-8 pl-0">
-                        <span>1161595480</span>
+                      <div class="col-7col-md-8 pl-0">
+                        <span class="text-nowrap">1161595480</span>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-12 d-flex d-lg-block justify-content-center">
+                  <div class="col-lg-3 col-md-12 d-flex d-lg-block justify-content-center mt-4 mt-md-0">
                     <img src="assets/img/logo-Bullrich.png" alt="" class="img-fluid" />
                   </div>
                 </div>
@@ -330,7 +357,7 @@
                 <h5 class="card-title mb-4">Mi cuenta</h5>
                 <div class="row">
                   <div class="col-lg-4 d-flex d-lg-block justify-content-center">
-                    <span>Nombre</span>
+                    <span class="text-nowrap">Nombre</span>
                   </div>
                   <div class="col-lg-8 d-flex justify-content-center">
                     <span>Norberto Riccitelli</span>
@@ -339,29 +366,29 @@
                 <hr class="mb-2" />
                 <div class="row mb-0 pb-0">
                   <div class="col-lg-4 d-flex d-lg-block justify-content-center">
-                    <span>Correo</span>
+                    <span class="text-nowrap">Correo</span>
                   </div>
                   <div class="col-lg-8 d-flex justify-content-center">
-                    <span style="font-size: 0.9em">norbertoriccitelli@gmail.com</span>
+                    <span style="font-size: 0.9em" class="text-nowrap">norbertoriccitelli@gmail.com</span>
                   </div>
                 </div>
                 <hr class="mb-2" />
                 <div class="row">
                   <div class="col-lg-4 d-flex d-lg-block justify-content-center">
-                    <span>Contraseña</span>
+                    <span class="text-nowrap">Contraseña</span>
                   </div>
                   <div class="col-lg-8 d-flex justify-content-center">
-                    <span>**********</span>
+                    <span class="text-nowrap">**********</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="card mt-3">
               <div class="card-body" style="background-color: #288b99">
-                <h4 class="card-title text-white mb-4" style="font-weight: 400">Plan Contratado</h4>
+                <h4 class="card-title text-white mb-4 text-nowrap" style="font-weight: 400">Plan Contratado</h4>
                 <div class="d-flex justify-content-center mt-3">
                   <div class="contain" style="padding: 15px 50px; border: 1px solid white; color: #fff; border-radius: 5px">
-                    <span style="font-size: 1.2rem; font-weight: 600">PLAN N° 1</span>
+                    <span style="font-size: 1.2rem; font-weight: 600" class="text-nowrap">PLAN N° 1</span>
                   </div>
                 </div>
                 <ul class="mt-3 text-white text-center" style="list-style: none">
@@ -389,25 +416,33 @@
                     <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" />
                     <h5 class="card-title color-primary mt-4 mb-0 ficha-card-name" style="font-weight: 600; letter-spacing: 2px">Norberto Riccitelli</h5>
                     <div class="ficha-card-info pt-4 mb-0">
-                      <p class="color-text-secondary">
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="far fa-envelope mr-3" style="font-size: 1.4rem"></i>
-                        <a href="mailto:florenciamarina@gmail.com" class="no-style color-text-secondary" style="font-size: 0.8rem">florenciamarina@gmail.com</a>
+                        <a href="mailto:florenciamarina@gmail.com" class="no-style color-text-secondary text-nowrap" style="font-size: 0.8rem"
+                          >florenciamarina@gmail.com</a
+                        >
                       </p>
-                      <p class="color-text-secondary">
+                      <hr class="my-2" />
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="fas fa-phone mr-3" style="font-size: 1.4rem; transform: rotateY(180deg)"></i>
-                        <a href="tel:01155884477" class="no-style color-text-secondary" style="font-size: 0.9rem">(011) 15 - 55884477</a>
+                        <a href="tel:01155884477" class="no-style color-text-secondary text-nowrap" style="font-size: 0.9rem">(011) 15 - 55884477</a>
                       </p>
-                      <p class="color-text-secondary">
+                      <hr class="my-2" />
+
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="fas fa-mobile-alt mr-3" style="font-size: 1.4rem"></i>
-                        <a href="tel:01155884477" class="no-style color-text-secondary" style="font-size: 0.9rem">(011) 15 - 55884477</a>
+                        <a href="tel:01155884477" class="no-style color-text-secondary text-nowrap" style="font-size: 0.9rem">(011) 15 - 55884477</a>
                       </p>
-                      <p class="color-text-secondary">
+                      <hr class="my-2" />
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="fab fa-whatsapp mr-3" style="font-size: 1.4rem"></i>
-                        <a href="https://api.whatsapp.com/send?phone=+5401155884477" style="font-size: 0.9rem" class="no-style color-text-secondary"
+                        <a href="https://api.whatsapp.com/send?phone=+5401155884477" style="font-size: 0.9rem" class="no-style color-text-secondary text-nowrap"
                           >(011) 15 - 55884477</a
                         >
                       </p>
-                      <div class="color-text-secondary">
+                      <hr class="my-2" />
+
+                      <div class="color-text-secondary ml-30percent">
                         <div class="items">
                           <i class="far fa-user mr-3 d-inline-block" style="font-size: 1.4rem"></i>
                           <span class="d-inline-block" style="font-size: 0.9rem">Autorizado a:</span>
@@ -427,25 +462,33 @@
                     <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" />
                     <h5 class="card-title color-primary mt-4 mb-0 ficha-card-name" style="font-weight: 600; letter-spacing: 2px">Norberto Riccitelli</h5>
                     <div class="ficha-card-info pt-4 mb-0">
-                      <p class="color-text-secondary">
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="far fa-envelope mr-3" style="font-size: 1.4rem"></i>
-                        <a href="mailto:florenciamarina@gmail.com" class="no-style color-text-secondary" style="font-size: 0.8rem">florenciamarina@gmail.com</a>
+                        <a href="mailto:florenciamarina@gmail.com" class="no-style color-text-secondary text-nowrap" style="font-size: 0.8rem"
+                          >florenciamarina@gmail.com</a
+                        >
                       </p>
-                      <p class="color-text-secondary">
+                      <hr class="my-2" />
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="fas fa-phone mr-3" style="font-size: 1.4rem; transform: rotateY(180deg)"></i>
-                        <a href="tel:01155884477" class="no-style color-text-secondary" style="font-size: 0.9rem">(011) 15 - 55884477</a>
+                        <a href="tel:01155884477" class="no-style color-text-secondary text-nowrap" style="font-size: 0.9rem">(011) 15 - 55884477</a>
                       </p>
-                      <p class="color-text-secondary">
+                      <hr class="my-2" />
+
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="fas fa-mobile-alt mr-3" style="font-size: 1.4rem"></i>
-                        <a href="tel:01155884477" class="no-style color-text-secondary" style="font-size: 0.9rem">(011) 15 - 55884477</a>
+                        <a href="tel:01155884477" class="no-style color-text-secondary text-nowrap" style="font-size: 0.9rem">(011) 15 - 55884477</a>
                       </p>
-                      <p class="color-text-secondary">
+                      <hr class="my-2" />
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="fab fa-whatsapp mr-3" style="font-size: 1.4rem"></i>
-                        <a href="https://api.whatsapp.com/send?phone=+5401155884477" style="font-size: 0.9rem" class="no-style color-text-secondary"
+                        <a href="https://api.whatsapp.com/send?phone=+5401155884477" style="font-size: 0.9rem" class="no-style color-text-secondary text-nowrap"
                           >(011) 15 - 55884477</a
                         >
                       </p>
-                      <div class="color-text-secondary">
+                      <hr class="my-2" />
+
+                      <div class="color-text-secondary ml-30percent">
                         <div class="items">
                           <i class="far fa-user mr-3 d-inline-block" style="font-size: 1.4rem"></i>
                           <span class="d-inline-block" style="font-size: 0.9rem">Autorizado a:</span>
@@ -465,25 +508,33 @@
                     <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" />
                     <h5 class="card-title color-primary mt-4 mb-0 ficha-card-name" style="font-weight: 600; letter-spacing: 2px">Norberto Riccitelli</h5>
                     <div class="ficha-card-info pt-4 mb-0">
-                      <p class="color-text-secondary">
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="far fa-envelope mr-3" style="font-size: 1.4rem"></i>
-                        <a href="mailto:florenciamarina@gmail.com" class="no-style color-text-secondary" style="font-size: 0.8rem">florenciamarina@gmail.com</a>
+                        <a href="mailto:florenciamarina@gmail.com" class="no-style color-text-secondary text-nowrap" style="font-size: 0.8rem"
+                          >florenciamarina@gmail.com</a
+                        >
                       </p>
-                      <p class="color-text-secondary">
+                      <hr class="my-2" />
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="fas fa-phone mr-3" style="font-size: 1.4rem; transform: rotateY(180deg)"></i>
-                        <a href="tel:01155884477" class="no-style color-text-secondary" style="font-size: 0.9rem">(011) 15 - 55884477</a>
+                        <a href="tel:01155884477" class="no-style color-text-secondary text-nowrap" style="font-size: 0.9rem">(011) 15 - 55884477</a>
                       </p>
-                      <p class="color-text-secondary">
+                      <hr class="my-2" />
+
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="fas fa-mobile-alt mr-3" style="font-size: 1.4rem"></i>
-                        <a href="tel:01155884477" class="no-style color-text-secondary" style="font-size: 0.9rem">(011) 15 - 55884477</a>
+                        <a href="tel:01155884477" class="no-style color-text-secondary text-nowrap" style="font-size: 0.9rem">(011) 15 - 55884477</a>
                       </p>
-                      <p class="color-text-secondary">
+                      <hr class="my-2" />
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="fab fa-whatsapp mr-3" style="font-size: 1.4rem"></i>
-                        <a href="https://api.whatsapp.com/send?phone=+5401155884477" style="font-size: 0.9rem" class="no-style color-text-secondary"
+                        <a href="https://api.whatsapp.com/send?phone=+5401155884477" style="font-size: 0.9rem" class="no-style color-text-secondary text-nowrap"
                           >(011) 15 - 55884477</a
                         >
                       </p>
-                      <div class="color-text-secondary">
+                      <hr class="my-2" />
+
+                      <div class="color-text-secondary ml-30percent">
                         <div class="items">
                           <i class="far fa-user mr-3 d-inline-block" style="font-size: 1.4rem"></i>
                           <span class="d-inline-block" style="font-size: 0.9rem">Autorizado a:</span>
@@ -503,25 +554,33 @@
                     <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" />
                     <h5 class="card-title color-primary mt-4 mb-0 ficha-card-name" style="font-weight: 600; letter-spacing: 2px">Norberto Riccitelli</h5>
                     <div class="ficha-card-info pt-4 mb-0">
-                      <p class="color-text-secondary">
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="far fa-envelope mr-3" style="font-size: 1.4rem"></i>
-                        <a href="mailto:florenciamarina@gmail.com" class="no-style color-text-secondary" style="font-size: 0.8rem">florenciamarina@gmail.com</a>
+                        <a href="mailto:florenciamarina@gmail.com" class="no-style color-text-secondary text-nowrap" style="font-size: 0.8rem"
+                          >florenciamarina@gmail.com</a
+                        >
                       </p>
-                      <p class="color-text-secondary">
+                      <hr class="my-2" />
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="fas fa-phone mr-3" style="font-size: 1.4rem; transform: rotateY(180deg)"></i>
-                        <a href="tel:01155884477" class="no-style color-text-secondary" style="font-size: 0.9rem">(011) 15 - 55884477</a>
+                        <a href="tel:01155884477" class="no-style color-text-secondary text-nowrap" style="font-size: 0.9rem">(011) 15 - 55884477</a>
                       </p>
-                      <p class="color-text-secondary">
+                      <hr class="my-2" />
+
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="fas fa-mobile-alt mr-3" style="font-size: 1.4rem"></i>
-                        <a href="tel:01155884477" class="no-style color-text-secondary" style="font-size: 0.9rem">(011) 15 - 55884477</a>
+                        <a href="tel:01155884477" class="no-style color-text-secondary text-nowrap" style="font-size: 0.9rem">(011) 15 - 55884477</a>
                       </p>
-                      <p class="color-text-secondary">
+                      <hr class="my-2" />
+                      <p class="color-text-secondary resize-font ml-30percent">
                         <i class="fab fa-whatsapp mr-3" style="font-size: 1.4rem"></i>
-                        <a href="https://api.whatsapp.com/send?phone=+5401155884477" style="font-size: 0.9rem" class="no-style color-text-secondary"
+                        <a href="https://api.whatsapp.com/send?phone=+5401155884477" style="font-size: 0.9rem" class="no-style color-text-secondary text-nowrap"
                           >(011) 15 - 55884477</a
                         >
                       </p>
-                      <div class="color-text-secondary">
+                      <hr class="my-2" />
+
+                      <div class="color-text-secondary ml-30percent">
                         <div class="items">
                           <i class="far fa-user mr-3 d-inline-block" style="font-size: 1.4rem"></i>
                           <span class="d-inline-block" style="font-size: 0.9rem">Autorizado a:</span>

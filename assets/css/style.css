@@ -96,7 +96,15 @@ input[type="number"] {
 .color-text-secondary {
   color: var(--color-text-secondary) !important;
 }
-
+.bg-primary {
+  background: var(--color-primary) !important;
+}
+.bg-secondary {
+  background: var(--color-secondary) !important;
+}
+.bg-badge {
+  background: #3e97a3 !important;
+}
 /* navegacion */
 
 nav {
@@ -559,7 +567,6 @@ input busqueda NAV
   background-color: #3e97a3;
   margin: 10px 5px 5px 5px;
 }
-
 /*=================================
   PAGINA CARGAR PROPIEDAD 
 ================================ */
@@ -671,6 +678,10 @@ input busqueda NAV
 
 .form-group label {
   font-weight: 600;
+}
+
+.fas.fa-chevron-down.flt-right {
+  margin-top: 5px;
 }
 
 /* Barra scroll servicios */
