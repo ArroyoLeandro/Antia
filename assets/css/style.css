@@ -1133,6 +1133,9 @@ input busqueda NAV
   .logo-footer {
     width: 50% !important;
   }
+  .notif:before {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1155,15 +1158,6 @@ input busqueda NAV
   .btn-group,
   .btn-group-vertical {
     padding: 1rem 0;
-  }
-
-  .notif:before {
-    content: "\025cf";
-    position: absolute;
-    color: var(--color-secondary);
-    bottom: 5px;
-    right: 3px;
-    font-size: 18px;
   }
 
   /* dropdown configuracion evitar que salga de pantalla  NAV*/

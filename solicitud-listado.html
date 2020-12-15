@@ -15,6 +15,20 @@
 </head>
 <body>
 
+    <style>
+        .filter-sol{
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            cursor: pointer;
+        }
+        .filter-sol.active{
+            color: var(--color-primary);
+        }
+        .filter-sol:hover{
+            color: var(--color-primary);
+        }
+    </style>
+
 <!-- ===== NAVEGACION ====== -->
 <nav class="navbar navbar-expand-lg navbar-dark">
   <a class="navbar-brand" href="dashboard.html">
@@ -769,25 +783,50 @@
           <div class="col-lg-9 col-md-6 col-12 mb-5">
             <!-- titulo de seccion -->
             <div class="title-section mb-3">
-              <span class="span-tittle">PROPIEDADES</span>
-              <button class="btn-compartir btn">PUBLICAR PROPIEDAD</button>
+              <span class="span-tittle mb-2">SOLICITUDES</span>
             </div>
 
             <div class="row">
-              <div class="col-12">
-                <span>123 propiedades</span>
+              <div class="col-md-8 mt-2 mt-md-0">
+                <span>234 solicitudes</span>
+              </div>
+              <div class="col-md-4 mt-2 mt-md-0">
+                <a href="#"class="no-style mx-3 filter-sol">Pendientes</a>
+                <a href="#"class="no-style mx-3 filter-sol active">Aceptadas</a>
+                <a href="#"class="no-style mx-3 filter-sol">Rechazadas</a>
               </div>
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
-                    <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
-                    <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="col-10">
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                                <small class="mx-1 d-block">Asesor Inmobiliario</small>
+                            </div>
+                            <div class="col-4 text-center">
+                                 <span class="badge text-white badge-alquiler py-1 px-2">ALQUILER</span>
+                                 <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
+                            </div>
+                        </div>
+
+                        </div>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <a href="#" class="no-style"><h5 class="card-title pt-3">Solicito Departamento</h5></a>
+                    <p class="card-text description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <hr class="mb-2">
+                    <div >
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+                        <span class="badge badge-alquiler text-white">Montegrande</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+
+                      </div>
                     <hr>
                     <div class="info-propiedad">
                       <span><i class="fas fa-ruler-combined"></i> 280mt</span>
@@ -795,25 +834,59 @@
                       <span><i class="fas fa-bed"></i>2</span>
                       <span><i class="fas fa-car"></i>1</span>
                     </div>
-                    <hr>   
-                    <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
-                    </div>                   
+                    <hr>           
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="info-valor" >
+                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
+                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                              </div>  
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-content-end flex-column">
+                            <a href="#" class="ml-3 mt-3 d-block no-style">
+                            <span class="badge text-white badge-success" style="width: 75%;">ACEPTAR</span>
+                            </a>
+                            <a href="#" class="ml-3 d-block no-style">
+                            <span class="badge text-white badge-danger" style="width: 75%;">RECHAZAR</span>
+
+                            </a>
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-alquiler">ALQUILER</span>
-                    <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
-                    <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="col-10">
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                                <small class="mx-1 d-block">Asesor Inmobiliario</small>
+                            </div>
+                            <div class="col-4 text-center">
+                                 <span class="badge text-white badge-venta py-1 px-2">VENTA</span>
+                                 <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
+                            </div>
+                        </div>
+
+                        </div>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <a href="#" class="no-style"><h5 class="card-title pt-3">Solicito Departamento</h5></a>
+                    <p class="card-text description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <hr class="mb-2">
+                    <div >
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+                        <span class="badge badge-alquiler text-white">Montegrande</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+
+                      </div>
                     <hr>
                     <div class="info-propiedad">
                       <span><i class="fas fa-ruler-combined"></i> 280mt</span>
@@ -821,25 +894,60 @@
                       <span><i class="fas fa-bed"></i>2</span>
                       <span><i class="fas fa-car"></i>1</span>
                     </div>
-                    <hr>   
-                    <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
-                    </div>                   
+                    <hr>           
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="info-valor" >
+                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
+                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                              </div>  
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-content-end flex-column">
+                            <a href="#" class="ml-3 mt-3 d-block no-style">
+                            <span class="badge text-white badge-success" style="width: 75%;">ACEPTAR</span>
+                            </a>
+                            <a href="#" class="ml-3 d-block no-style">
+                            <span class="badge text-white badge-danger" style="width: 75%;">RECHAZAR</span>
+
+                            </a>
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
-                    <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
-                    <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="col-10">
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                                <small class="mx-1 d-block">Asesor Inmobiliario</small>
+                            </div>
+                            <div class="col-4  text-center">
+                                 <span class="badge text-white badge-alquiler py-1 px-2" style="white-space: break-spaces !important; font-size: .6rem;">ALQUILER TEMPORARIO</span>
+                                 <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
+                                 <!-- <small class="badge d-block text-success">Aceptada</small>    -->
+                            </div>
+                        </div>
+
+                        </div>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <a href="#" class="no-style"><h5 class="card-title pt-3">Solicito Departamento</h5></a>
+                    <p class="card-text description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <hr class="mb-2">
+                    <div >
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+                        <span class="badge badge-alquiler text-white">Montegrande</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+
+                      </div>
                     <hr>
                     <div class="info-propiedad">
                       <span><i class="fas fa-ruler-combined"></i> 280mt</span>
@@ -847,25 +955,60 @@
                       <span><i class="fas fa-bed"></i>2</span>
                       <span><i class="fas fa-car"></i>1</span>
                     </div>
-                    <hr>   
-                    <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
-                    </div>                   
+                    <hr>           
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="info-valor" >
+                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
+                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                              </div>  
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-content-end flex-column">
+                            <a href="#" class="ml-3 mt-3 d-block no-style">
+                            <span class="badge text-white badge-success" style="width: 75%;">ACEPTAR</span>
+                            </a>
+                            <a href="#" class="ml-3 d-block no-style">
+                            <span class="badge text-white badge-danger" style="width: 75%;">RECHAZAR</span>
+
+                            </a>
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
-                    <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
-                    <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="col-10">
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                                <small class="mx-1 d-block">Asesor Inmobiliario</small>
+                            </div>
+                            <div class="col-4 text-center">
+                                 <span class="badge text-white badge-venta py-1 px-2">VENTA</span>
+                                 <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
+                                 <small class="badge d-block text-success">Aceptada</small>   
+                            </div>
+                        </div>
+
+                        </div>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <a href="#" class="no-style"><h5 class="card-title pt-3">Solicito Departamento</h5></a>
+                    <p class="card-text description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <hr class="mb-2">
+                    <div >
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+                        <span class="badge badge-alquiler text-white">Montegrande</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+
+                      </div>
                     <hr>
                     <div class="info-propiedad">
                       <span><i class="fas fa-ruler-combined"></i> 280mt</span>
@@ -873,25 +1016,60 @@
                       <span><i class="fas fa-bed"></i>2</span>
                       <span><i class="fas fa-car"></i>1</span>
                     </div>
-                    <hr>   
-                    <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
-                    </div>                   
+                    <hr>           
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="info-valor" >
+                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
+                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                              </div>  
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-content-end flex-column">
+                            <!-- <a href="#" class="ml-3 mt-3 d-block no-style">
+                            <span class="badge text-white badge-success" style="width: 75%;">ACEPTAR</span>
+                            </a>
+                            <a href="#" class="ml-3 d-block no-style">
+                            <span class="badge text-white badge-danger" style="width: 75%;">RECHAZAR</span>
+
+                            </a> -->
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
-                    <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
-                    <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="col-10">
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                                <small class="mx-1 d-block">Asesor Inmobiliario</small>
+                            </div>
+                            <div class="col-4 text-center">
+                                 <span class="badge text-white badge-alquiler py-1 px-2">ALQUILER</span>
+                                 <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
+                                 <small class="badge d-block text-success">Aceptada</small>   
+                            </div>
+                        </div>
+
+                        </div>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <a href="#" class="no-style"><h5 class="card-title pt-3">Solicito Departamento</h5></a>
+                    <p class="card-text description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <hr class="mb-2">
+                    <div >
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+                        <span class="badge badge-alquiler text-white">Montegrande</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+
+                      </div>
                     <hr>
                     <div class="info-propiedad">
                       <span><i class="fas fa-ruler-combined"></i> 280mt</span>
@@ -899,25 +1077,54 @@
                       <span><i class="fas fa-bed"></i>2</span>
                       <span><i class="fas fa-car"></i>1</span>
                     </div>
-                    <hr>   
-                    <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
-                    </div>                   
+                    <hr>           
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="info-valor" >
+                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
+                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                              </div>  
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-content-end flex-column">
+                            </a> -->
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-alquiler">ALQUILER</span>
-                    <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
-                    <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="col-10">
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                                <small class="mx-1 d-block">Asesor Inmobiliario</small>
+                            </div>
+                            <div class="col-4 text-center">
+                                 <span class="badge text-white badge-alquiler py-1 px-2" style="white-space: break-spaces !important; font-size: .6rem;">ALQUILER TEMPORARIO</span>
+                                 <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
+                                 <small class="badge d-block text-success">Aceptada</small>   
+                            </div>
+                        </div>
+
+                        </div>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <a href="#" class="no-style"><h5 class="card-title pt-3">Solicito Departamento</h5></a>
+                    <p class="card-text description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <hr class="mb-2">
+                    <div >
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+                        <span class="badge badge-alquiler text-white">Montegrande</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+
+                      </div>
                     <hr>
                     <div class="info-propiedad">
                       <span><i class="fas fa-ruler-combined"></i> 280mt</span>
@@ -925,25 +1132,61 @@
                       <span><i class="fas fa-bed"></i>2</span>
                       <span><i class="fas fa-car"></i>1</span>
                     </div>
-                    <hr>   
-                    <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
-                    </div>                   
+                    <hr>           
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="info-valor" >
+                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
+                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                              </div>  
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-content-end flex-column">
+                            <a href="#" class="ml-3 mt-3 d-block no-style">
+                            <span class="badge text-white badge-success" style="width: 75%;">ACEPTAR</span>
+                            </a>
+                            <a href="#" class="ml-3 d-block no-style">
+                            <span class="badge text-white badge-danger" style="width: 75%;">RECHAZAR</span>
+
+                            </a>
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
-                    <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
-                    <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="col-10">
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                                <small class="mx-1 d-block">Asesor Inmobiliario</small>
+                            </div>
+                            <div class="col-4 text-center">
+                                 <span class="badge text-white badge-alquiler py-1 px-2">ALQUILER</span>
+                                 <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
+                                 <small class="badge d-block text-success">Aceptada</small>   
+                            </div>
+                        </div>
+
+                        </div>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <a href="#" class="no-style"><h5 class="card-title pt-3">Solicito Departamento</h5></a>
+                    <p class="card-text description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <hr class="mb-2">
+                    <div >
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+                        <span class="badge badge-alquiler text-white">Montegrande</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+
+                      </div>
                     <hr>
                     <div class="info-propiedad">
                       <span><i class="fas fa-ruler-combined"></i> 280mt</span>
@@ -951,25 +1194,54 @@
                       <span><i class="fas fa-bed"></i>2</span>
                       <span><i class="fas fa-car"></i>1</span>
                     </div>
-                    <hr>   
-                    <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
-                    </div>                   
+                    <hr>           
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="info-valor" >
+                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
+                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                              </div>  
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-content-end flex-column">
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
-                    <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
-                    <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="col-10">
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                                <small class="mx-1 d-block">Asesor Inmobiliario</small>
+                            </div>
+                            <div class="col-4 text-center">
+                                 <span class="badge text-white badge-venta py-1 px-2">VENTA</span>
+                                 <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
+                                 <small class="badge d-block text-success">Aceptada</small>   
+                            </div>
+                        </div>
+
+                        </div>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <a href="#" class="no-style"><h5 class="card-title pt-3">Solicito Departamento</h5></a>
+                    <p class="card-text description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <hr class="mb-2">
+                    <div >
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+                        <span class="badge badge-alquiler text-white">Montegrande</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+
+                      </div>
                     <hr>
                     <div class="info-propiedad">
                       <span><i class="fas fa-ruler-combined"></i> 280mt</span>
@@ -977,25 +1249,53 @@
                       <span><i class="fas fa-bed"></i>2</span>
                       <span><i class="fas fa-car"></i>1</span>
                     </div>
-                    <hr>   
-                    <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
-                    </div>                   
+                    <hr>           
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="info-valor" >
+                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
+                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                              </div>  
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-content-end flex-column">
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-alquiler">ALQUILER</span>
-                    <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
-                    <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
-                    <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="col-10">
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                                <small class="mx-1 d-block">Asesor Inmobiliario</small>
+                            </div>
+                            <div class="col-4 text-center">
+                                 <span class="badge text-white badge-alquiler py-1 px-2">ALQUILER</span>
+                                 <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
+                                 <small class="badge d-block text-success">Aceptada</small>   
+                            </div>
+                        </div>
+
+                        </div>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <a href="#" class="no-style"><h5 class="card-title pt-3">Solicito Departamento</h5></a>
+                    <p class="card-text description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <hr class="mb-2">
+                    <div >
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+                        <span class="badge badge-alquiler text-white">Montegrande</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+
+                      </div>
                     <hr>
                     <div class="info-propiedad">
                       <span><i class="fas fa-ruler-combined"></i> 280mt</span>
@@ -1003,15 +1303,183 @@
                       <span><i class="fas fa-bed"></i>2</span>
                       <span><i class="fas fa-car"></i>1</span>
                     </div>
-                    <hr>   
-                    <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
-                    </div>                   
+                    <hr>           
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="info-valor" >
+                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
+                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                              </div>  
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-content-end flex-column">
+                        </div>
+                    </div>
                   </div>
                 </div>
-              </div>    
-             
+              </div>
+              <div class="col-lg-4 col-md-6 mt-3">
+                <div class="card">
+                  <div class="card-body container pos-relative">
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="col-10">
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                                <small class="mx-1 d-block">Asesor Inmobiliario</small>
+                            </div>
+                            <div class="col-4 text-center">
+                                 <span class="badge text-white badge-venta py-1 px-2">VENTA</span>
+                                 <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
+                                 <small class="badge d-block text-danger">Rechazada</small>   
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                    <a href="#" class="no-style"><h5 class="card-title pt-3">Solicito Departamento</h5></a>
+                    <p class="card-text description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <hr class="mb-2">
+                    <div >
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+                        <span class="badge badge-alquiler text-white">Montegrande</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+
+                      </div>
+                    <hr>
+                    <div class="info-propiedad">
+                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
+                      <span><i class="fas fa-bath"></i>4</span>
+                      <span><i class="fas fa-bed"></i>2</span>
+                      <span><i class="fas fa-car"></i>1</span>
+                    </div>
+                    <hr>           
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="info-valor" >
+                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
+                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                              </div>  
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-content-end flex-column">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-3">
+                <div class="card">
+                  <div class="card-body container pos-relative">
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="col-10">
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                                <small class="mx-1 d-block">Asesor Inmobiliario</small>
+                            </div>
+                            <div class="col-4 text-center">
+                                 <span class="badge text-white badge-alquiler py-1 px-2">ALQUILER</span>
+                                 <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
+                                 <small class="badge d-block text-danger">Rechazada</small>   
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                    <a href="#" class="no-style"><h5 class="card-title pt-3">Solicito Departamento</h5></a>
+                    <p class="card-text description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <hr class="mb-2">
+                    <div >
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+                        <span class="badge badge-alquiler text-white">Montegrande</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+
+                      </div>
+                    <hr>
+                    <div class="info-propiedad">
+                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
+                      <span><i class="fas fa-bath"></i>4</span>
+                      <span><i class="fas fa-bed"></i>2</span>
+                      <span><i class="fas fa-car"></i>1</span>
+                    </div>
+                    <hr>           
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="info-valor" >
+                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
+                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                              </div>  
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-content-end flex-column">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-3">
+                <div class="card">
+                  <div class="card-body container pos-relative">
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="col-10">
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                                <small class="mx-1 d-block">Asesor Inmobiliario</small>
+                            </div>
+                            <div class="col-4 text-center">
+                                 <span class="badge text-white badge-venta py-1 px-2">VENTA</span>
+                                 <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
+                                 <small class="badge d-block text-danger">Rechazada</small>   
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                    <a href="#" class="no-style"><h5 class="card-title pt-3">Solicito Departamento</h5></a>
+                    <p class="card-text description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <hr class="mb-2">
+                    <div >
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+                        <span class="badge badge-alquiler text-white">Montegrande</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Loma hermosa</span>
+                        <span class="badge badge-alquiler text-white">Exaltacion de la Cruz</span>
+
+                      </div>
+                    <hr>
+                    <div class="info-propiedad">
+                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
+                      <span><i class="fas fa-bath"></i>4</span>
+                      <span><i class="fas fa-bed"></i>2</span>
+                      <span><i class="fas fa-car"></i>1</span>
+                    </div>
+                    <hr>           
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="info-valor" >
+                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
+                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                              </div>  
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-content-end flex-column">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="col-12 my-5 ">
                 <div class="btn-toolbar" role="toolbar">
                   <div ></div>

@@ -54,6 +54,14 @@
         font-size: 1.4rem;
         color: #fff;
       }
+      .order-control {
+          width: 15em;
+        }
+      @media (max-width: 600px) {
+        .order-control {
+          width: 10em;
+        }
+      }
     </style>
 
     <!-- ===== NAVEGACION ====== -->
@@ -199,14 +207,14 @@
                 <span class="ml-5">30 Contactos</span>
               </div>
               <!-- Download -->
-              <div class="download form-inline col-12 col-md-2">
+              <div class="download form-inline col-4 col-md-2">
                 <span style="align-items: center">Descargar</span>
                 <a href="#" class="no-style color-text-secondary"><i class="fas fa-file-excel" style="font-size: 2.2rem; padding: 10px 10px"></i></a>
               </div>
               <!-- Order -->
-              <div class="order form-inline col-12 col-md-4 justify-content-center">
+              <div class="order form-inline col-8 mt-2 col-md-4 justify-content-center">
                 <span class="d-inline-block mx-1 pr-2">Ordenar por</span>
-                <select class="form-control" style="width: 15em">
+                <select class="form-control order-control">
                   <option selected>Mas nuevos</option>
                   <option value="1">Uno</option>
                   <option value="2">Dos</option>

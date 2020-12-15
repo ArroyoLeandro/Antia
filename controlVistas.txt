@@ -26,18 +26,14 @@
 
 1 vista en contacto
 
-	- [perfil de busqueda] [comprobar responsive]
-
-============ MAQUETANDO ============ 
-
--propiedades corregir problemas de servicios (mala estructura html)
-
+	- [perfil de busqueda]
 
 1 vista de solicitudes
 
 	 - [listado de solicitudes] 
 
 
+============ MAQUETANDO ============ 
 ============ FALTA MAQUETAR ============ 
 ============ FUERA DEL PRESUPUESTO ============ 
 ============ NO TENEMOS DISEÑOS ============ 
