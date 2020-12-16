@@ -20,9 +20,54 @@
   </head>
   <body>
     <style>
+      .date,
+      .time {
+        overflow-wrap: normal;
+      }
       @media (max-width: 1024px) {
         .timeline .timeline-body .timeline-item .dates {
           left: -110px !important;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 992px) {
+        .actividad-titulo h5 {
+          font-size: 1rem;
+        }
+        .actividad-titulo p {
+          font-size: 0.8rem;
+        }
+      }
+      @media (max-width: 500px) {
+        .timeline .timeline-body {
+          margin-left: 20px;
+        }
+        .timeline .timeline-body .timeline-item .dates {
+          left: -20px !important;
+        }
+        .timeline .timeline-body .timeline-item .content {
+          margin: 0 !important;
+          padding-left: 60px !important;
+        }
+        .timeline .timeline-body .timeline-item .dates {
+          z-index: 100 !important;
+          top: 90px !important;
+          left: -25px !important;
+          width: 30% !important;
+          background: #fff !important;
+        }
+      }
+      @media (min-width: 400px) and (max-width: 500px) {
+        .timeline .timeline-body .timeline-item .dates {
+          width: 20% !important;
+        }
+      }
+      @media (max-width: 400px) {
+        .actividad-card-head {
+          flex-direction: column;
+        }
+        .actividad-card-head h5,
+        .actividad-card-head p {
+          margin: 15px 0;
         }
       }
     </style>
@@ -157,7 +202,7 @@
           </div>
 
           <!-- columna izquierda -->
-          <div class="col-md-4 mt-4">
+          <div class="col-md-5 col-xl-4 mt-4">
             <div class="card ficha-card">
               <div class="card-body pb-0">
                 <h5 class="card-title color-primary my-0 ficha-card-name" style="font-weight: 600; letter-spacing: 2px">Norberto Riccitelli</h5>
@@ -168,7 +213,7 @@
                   <h5 class="card-title mt-3">Información</h5>
                   <p class="color-text-secondary">
                     <i class="fas fa-envelope mr-3" style="font-size: 1.4rem"></i>
-                    <a href="mailto:example@domain.com" class="no-style color-text-secondary" style="font-size: 1.1rem"> example@domain.com</a>
+                    <a href="mailto:example@domain.com" class="no-style color-text-secondary text-nowrap" style="font-size: 1rem"> example@domain.com</a>
                   </p>
                   <p class="color-text-secondary">
                     <i class="fas fa-phone mr-3" style="font-size: 1.4rem; transform: rotateY(180deg)"></i>
@@ -205,7 +250,7 @@
           <!-- columna izquierda -->
 
           <!-- columna derecha -->
-          <div class="col-md-8 mt-4">
+          <div class="col-md-7 col-xl-8 mt-4">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title color-text-secondary mb-2 timeline-title">Timeline</h5>

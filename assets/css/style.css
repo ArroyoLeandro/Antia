@@ -1136,6 +1136,10 @@ input busqueda NAV
   .notif:before {
     font-size: 14px;
   }
+  .posNotif.notif:before {
+    top: 22px;
+    right: 4px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1175,5 +1179,16 @@ input busqueda NAV
 @media (min-width: 1280px) {
   .item.col-6.col-sm-4.col-lg-2 {
     max-width: 19.666667% !important;
+  }
+}
+
+/* media query configuracion */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .img-perfil-responsive {
+    width: 170px !important;
+    height: 170px !important;
+  }
+  .minMaxInput {
+    font-size: 0.6rem !important;
   }
 }

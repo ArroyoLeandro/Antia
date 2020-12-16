@@ -111,15 +111,30 @@
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.2);
       }
-      /* .chat-form {
-        display: flex;
-        align-items: flex-start;
+      @media (min-width: 410px) and (max-width: 768px) {
+        .contact-card {
+          height: 500px !important;
+        }
+        .card-footer2 {
+          padding-top: 300px !important;
+        }
       }
-      
-      .chat-form button {
-        padding: 10px 35px;
-        margin: 0 10px;
-      } */
+      @media (max-width: 575px) {
+        .badge {
+          font-size: 50%;
+        }
+        .chat-form-button {
+          width: 100%;
+          justify-content: space-evenly !important;
+          margin-top: 1rem;
+        }
+        .chat-form-button button {
+          width: 180px !important;
+        }
+        .chat small {
+          font-size: 0.7rem;
+        }
+      }
     </style>
     <!-- ===== NAVEGACION ====== -->
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -247,21 +262,12 @@
       <div class="container">
         <div class="row">
           <!-- titulo de seccion -->
-          <div class="title-section">
+          <div class="title-section mb-4 mb-md-0">
             <span class="span-tittle mb-3" style="letter-spacing: 0.3rem">MENSAJE PERSONAL</span>
-          </div>
-          <div class="col-12 mt-5">
-            <div class="alert alert-info alert-dismissible fade show" role="alert">
-              <i class="fas fa-check-double"></i>
-              <strong>Operacion exitosa! </strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, facere?
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
           </div>
 
           <!-- ====== FICHA  ======-->
-          <div class="col-md-4 mt-2 p-0" style="box-shadow: 5px 5px 10px #ccc">
+          <div class="col-md-4 mt-4 p-0" style="box-shadow: 5px 5px 10px #ccc">
             <div class="card contact-card">
               <div class="card-body mt-4">
                 <h5 class="card-title">Norberto Riccitelli</h5>
@@ -284,6 +290,7 @@
                 <p class="color-text-secondary">
                   <i class="fab fa-whatsapp mr-3" style="font-size: 1.4rem"></i>
                   <a href="https://api.whatsapp.com/send?phone=+5401134543456" class="no-style color-text-secondary">011-3454 3456</a>
+                  <a href="#" class="no-style color-primary float-right mr-4"><i class="fas fa-edit"></i></a>
                 </p>
                 <p class="color-text-secondary">
                   <i class="fas fa-map-marker-alt mr-3" style="font-size: 1.4rem"></i>
@@ -296,7 +303,7 @@
             </div>
           </div>
           <!-- FIN col-4 -->
-          <div class="col-md-8 mt-2 p-0 pl-md-3">
+          <div class="col-md-8 mt-4 p-0 pl-md-3">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title color-text-secondary mb-4">Mensaje Privado</h5>
@@ -349,7 +356,7 @@
                             </span>
                           </div>
                         </div>
-                        <div class="chat-form-button d-flex justify-content-center align-items-center flex-column flex-lg-row">
+                        <div class="chat-form-button d-flex justify-content-center align-items-center flex-row flex-sm-column flex-xl-row">
                           <div class="icons justify-content-between mx-lg-2 my-2 my-lg-0">
                             <a href="#" class="no-style ml-2 flt-right"><i class="fas fa-paperclip color-primary" style="font-size: 1.2rem"></i></a>
                             <a href="#" class="no-style ml-2 flt-right"><i class="fa fa-home color-primary" style="font-size: 1.2rem" aria-hidden="true"></i></a>

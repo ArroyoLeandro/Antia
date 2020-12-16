@@ -94,6 +94,35 @@
         display: none;
         z-index: 100;
       }
+
+      .chat-form-button button {
+        width: 180px;
+      }
+      @media (max-width: 992px) {
+        .msj-dir-prop {
+          margin-top: 1rem;
+          font-size: 1.2rem !important;
+        }
+        .msj-tipo-prop {
+          font-size: 0.8rem !important;
+        }
+        .msj-precio-prop {
+          font-size: 1.2rem !important;
+        }
+      }
+      @media (max-width: 768px) {
+        .chat-form-button button {
+          width: 300px;
+        }
+      }
+      @media (min-width: 410px) and (max-width: 768px) {
+        .contact-card {
+          height: 500px !important;
+        }
+        .card-footer2 {
+          padding-top: 300px !important;
+        }
+      }
     </style>
     <!-- ===== NAVEGACION ====== -->
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -224,7 +253,7 @@
           <div class="title-section">
             <span class="span-tittle mb-3" style="letter-spacing: 0.3rem">MENSAJE PERSONAL</span>
           </div>
-          <div class="col-12 mt-5">
+          <div class="col-12 mt-5 mb-5 mb-md-0">
             <div class="alert alert-info alert-dismissible fade show" role="alert" style="background: #bae7e8 !important">
               <i class="fas fa-check-double"></i>
               <strong>Operacion exitosa! </strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, facere?
@@ -258,6 +287,7 @@
                 <p class="color-text-secondary">
                   <i class="fab fa-whatsapp mr-3" style="font-size: 1.4rem"></i>
                   <a href="https://api.whatsapp.com/send?phone=+5401134543456" class="no-style color-text-secondary">011-3454 3456</a>
+                  <a href="#" class="no-style color-primary float-right mr-4"><i class="fas fa-edit"></i></a>
                 </p>
                 <p class="color-text-secondary">
                   <i class="fas fa-map-marker-alt mr-3" style="font-size: 1.4rem"></i>
@@ -301,15 +331,15 @@
                               <div class="card-body p-2">
                                 <div class="row">
                                   <div class="col-12 col-md-6 p-0">
-                                    <img src="assets/img/casa0.jpg" alt="propiedad" class="img-fluid" />
+                                    <img src="assets/img/casa0.jpg" alt="propiedad" class="img-fluid msj-img" />
                                   </div>
                                   <div class="col-12 col-md-6">
                                     <div class="info-direccion">
-                                      <p class="card-text font-weight-bold color-text-secondary h4">Charcas 194, CABA</p>
+                                      <p class="card-text font-weight-bold color-text-secondary h4 msj-dir-prop">Charcas 194, CABA</p>
                                       <div class="info-tipo">
-                                        <p class="card-title"><i class="fas fa-home"></i> Fondo de comercio</p>
+                                        <p class="card-title msj-tipo-prop"><i class="fas fa-home"></i> Fondo de comercio</p>
                                       </div>
-                                      <h5 class="card-title color-primary">$200.000</h5>
+                                      <h5 class="card-title color-primary msj-precio-prop">$200.000</h5>
                                     </div>
                                     <div class="info-cantidad">
                                       <span class="font-weight-normal p-0"><i class="fas fa-ruler-combined"></i> 280mt</span>
@@ -361,10 +391,6 @@
                             </ul>
                           </div>
                         </div>
-                        <!-- <div class="col-12 col-md-6 d-flex flex-column flex-md-row justify-content-around px-0">
-                          <button type="button" class="btn">NUEVA PROPIEDAD</button>
-                          <button type="button" class="btn">ENVIAR</button>
-                        </div> -->
                         <div class="col-12 col-md-6 chat-form-button d-flex justify-content-center align-items-center flex-column flex-lg-row">
                           <div class="icons justify-content-between mx-lg-2 my-2 my-lg-0">
                             <button type="button" class="btn btn-agregar">NUEVA PROPIEDAD</button>

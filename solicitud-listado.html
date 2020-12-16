@@ -27,6 +27,23 @@
         .filter-sol:hover{
             color: var(--color-primary);
         }
+
+        .card-info{
+          display: flex;
+          flex-direction: column;
+          padding-left: 45px;
+        }
+        .card-info span{
+          font-size:.8rem;
+          letter-spacing: .1rem;
+           font-weight: 700;
+        }
+        .card-tipo{
+          margin-left: -20px;
+        }
+        .card-tipo small{
+          font-size: .6rem;
+        }
     </style>
 
 <!-- ===== NAVEGACION ====== -->
@@ -141,7 +158,7 @@
         <div class="row">
           
            <!-- FILTROS -->
-          <div class="col-lg-3 col-md-6  col-12 mt-4">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12 mt-4">
             <div class="accordion" id="accordionExample0">
               <div class="card" >
                 <div class="card-header" id="heading0">
@@ -780,37 +797,37 @@
           </div>
 
           <!-- CONTENIDO -->
-          <div class="col-lg-9 col-md-6 col-12 mb-5">
+          <div class="col-xl-8 col-lg-8 col-md-6 col-12 mb-5">
             <!-- titulo de seccion -->
             <div class="title-section mb-3">
               <span class="span-tittle mb-2">SOLICITUDES</span>
             </div>
 
             <div class="row">
-              <div class="col-md-8 mt-2 mt-md-0">
+              <div class="col-12 col-md-6 col-lg-5 col-xl-4  mt-2 mt-md-0">
                 <span>234 solicitudes</span>
               </div>
-              <div class="col-md-4 mt-2 mt-md-0">
+              <div class="col-12 col-md-6 col-lg-7 col-xl-8  mt-2 mt-md-0 d-block d-lg-flex justify-content-end">
                 <a href="#"class="no-style mx-3 filter-sol">Pendientes</a>
                 <a href="#"class="no-style mx-3 filter-sol active">Aceptadas</a>
                 <a href="#"class="no-style mx-3 filter-sol">Rechazadas</a>
               </div>
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
                     <div class="row">
                         <div class="col-2 pr-0">
                             <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 p-0">
                         <div class="row">
-                            <div class="col-8">
-                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                            <div class="col-8 card-info">
+                                <span class="mx-1 color-primary">Norberto Riccitelli</span>
                                 <small class="mx-1 d-block">Asesor Inmobiliario</small>
                             </div>
-                            <div class="col-4 text-center">
+                            <div class="col-4 card-tipo text-center">
                                  <span class="badge text-white badge-alquiler py-1 px-2">ALQUILER</span>
-                                 <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
+                                 <small class="d-block">Hace 20 horas</small>   
                             </div>
                         </div>
 
@@ -838,8 +855,8 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="info-valor" >
-                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                                <h5 class="card-title m-0" >$200.000</h5>
+                                <p class="card-text m-0" >PRESUPUESTO</p>
                               </div>  
                         </div>
                         <div class="col-6 d-flex justify-content-center align-content-end flex-column">
@@ -855,20 +872,20 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
                     <div class="row">
                         <div class="col-2 pr-0">
                             <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 p-0">
                         <div class="row">
-                            <div class="col-8">
-                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                            <div class="col-8 card-info">
+                                <span class="mx-1 color-primary" >Norberto Riccitelli</span>
                                 <small class="mx-1 d-block">Asesor Inmobiliario</small>
                             </div>
-                            <div class="col-4 text-center">
+                            <div class="col-4 card-tipo text-center">
                                  <span class="badge text-white badge-venta py-1 px-2">VENTA</span>
                                  <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
                             </div>
@@ -898,8 +915,8 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="info-valor" >
-                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                                <h5 class="card-title m-0" >$200.000</h5>
+                                <p class="card-text m-0" >PRESUPUESTO</p>
                               </div>  
                         </div>
                         <div class="col-6 d-flex justify-content-center align-content-end flex-column">
@@ -915,20 +932,20 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
                     <div class="row">
                         <div class="col-2 pr-0">
                             <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 p-0">
                         <div class="row">
-                            <div class="col-8">
-                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                            <div class="col-8 card-info">
+                                <span class="mx-1 color-primary" >Norberto Riccitelli</span>
                                 <small class="mx-1 d-block">Asesor Inmobiliario</small>
                             </div>
-                            <div class="col-4  text-center">
+                            <div class="col-4 card-tipo text-center">
                                  <span class="badge text-white badge-alquiler py-1 px-2" style="white-space: break-spaces !important; font-size: .6rem;">ALQUILER TEMPORARIO</span>
                                  <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
                                  <!-- <small class="badge d-block text-success">Aceptada</small>    -->
@@ -959,8 +976,8 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="info-valor" >
-                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                                <h5 class="card-title m-0" >$200.000</h5>
+                                <p class="card-text m-0" >PRESUPUESTO</p>
                               </div>  
                         </div>
                         <div class="col-6 d-flex justify-content-center align-content-end flex-column">
@@ -976,20 +993,20 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
                     <div class="row">
                         <div class="col-2 pr-0">
                             <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 p-0">
                         <div class="row">
-                            <div class="col-8">
-                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                            <div class="col-8 card-info">
+                                <span class="mx-1 color-primary" >Norberto Riccitelli</span>
                                 <small class="mx-1 d-block">Asesor Inmobiliario</small>
                             </div>
-                            <div class="col-4 text-center">
+                            <div class="col-4 card-tipo text-center">
                                  <span class="badge text-white badge-venta py-1 px-2">VENTA</span>
                                  <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
                                  <small class="badge d-block text-success">Aceptada</small>   
@@ -1020,8 +1037,8 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="info-valor" >
-                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                                <h5 class="card-title m-0" >$200.000</h5>
+                                <p class="card-text m-0" >PRESUPUESTO</p>
                               </div>  
                         </div>
                         <div class="col-6 d-flex justify-content-center align-content-end flex-column">
@@ -1037,20 +1054,20 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
                     <div class="row">
                         <div class="col-2 pr-0">
                             <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 p-0">
                         <div class="row">
-                            <div class="col-8">
-                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                            <div class="col-8 card-info">
+                                <span class="mx-1 color-primary" >Norberto Riccitelli</span>
                                 <small class="mx-1 d-block">Asesor Inmobiliario</small>
                             </div>
-                            <div class="col-4 text-center">
+                            <div class="col-4 card-tipo text-center">
                                  <span class="badge text-white badge-alquiler py-1 px-2">ALQUILER</span>
                                  <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
                                  <small class="badge d-block text-success">Aceptada</small>   
@@ -1081,8 +1098,8 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="info-valor" >
-                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                                <h5 class="card-title m-0" >$200.000</h5>
+                                <p class="card-text m-0" >PRESUPUESTO</p>
                               </div>  
                         </div>
                         <div class="col-6 d-flex justify-content-center align-content-end flex-column">
@@ -1092,20 +1109,20 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
                     <div class="row">
                         <div class="col-2 pr-0">
                             <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 p-0">
                         <div class="row">
-                            <div class="col-8">
-                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                            <div class="col-8 card-info">
+                                <span class="mx-1 color-primary" >Norberto Riccitelli</span>
                                 <small class="mx-1 d-block">Asesor Inmobiliario</small>
                             </div>
-                            <div class="col-4 text-center">
+                            <div class="col-4 card-tipo text-center">
                                  <span class="badge text-white badge-alquiler py-1 px-2" style="white-space: break-spaces !important; font-size: .6rem;">ALQUILER TEMPORARIO</span>
                                  <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
                                  <small class="badge d-block text-success">Aceptada</small>   
@@ -1136,8 +1153,8 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="info-valor" >
-                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                                <h5 class="card-title m-0" >$200.000</h5>
+                                <p class="card-text m-0" >PRESUPUESTO</p>
                               </div>  
                         </div>
                         <div class="col-6 d-flex justify-content-center align-content-end flex-column">
@@ -1154,20 +1171,20 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
                     <div class="row">
                         <div class="col-2 pr-0">
                             <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 p-0">
                         <div class="row">
-                            <div class="col-8">
-                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                            <div class="col-8 card-info">
+                                <span class="mx-1 color-primary" >Norberto Riccitelli</span>
                                 <small class="mx-1 d-block">Asesor Inmobiliario</small>
                             </div>
-                            <div class="col-4 text-center">
+                            <div class="col-4 card-tipo text-center">
                                  <span class="badge text-white badge-alquiler py-1 px-2">ALQUILER</span>
                                  <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
                                  <small class="badge d-block text-success">Aceptada</small>   
@@ -1198,8 +1215,8 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="info-valor" >
-                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                                <h5 class="card-title m-0" >$200.000</h5>
+                                <p class="card-text m-0" >PRESUPUESTO</p>
                               </div>  
                         </div>
                         <div class="col-6 d-flex justify-content-center align-content-end flex-column">
@@ -1209,20 +1226,20 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
                     <div class="row">
                         <div class="col-2 pr-0">
                             <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 p-0">
                         <div class="row">
-                            <div class="col-8">
-                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                            <div class="col-8 card-info">
+                                <span class="mx-1 color-primary" >Norberto Riccitelli</span>
                                 <small class="mx-1 d-block">Asesor Inmobiliario</small>
                             </div>
-                            <div class="col-4 text-center">
+                            <div class="col-4 card-tipo text-center">
                                  <span class="badge text-white badge-venta py-1 px-2">VENTA</span>
                                  <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
                                  <small class="badge d-block text-success">Aceptada</small>   
@@ -1253,8 +1270,8 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="info-valor" >
-                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                                <h5 class="card-title m-0" >$200.000</h5>
+                                <p class="card-text m-0" >PRESUPUESTO</p>
                               </div>  
                         </div>
                         <div class="col-6 d-flex justify-content-center align-content-end flex-column">
@@ -1263,20 +1280,20 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
                     <div class="row">
                         <div class="col-2 pr-0">
                             <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 p-0">
                         <div class="row">
-                            <div class="col-8">
-                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                            <div class="col-8 card-info">
+                                <span class="mx-1 color-primary" >Norberto Riccitelli</span>
                                 <small class="mx-1 d-block">Asesor Inmobiliario</small>
                             </div>
-                            <div class="col-4 text-center">
+                            <div class="col-4 card-tipo text-center">
                                  <span class="badge text-white badge-alquiler py-1 px-2">ALQUILER</span>
                                  <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
                                  <small class="badge d-block text-success">Aceptada</small>   
@@ -1307,8 +1324,8 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="info-valor" >
-                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                                <h5 class="card-title m-0" >$200.000</h5>
+                                <p class="card-text m-0" >PRESUPUESTO</p>
                               </div>  
                         </div>
                         <div class="col-6 d-flex justify-content-center align-content-end flex-column">
@@ -1317,20 +1334,20 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
                     <div class="row">
                         <div class="col-2 pr-0">
                             <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 p-0">
                         <div class="row">
-                            <div class="col-8">
-                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                            <div class="col-8 card-info">
+                                <span class="mx-1 color-primary" >Norberto Riccitelli</span>
                                 <small class="mx-1 d-block">Asesor Inmobiliario</small>
                             </div>
-                            <div class="col-4 text-center">
+                            <div class="col-4 card-tipo text-center">
                                  <span class="badge text-white badge-venta py-1 px-2">VENTA</span>
                                  <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
                                  <small class="badge d-block text-danger">Rechazada</small>   
@@ -1361,8 +1378,8 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="info-valor" >
-                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                                <h5 class="card-title m-0" >$200.000</h5>
+                                <p class="card-text m-0" >PRESUPUESTO</p>
                               </div>  
                         </div>
                         <div class="col-6 d-flex justify-content-center align-content-end flex-column">
@@ -1371,20 +1388,20 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
                     <div class="row">
                         <div class="col-2 pr-0">
                             <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 p-0">
                         <div class="row">
-                            <div class="col-8">
-                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                            <div class="col-8 card-info">
+                                <span class="mx-1 color-primary" >Norberto Riccitelli</span>
                                 <small class="mx-1 d-block">Asesor Inmobiliario</small>
                             </div>
-                            <div class="col-4 text-center">
+                            <div class="col-4 card-tipo text-center">
                                  <span class="badge text-white badge-alquiler py-1 px-2">ALQUILER</span>
                                  <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
                                  <small class="badge d-block text-danger">Rechazada</small>   
@@ -1415,8 +1432,8 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="info-valor" >
-                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                                <h5 class="card-title m-0" >$200.000</h5>
+                                <p class="card-text m-0" >PRESUPUESTO</p>
                               </div>  
                         </div>
                         <div class="col-6 d-flex justify-content-center align-content-end flex-column">
@@ -1425,20 +1442,20 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
                     <div class="row">
                         <div class="col-2 pr-0">
                             <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" style="width: 50px; height: 50px;">
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 p-0">
                         <div class="row">
-                            <div class="col-8">
-                                <span class="mx-1 color-primary" style="font-size:.8rem;letter-spacing: .1rem; font-weight: 700;">Norberto Riccitelli</span>
+                            <div class="col-8 card-info">
+                                <span class="mx-1 color-primary" >Norberto Riccitelli</span>
                                 <small class="mx-1 d-block">Asesor Inmobiliario</small>
                             </div>
-                            <div class="col-4 text-center">
+                            <div class="col-4 card-tipo text-center">
                                  <span class="badge text-white badge-venta py-1 px-2">VENTA</span>
                                  <small class="d-block" style="font-size: .6rem;">Hace 20 horas</small>   
                                  <small class="badge d-block text-danger">Rechazada</small>   
@@ -1469,8 +1486,8 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="info-valor" >
-                                <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                                <p class="card-text" style="margin: 0;">PRESUPUESTO</p>
+                                <h5 class="card-title m-0" >$200.000</h5>
+                                <p class="card-text m-0" >PRESUPUESTO</p>
                               </div>  
                         </div>
                         <div class="col-6 d-flex justify-content-center align-content-end flex-column">
