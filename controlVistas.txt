@@ -21,8 +21,8 @@
 	 - (vendedor edicion, vendedor perfil )
 
 
-3 vistas de mensajes [corregir responsive]
-	 - (listado de mensajes [listo], mensaje abierto [proceso])
+3 vistas de mensajes
+	 - (listado de mensajes, mensaje abierto )
 
 1 vista en contacto
 
@@ -49,7 +49,10 @@
 
 
 
-===============CORRECCIONES DE LAS PRIMERAS VISTAS ENTREGADAS ================================
+
+
+
+===============CORRECCIONES DE LAS PRIMERAS VISTAS ENTREGADAS [LISTAS]================================
 
 DASHBOARD 
 -respetar tipografias: estan todas en bold y en diseño no son todas asi. [listo] 
@@ -65,5 +68,3 @@ PROPIEDADES:
 
 CONFIGURACIÓN GENERAL:
 -Intentar respetar el diseño, ej: si hay un vector y al lado va la dirección de email que no queden en dos renglones por separado, lo mismo en CONFIGURACIÓN VENDEDOR. O mismo el numero de telefono que quede todo en un mismo renglon. [listo]
-
-
