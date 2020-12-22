@@ -60,19 +60,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="dashboard.html">Dashboard</a>
+            <a class="nav-link active fwregular" href="dashboard.html">Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="propiedad-listado.html">Propiedades</a>
+            <a class="nav-link fwregular" href="propiedad-listado.html">Propiedades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Solicitudes</a>
+            <a class="nav-link fwregular" href="#">Solicitudes</a>
           </li>
           <li class="nav-item pos-relative">
-            <a class="nav-link" href="#">Mensajes<i class="far notif posNotif"></i></a>
+            <a class="nav-link fwregular" href="#">Mensajes<i class="far notif posNotif"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto-listado.html">Contactos</a>
+            <a class="nav-link fwregular" href="contacto-listado.html">Contactos</a>
           </li>
         </ul>
 
@@ -82,10 +82,8 @@
             <li class="nav-item active d-flex">
               <div class="nav-link d-inline-block pos-relative m-1 pt-2">
                 <div class="search-container">
-                  <input type="text" name="search" id="search" placeholder="Search..." class="search-text" autocomplete="off" />
-                  <a href="#" class="search-icon">
-                    <i class="fas fa-search pt-2" style="cursor: pointer"></i>
-                  </a>
+                  <input type="text" name="search" id="search" placeholder="Search..." class="search-text fwregular" autocomplete="off" />
+                  <a href="#" class="search-icon"> <img src="assets/img/icons/icon-search.svg" alt="" class="icon-edit" /> </a>
                 </div>
               </div>
 
@@ -99,7 +97,7 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  <i class="far fa-bell pt-2"></i>
+                  <img src="assets/img/icons/icon-bell.svg" alt="" width="30" height="30" class="pt-2" />
                   <i class="far bell notif"></i>
                 </a>
                 <div class="dropdown-menu navegacion notificacionNavegacion">
@@ -134,25 +132,25 @@
 
               <div class="nav-item dropdown m-1 pt-2">
                 <a class="nav-link d-inline-block dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-cog pt-2"></i>
+                  <img src="assets/img/icons/icon-tool.svg" alt="" width="30" height="30" class="pt-2" />
                 </a>
                 <div class="dropdown-menu config navegacion">
-                  <a class="dropdown-item" href="configuracion-principal.html">Configuración general</a>
+                  <a class="dropdown-item fwregular" href="configuracion-principal.html">Configuración general</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="configuracion-editar.html">Configuración edición</a>
+                  <a class="dropdown-item fwregular" href="configuracion-editar.html">Configuración edición</a>
                 </div>
               </div>
             </li>
 
-            <li class="nav-item dropdown ml-4 mt-2">
+            <li class="nav-item dropdown ml-4 mt-3">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" />
-                <span class="mx-1">Norberto Riccitelli</span>
+                <span class="mx-1 fwregular text-perfil-header">Norberto Riccitelli <i class="fas fa-sort-down"></i></span>
               </a>
               <div class="dropdown-menu navegacion w-100">
-                <a class="dropdown-item" href="contacto-ficha.html">Perfil</a>
+                <a class="dropdown-item fwregular" href="contacto-ficha.html">Perfil</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                <a class="dropdown-item fwregular" href="#">Cerrar Sesión</a>
               </div>
             </li>
           </ul>
@@ -166,11 +164,13 @@
         <div class="row">
           <!-- titulo de seccion -->
           <div class="title-section">
-            <span class="span-tittle">DETALLE DE LA PROPIEDAD</span>
+            <span class="span-tittle fwregular">DETALLE DE LA PROPIEDAD</span>
             <span class="container-btn mt-3 mt-md-0 mb-md-2">
-              <span class="compartir-text"><b>COMPARTIR EN</b> </span>
-              <a href="https://api.whatsapp.com/send?phone=+541131193176" target="_BLANK"><i class="fab fa-whatsapp-square"></i></a>
-              <a href="https://www.facebook.com/" target="_BLANK" class="ml-2"><i class="fab fa-facebook-messenger"></i></a>
+              <span class="compartir-text fwsemibold">COMPARTIR EN </span>
+              <a href="https://api.whatsapp.com/send?phone=+541131193176" target="_BLANK"
+                ><img src="assets/img/icons/icon-telefono-compartir.svg" alt="" width="28" height="28"
+              /></a>
+              <a href="https://www.facebook.com/" target="_BLANK" class="ml-2"><img src="assets/img/icons/icon-messenger.svg" alt="" width="28" height="28" /></a>
             </span>
           </div>
 
@@ -186,7 +186,16 @@
               <div class="carousel-inner pos-relative">
                 <span class="badge badge-info">VENTA</span>
 
-                <i class="fas fa-compress-alt expand-icon" id="expandIcon" data-toggle="modal" data-target="#modal-expand"></i>
+                <img
+                  src="assets/img/icons/icon-expand.svg"
+                  class="expand-icon"
+                  alt=""
+                  id="expandIcon"
+                  data-toggle="modal"
+                  data-target="#modal-expand"
+                  width="32"
+                  height="32"
+                />
 
                 <div class="carousel-item active">
                   <img src="assets/img/casa0.jpg" class="img-carrousel" />
@@ -221,7 +230,7 @@
                   </div>
                   <div class="col-6 d-flex">
                     <div class="ml-auto info-valor">
-                      <h5 class="card-title">$200.000</h5>
+                      <h5 class="card-title fwregular">$200.000</h5>
                       <p class="card-text">VALOR DEL INMUEBLE</p>
                     </div>
                   </div>
@@ -230,15 +239,15 @@
                 <div class="row mt-4">
                   <div class="col-6">
                     <div class="info-tipo">
-                      <p class="card-title"><i class="fas fa-home"></i> Fondo de comercio</p>
+                      <p class="card-title"><img src="assets/img/icons/icon-casa.svg" width="18" height="18" alt="" /> Fondo de comercio</p>
                     </div>
                   </div>
                   <div class="col-6 d-flex">
                     <div class="ml-auto info-cantidad">
-                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
-                      <span><i class="fas fa-bath"></i>4</span>
-                      <span><i class="fas fa-bed"></i>2</span>
-                      <span><i class="fas fa-car"></i>1</span>
+                      <span><img src="assets/img/icons/icon-mts.svg" alt="icono cantidad de metros" /> 280mt</span>
+                      <span><img src="assets/img/icons/icon-banio.svg" alt="icono cantidad de baños" />4</span>
+                      <span><img src="assets/img/icons/icon-habitacion.svg" alt="icono cantidad de habitaciones" />2</span>
+                      <span><img src="assets/img/icons/icon-auto.svg" alt="icono cantidad de autos" />1</span>
                     </div>
                   </div>
                 </div>
@@ -248,7 +257,7 @@
             <!-- ====== SERVICIOS ====== -->
             <div class="card mt-4">
               <div class="card-body">
-                <h5 class="card-title">Servicios del inmueble</h5>
+                <h5 class="card-title fwregular">Servicios del inmueble</h5>
                 <div class="info-services row">
                   <!--ITEM  -->
                   <div class="item col-6 col-sm-4 col-lg-2">
@@ -539,18 +548,18 @@
           <div class="col-md-4 mt-5">
             <div class="card contact-card">
               <div class="card-body card-body-info">
-                <h5 class="card-title">Norberto Riccitelli</h5>
-                <p class="card-text">AGENTE INMOBILIARIO</p>
+                <h5 class="card-title fwregular">Norberto Riccitelli</h5>
+                <p class="card-text fwregular">AGENTE INMOBILIARIO</p>
                 <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile detalle" />
                 <div class="direccion-info">
-                  <p class="card-text"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                  <p class="card-text fwlight"><img src="assets/img/icons/icon-ubicacion.svg" height="20" width="20" alt="" /> Charcas 1934, Palermo, Capital Federal</p>
                 </div>
               </div>
               <div class="card-footer2">
                 <div class="info-icons">
-                  <a href="tel:+541131193176" class="no-style"><i class="fas fa-phone invert_icon"></i></a>
-                  <a href="mailto:sistemafaredes@hotmail.com" class="no-style"><i class="fas fa-envelope"></i></a>
-                  <a href="https://api.whatsapp.com/send?phone=+541131193176" class="no-style"><i class="fab fa-whatsapp"></i></a>
+                  <a href="tel:+541131193176" class="no-style"><img src="assets/img/icons/icon-telefono.svg" alt="" /></a>
+                  <a href="mailto:sistemafaredes@hotmail.com" class="no-style"><img src="assets/img/icons/icon-email.svg" alt="" /></a>
+                  <a href="https://api.whatsapp.com/send?phone=+541131193176" class="no-style"><img src="assets/img/icons/icon-whatsapp.svg" alt="" /></a>
                 </div>
                 <img src="assets/img/logo-Bullrich.png" alt="" class="img-logo-inmobiliaria" />
               </div>
@@ -559,8 +568,8 @@
             <!-- ====== TABLA PROPIEDAD ====== -->
             <div class="card mt-3">
               <div class="card-body">
-                <h5 class="card-title">Información</h5>
-                <table class="table">
+                <h5 class="card-title fwregular">Información</h5>
+                <table class="table fwregular">
                   <tbody>
                     <tr>
                       <td>Propiedad ID</td>

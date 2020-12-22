@@ -18,108 +18,120 @@
 <!-- ===== NAVEGACION ====== -->
 <nav class="navbar navbar-expand-lg navbar-dark">
   <a class="navbar-brand" href="dashboard.html">
-      <img src="assets/img/logo.jpg" alt="Logo" class="img-fluid" style="width: 200px;">
+    <img src="assets/img/logo.jpg" alt="Logo" class="img-fluid" style="width: 200px" />
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link active" href="dashboard.html">Dashboard</a>
+        <a class="nav-link active fwregular" href="dashboard.html">Dashboard</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="propiedad-listado.html">Propiedades</a>
+        <a class="nav-link fwregular" href="propiedad-listado.html">Propiedades</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Solicitudes</a>
+        <a class="nav-link fwregular" href="#">Solicitudes</a>
       </li>
       <li class="nav-item pos-relative">
-        <a class="nav-link" href="#">Mensajes<i class="far notif posNotif"></i></a>
+        <a class="nav-link fwregular" href="#">Mensajes<i class="far notif posNotif"></i></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contacto-listado.html">Contactos</a>
+        <a class="nav-link fwregular" href="contacto-listado.html">Contactos</a>
       </li>
     </ul>
 
     <!-- ===== ICONOS NAVEGACION ====== -->
     <div class="form-inline my-2 my-lg-0">
       <ul class="navbar-nav">
-          <li class="nav-item active d-flex">            
-            <div class="nav-link d-inline-block pos-relative m-1 pt-2">
-              <div class="search-container">
-                <input type="text" name="search" id="search" placeholder="Search..." class="search-text" autocomplete="off">
-                <a href="#" class="search-icon">
-                  <i class="fas fa-search pt-2" style="cursor: pointer;"></i>
-                </a>
-              </div>
-            </div>          
-
-            <div class="nav-item notificacion dropdown m-1 pt-2">
-              <a class="nav-link d-inline-block pos-relative dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >
-                <i class="far fa-bell pt-2"></i>
-                <i class="far bell notif"></i>
-              </a>
-              <div class="dropdown-menu navegacion notificacionNavegacion">
-                <a class="dropdown-item" href="#">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <div class="notif-box-icon home">
-                      <i class="fas fa-home"></i>
-                    </div>
-                    <p class="ml-3">La propiedad <b>Florencia Ruiz, Palermo</b> ha sido reservada</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <div class="notif-box-icon user">
-                      <i class="far fa-user"></i>
-                    </div>
-                    <p class="ml-3">Su contacto <b> Norberto Riccitelli </b> ha actualizado su numero de teléfono</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <div class="notif-box-icon email d-inline-block">
-                      <i class="fas fa-envelope"></i>
-                    </div>
-                    <p class="ml-3 d-inline-block"><b>Florencia Marina</b> ha contestado a su consulta por una propiedad</p>
-                  </div>
-                </a>
-              </div>
+        <li class="nav-item active d-flex">
+          <div class="nav-link d-inline-block pos-relative m-1 pt-2">
+            <div class="search-container">
+              <input type="text" name="search" id="search" placeholder="Search..." class="search-text fwregular" autocomplete="off" />
+              <a href="#" class="search-icon"> <img src="assets/img/icons/icon-search.svg" alt="" class="icon-edit" /> </a>
             </div>
-  
-            <div class="nav-item dropdown m-1 pt-2">
-              <a class="nav-link d-inline-block dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-cog pt-2"></i>
-              </a>
-              <div class="dropdown-menu config navegacion">
-                <a class="dropdown-item" href="configuracion-principal.html">Configuración general</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="configuracion-editar.html">Configuración edición</a>
-              </div>
-            </div>
+          </div>
 
-          </li>
-
-          <li class="nav-item dropdown ml-4 mt-2">
-            <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile">
-              <span class="mx-1">Norberto Riccitelli</span>
+          <div class="nav-item notificacion dropdown m-1 pt-2">
+            <a
+              class="nav-link d-inline-block pos-relative dropdown-toggle"
+              href="#"
+              data-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img src="assets/img/icons/icon-bell.svg" alt="" width="30" height="30" class="pt-2" />
+              <i class="far bell notif"></i>
             </a>
-            <div class="dropdown-menu navegacion w-100">
-              <a class="dropdown-item" href="contacto-ficha.html">Perfil</a>
+            <div class="dropdown-menu navegacion notificacionNavegacion">
+              <a class="dropdown-item" href="#">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="notif-box-icon home">
+                    <i class="fas fa-home"></i>
+                  </div>
+                  <p class="ml-3">La propiedad <b>Florencia Ruiz, Palermo</b> ha sido reservada</p>
+                </div>
+              </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Cerrar Sesión</a>
+              <a class="dropdown-item" href="#">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="notif-box-icon user">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <p class="ml-3">Su contacto <b> Norberto Riccitelli </b> ha actualizado su numero de teléfono</p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="notif-box-icon email d-inline-block">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <p class="ml-3 d-inline-block"><b>Florencia Marina</b> ha contestado a su consulta por una propiedad</p>
+                </div>
+              </a>
             </div>
-          </li>
+          </div>
 
+          <div class="nav-item dropdown m-1 pt-2">
+            <a class="nav-link d-inline-block dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <img src="assets/img/icons/icon-tool.svg" alt="" width="30" height="30" class="pt-2" />
+            </a>
+            <div class="dropdown-menu config navegacion">
+              <a class="dropdown-item fwregular" href="configuracion-principal.html">Configuración general</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item fwregular" href="configuracion-editar.html">Configuración edición</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown ml-4 mt-3">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" />
+            <span class="mx-1 fwregular text-perfil-header">Norberto Riccitelli <i class="fas fa-sort-down"></i></span>
+          </a>
+          <div class="dropdown-menu navegacion w-100">
+            <a class="dropdown-item fwregular" href="contacto-ficha.html">Perfil</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item fwregular" href="#">Cerrar Sesión</a>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
-</nav>     
+</nav>    
 <!-- MAIN -->
     <div class="container-fluid">
       <!-- CABECERA -->
@@ -132,8 +144,8 @@
               <div class="card" >
                 <div class="card-header" id="heading0">
                   <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
-                    <h5 class="card-title">FILTROS DE BUSQUEDA <i class="fas fa-chevron-down flt-right"></i></h5> 
+                    <button class="btn btn-link btn-block text-left fwregular" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                    <h5 class="card-title fwregular">FILTROS DE BUSQUEDA <i class="fas fa-chevron-down flt-right"></i></h5> 
                     </button>
                   </h2>
                   <div class="flt-both"></div>
@@ -147,7 +159,7 @@
                           <div class="card">
                             <div class="card-header" id="headingOne">
                               <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="btn btn-link btn-block text-left fwregular" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 - Ubicacion <i class="fas fa-chevron-down flt-right"></i>
                                 </button>
                               </h2>
@@ -189,7 +201,7 @@
                             <div class="card-header" id="heading2">
                               
                               <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                <button class="btn btn-link btn-block text-left fwregular" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
                                 - Tipo de operacion <i class="fas fa-chevron-down flt-right"></i>
                                 </button>
                               </h2>
@@ -207,7 +219,7 @@
                                               <!-- Input oculto -->
                                               <input class="custom-radio-checkbox__input" type="checkbox"  checked>
                                               <!-- Imagen en sustitucion -->
-                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                               <!-- Texto -->
                                               <span class="custom-radio-checkbox__text2">Venta</span>
                                             </label>
@@ -218,7 +230,7 @@
                                               <!-- Input oculto -->
                                               <input class="custom-radio-checkbox__input" type="checkbox" >
                                               <!-- Imagen en sustitucion -->
-                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                               <!-- Texto -->
                                               <span class="custom-radio-checkbox__text2">Alquiler</span>
                                             </label>
@@ -235,7 +247,7 @@
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox"  checked>
                                             <!-- Imagen en sustitucion -->
-                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                             <!-- Texto -->
                                             <span class="custom-radio-checkbox__text2">Alquiler Temporario</span>
                                           </label>
@@ -257,7 +269,7 @@
                           <div class="card">
                             <div class="card-header" id="heading2">
                               <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                <button class="btn btn-link btn-block text-left fwregular" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
                                 - Tipo de propiedad <i class="fas fa-chevron-down flt-right"></i>
                                 </button>
                               </h2>
@@ -275,7 +287,7 @@
                                               <!-- Input oculto -->
                                               <input class="custom-radio-checkbox__input" type="checkbox"  checked>
                                               <!-- Imagen en sustitucion -->
-                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                               <!-- Texto -->
                                               <span class="custom-radio-checkbox__text2">Casa</span>
                                             </label>
@@ -286,7 +298,7 @@
                                               <!-- Input oculto -->
                                               <input class="custom-radio-checkbox__input" type="checkbox" >
                                               <!-- Imagen en sustitucion -->
-                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                               <!-- Texto -->
                                               <span class="custom-radio-checkbox__text2">Isla</span>
                                             </label>
@@ -296,7 +308,7 @@
                                               <!-- Input oculto -->
                                               <input class="custom-radio-checkbox__input" type="checkbox" >
                                               <!-- Imagen en sustitucion -->
-                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                               <!-- Texto -->
                                               <span class="custom-radio-checkbox__text2">Quinta</span>
                                             </label>
@@ -306,7 +318,7 @@
                                               <!-- Input oculto -->
                                               <input class="custom-radio-checkbox__input" type="checkbox" checked >
                                               <!-- Imagen en sustitucion -->
-                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                               <!-- Texto -->
                                               <span class="custom-radio-checkbox__text2">Terreno</span>
                                             </label>
@@ -316,7 +328,7 @@
                                               <!-- Input oculto -->
                                               <input class="custom-radio-checkbox__input" type="checkbox" >
                                               <!-- Imagen en sustitucion -->
-                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                               <!-- Texto -->
                                               <span class="custom-radio-checkbox__text2">Casa PH</span>
                                             </label>
@@ -326,7 +338,7 @@
                                               <!-- Input oculto -->
                                               <input class="custom-radio-checkbox__input" type="checkbox" >
                                               <!-- Imagen en sustitucion -->
-                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                               <!-- Texto -->
                                               <span class="custom-radio-checkbox__text2">Campo</span>
                                             </label>
@@ -336,7 +348,7 @@
                                               <!-- Input oculto -->
                                               <input class="custom-radio-checkbox__input" type="checkbox" >
                                               <!-- Imagen en sustitucion -->
-                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                               <!-- Texto -->
                                               <span class="custom-radio-checkbox__text2">Hotel</span>
                                             </label>
@@ -346,7 +358,7 @@
                                               <!-- Input oculto -->
                                               <input class="custom-radio-checkbox__input" type="checkbox">
                                               <!-- Imagen en sustitucion -->
-                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                               <!-- Texto -->
                                               <span class="custom-radio-checkbox__text2 ">Cochera</span>
                                             </label>
@@ -363,7 +375,7 @@
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox">
                                             <!-- Imagen en sustitucion -->
-                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                             <!-- Texto -->
                                             <span class="custom-radio-checkbox__text2 ">Departamento</span>
                                           </label>
@@ -374,7 +386,7 @@
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox" >
                                             <!-- Imagen en sustitucion -->
-                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                             <!-- Texto -->
                                             <span class="custom-radio-checkbox__text2 ">Fondo de comercio</span>
                                           </label>
@@ -384,7 +396,7 @@
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox" >
                                             <!-- Imagen en sustitucion -->
-                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                             <!-- Texto -->
                                             <span class="custom-radio-checkbox__text2 ">Galpon</span>
                                           </label>
@@ -394,7 +406,7 @@
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox" >
                                             <!-- Imagen en sustitucion -->
-                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                             <!-- Texto -->
                                             <span class="custom-radio-checkbox__text2 ">Local</span>
                                           </label>
@@ -404,7 +416,7 @@
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox" >
                                             <!-- Imagen en sustitucion -->
-                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                             <!-- Texto -->
                                             <span class="custom-radio-checkbox__text2 ">Oficina</span>
                                           </label>
@@ -414,7 +426,7 @@
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox" >
                                             <!-- Imagen en sustitucion -->
-                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                             <!-- Texto -->
                                             <span class="custom-radio-checkbox__text2 ">Edificio</span>
                                           </label>
@@ -424,7 +436,7 @@
                                             <!-- Input oculto -->
                                             <input class="custom-radio-checkbox__input" type="checkbox" >
                                             <!-- Imagen en sustitucion -->
-                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                             <!-- Texto -->
                                             <span class="custom-radio-checkbox__text2 ">Emprendimiento</span>
                                           </label>
@@ -446,7 +458,7 @@
                               <div class="card">
                                 <div class="card-header" id="heading3">
                                   <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                    <button class="btn btn-link btn-block text-left fwregular" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
                                     - Servicios <i class="fas fa-chevron-down flt-right"></i>
                                     </button>
                                   </h2>
@@ -466,7 +478,7 @@
                                                     <!-- Input oculto -->
                                                     <input class="custom-radio-checkbox__input" type="checkbox" checked>
                                                     <!-- Imagen en sustitucion -->
-                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                                   </label>
                                                 </div>
                                               </li>
@@ -477,7 +489,7 @@
                                                     <!-- Input oculto -->
                                                     <input class="custom-radio-checkbox__input" type="checkbox" checked>
                                                     <!-- Imagen en sustitucion -->
-                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                                   </label>
                                                 </div>
                                               </li>
@@ -488,7 +500,7 @@
                                                     <!-- Input oculto -->
                                                     <input class="custom-radio-checkbox__input" type="checkbox" checked>
                                                     <!-- Imagen en sustitucion -->
-                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                                   </label>
                                                 </div>
                                               </li>
@@ -499,7 +511,7 @@
                                                     <!-- Input oculto -->
                                                     <input class="custom-radio-checkbox__input" type="checkbox" checked>
                                                     <!-- Imagen en sustitucion -->
-                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                                   </label>
                                                 </div>
                                               </li>
@@ -510,7 +522,7 @@
                                                     <!-- Input oculto -->
                                                     <input class="custom-radio-checkbox__input" type="checkbox" >
                                                     <!-- Imagen en sustitucion -->
-                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                                   </label>
                                                 </div>
                                               </li>
@@ -521,7 +533,7 @@
                                                     <!-- Input oculto -->
                                                     <input class="custom-radio-checkbox__input" type="checkbox">
                                                     <!-- Imagen en sustitucion -->
-                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                                   </label>
                                                 </div>
                                               </li>
@@ -532,7 +544,7 @@
                                                     <!-- Input oculto -->
                                                     <input class="custom-radio-checkbox__input" type="checkbox">
                                                     <!-- Imagen en sustitucion -->
-                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                                   </label>
                                                 </div>
                                               </li>
@@ -543,7 +555,7 @@
                                                     <!-- Input oculto -->
                                                     <input class="custom-radio-checkbox__input" type="checkbox">
                                                     <!-- Imagen en sustitucion -->
-                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                                   </label>
                                                 </div>
                                               </li>
@@ -554,7 +566,7 @@
                                                     <!-- Input oculto -->
                                                     <input class="custom-radio-checkbox__input" type="checkbox">
                                                     <!-- Imagen en sustitucion -->
-                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                                   </label>
                                                 </div>
                                               </li>
@@ -565,7 +577,7 @@
                                                     <!-- Input oculto -->
                                                     <input class="custom-radio-checkbox__input" type="checkbox">
                                                     <!-- Imagen en sustitucion -->
-                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                                                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox-cuadrado"></span>
                                                   </label>
                                                 </div>
                                               </li>
@@ -585,7 +597,7 @@
                             <hr>
                               <div class="card"  style="border: none;">
                                 <div class="card-header d-flex">
-                                  <button class="btn btn-link btn-block text-left" type="button">
+                                  <button class="btn btn-link btn-block text-left fwregular" type="button">
                                     - Monto
                                     </button>
                                   <!-- <h2 class="mb-0"> </h2> -->
@@ -640,7 +652,7 @@
                                 <div class="card">
                                   <div class="card-header" id="heading5">
                                     <h2 class="mb-0">
-                                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                      <button class="btn btn-link btn-block text-left fwregular" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
                                       - Comodidades <i class="fas fa-chevron-down flt-right"></i>
                                       </button>
                                     </h2>
@@ -691,7 +703,7 @@
                               <div class="card">
                                 <div class="card-header" id="heading6">
                                   <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                    <button class="btn btn-link btn-block text-left fwregular" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
                                     - Expensas <i class="fas fa-chevron-down flt-right"></i>
                                     </button>
                                   </h2>
@@ -726,7 +738,7 @@
                           <div class="card">
                             <div class="card-header" id="heading7">
                               <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                <button class="btn btn-link btn-block text-left fwregular" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
                                 - Superficie en m2 <i class="fas fa-chevron-down flt-right"></i>
                                 </button>
                               </h2>
@@ -755,7 +767,7 @@
                         </div><!-- FIN acordion -->
                         <!-- fin septimo -->
         
-                        <a href="#" class="btn btn-block btn-aplicar no-style">Aplicar Filtros</a>
+                        <a href="#" class="btn btn-block btn-aplicar no-style fwsemibold">Aplicar Filtros</a>
         
                       </div>
                     </div>
@@ -769,36 +781,36 @@
           <div class="col-xl-8 col-lg-7 col-md-6 col-12 mb-5">
             <!-- titulo de seccion -->
             <div class="title-section mb-3">
-              <span class="span-tittle">PROPIEDADES</span>
+              <span class="span-tittle fwregular">PROPIEDADES</span>
               <button class="btn-compartir btn">PUBLICAR PROPIEDAD</button>
             </div>
 
             <div class="row">
               <div class="col-12">
-                <span>123 propiedades</span>
+                <span class="fwlight">123 propiedades</span>
               </div>
               <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
+                    <span class="badge badge-info badge-info-tipo badge-venta-propiedad">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                      <p class="card-title mb-0 fwmedium"><img src="assets/img/icons/icon-casa.svg" width="16" height="16" alt="" /> Fondo de comercio</p>
+                      <p class="card-text description-card fwlight"><img src="assets/img/icons/icon-ubicacion-alt.svg" width="14" height="14" alt="" /> Charcas 1934, Palermo, Capital Federal</p>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <p class="card-text description-card pt-3 fwlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
                     <hr>
                     <div class="info-propiedad">
-                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
-                      <span><i class="fas fa-bath"></i>4</span>
-                      <span><i class="fas fa-bed"></i>2</span>
-                      <span><i class="fas fa-car"></i>1</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-mts.svg" alt="icono cantidad de metros" /> 280mt</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-banio.svg" alt="icono cantidad de baños" />4</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-habitacion.svg" alt="icono cantidad de habitaciones" />2</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-auto.svg" alt="icono cantidad de autos" />1</span>
                     </div>
                     <hr>   
                     <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
+                      <h5 class="card-title fwregular" style="margin: 0;">$200.000</h5>
+                      <p class="card-text fwregular" style="margin: 0;">VALOR DEL INMUEBLE</p>
                     </div>                   
                   </div>
                 </div>
@@ -806,25 +818,25 @@
               <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-alquiler">ALQUILER</span>
+                    <span class="badge badge-info badge-info-tipo badge-alquiler-propiedad">ALQUILER</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                      <p class="card-title mb-0 fwmedium"><img src="assets/img/icons/icon-casa.svg" width="16" height="16" alt="" /> Fondo de comercio</p>
+                      <p class="card-text description-card fwlight"><img src="assets/img/icons/icon-ubicacion-alt.svg" width="14" height="14" alt="" /> Charcas 1934, Palermo, Capital Federal</p>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <p class="card-text description-card pt-3 fwlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
                     <hr>
                     <div class="info-propiedad">
-                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
-                      <span><i class="fas fa-bath"></i>4</span>
-                      <span><i class="fas fa-bed"></i>2</span>
-                      <span><i class="fas fa-car"></i>1</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-mts.svg" alt="icono cantidad de metros" /> 280mt</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-banio.svg" alt="icono cantidad de baños" />4</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-habitacion.svg" alt="icono cantidad de habitaciones" />2</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-auto.svg" alt="icono cantidad de autos" />1</span>
                     </div>
                     <hr>   
                     <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
+                      <h5 class="card-title fwregular" style="margin: 0;">$200.000</h5>
+                      <p class="card-text fwregular" style="margin: 0;">VALOR DEL INMUEBLE</p>
                     </div>                   
                   </div>
                 </div>
@@ -832,25 +844,25 @@
               <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
+                    <span class="badge badge-info badge-info-tipo badge-venta-propiedad">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                      <p class="card-title mb-0 fwmedium"><img src="assets/img/icons/icon-casa.svg" width="16" height="16" alt="" /> Fondo de comercio</p>
+                      <p class="card-text description-card fwlight"><img src="assets/img/icons/icon-ubicacion-alt.svg" width="14" height="14" alt="" /> Charcas 1934, Palermo, Capital Federal</p>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <p class="card-text description-card pt-3 fwlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
                     <hr>
                     <div class="info-propiedad">
-                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
-                      <span><i class="fas fa-bath"></i>4</span>
-                      <span><i class="fas fa-bed"></i>2</span>
-                      <span><i class="fas fa-car"></i>1</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-mts.svg" alt="icono cantidad de metros" /> 280mt</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-banio.svg" alt="icono cantidad de baños" />4</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-habitacion.svg" alt="icono cantidad de habitaciones" />2</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-auto.svg" alt="icono cantidad de autos" />1</span>
                     </div>
                     <hr>   
                     <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
+                      <h5 class="card-title fwregular" style="margin: 0;">$200.000</h5>
+                      <p class="card-text fwregular" style="margin: 0;">VALOR DEL INMUEBLE</p>
                     </div>                   
                   </div>
                 </div>
@@ -858,25 +870,25 @@
               <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
+                    <span class="badge badge-info badge-info-tipo badge-venta-propiedad">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                      <p class="card-title mb-0 fwmedium"><img src="assets/img/icons/icon-casa.svg" width="16" height="16" alt="" /> Fondo de comercio</p>
+                      <p class="card-text description-card fwlight"><img src="assets/img/icons/icon-ubicacion-alt.svg" width="14" height="14" alt="" /> Charcas 1934, Palermo, Capital Federal</p>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <p class="card-text description-card pt-3 fwlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
                     <hr>
                     <div class="info-propiedad">
-                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
-                      <span><i class="fas fa-bath"></i>4</span>
-                      <span><i class="fas fa-bed"></i>2</span>
-                      <span><i class="fas fa-car"></i>1</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-mts.svg" alt="icono cantidad de metros" /> 280mt</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-banio.svg" alt="icono cantidad de baños" />4</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-habitacion.svg" alt="icono cantidad de habitaciones" />2</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-auto.svg" alt="icono cantidad de autos" />1</span>
                     </div>
                     <hr>   
                     <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
+                      <h5 class="card-title fwregular" style="margin: 0;">$200.000</h5>
+                      <p class="card-text fwregular" style="margin: 0;">VALOR DEL INMUEBLE</p>
                     </div>                   
                   </div>
                 </div>
@@ -884,25 +896,25 @@
               <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
+                    <span class="badge badge-info badge-info-tipo badge-venta-propiedad">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                      <p class="card-title mb-0 fwmedium"><img src="assets/img/icons/icon-casa.svg" width="16" height="16" alt="" /> Fondo de comercio</p>
+                      <p class="card-text description-card fwlight"><img src="assets/img/icons/icon-ubicacion-alt.svg" width="14" height="14" alt="" /> Charcas 1934, Palermo, Capital Federal</p>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <p class="card-text description-card pt-3 fwlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
                     <hr>
                     <div class="info-propiedad">
-                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
-                      <span><i class="fas fa-bath"></i>4</span>
-                      <span><i class="fas fa-bed"></i>2</span>
-                      <span><i class="fas fa-car"></i>1</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-mts.svg" alt="icono cantidad de metros" /> 280mt</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-banio.svg" alt="icono cantidad de baños" />4</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-habitacion.svg" alt="icono cantidad de habitaciones" />2</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-auto.svg" alt="icono cantidad de autos" />1</span>
                     </div>
                     <hr>   
                     <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
+                      <h5 class="card-title fwregular" style="margin: 0;">$200.000</h5>
+                      <p class="card-text fwregular" style="margin: 0;">VALOR DEL INMUEBLE</p>
                     </div>                   
                   </div>
                 </div>
@@ -910,25 +922,25 @@
               <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-alquiler">ALQUILER</span>
+                    <span class="badge badge-info badge-info-tipo badge-alquiler-propiedad">ALQUILER</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                      <p class="card-title mb-0 fwmedium"><img src="assets/img/icons/icon-casa.svg" width="16" height="16" alt="" /> Fondo de comercio</p>
+                      <p class="card-text description-card fwlight"><img src="assets/img/icons/icon-ubicacion-alt.svg" width="14" height="14" alt="" /> Charcas 1934, Palermo, Capital Federal</p>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <p class="card-text description-card pt-3 fwlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
                     <hr>
                     <div class="info-propiedad">
-                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
-                      <span><i class="fas fa-bath"></i>4</span>
-                      <span><i class="fas fa-bed"></i>2</span>
-                      <span><i class="fas fa-car"></i>1</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-mts.svg" alt="icono cantidad de metros" /> 280mt</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-banio.svg" alt="icono cantidad de baños" />4</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-habitacion.svg" alt="icono cantidad de habitaciones" />2</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-auto.svg" alt="icono cantidad de autos" />1</span>
                     </div>
                     <hr>   
                     <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
+                      <h5 class="card-title fwregular" style="margin: 0;">$200.000</h5>
+                      <p class="card-text fwregular" style="margin: 0;">VALOR DEL INMUEBLE</p>
                     </div>                   
                   </div>
                 </div>
@@ -936,25 +948,25 @@
               <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
+                    <span class="badge badge-info badge-info-tipo badge-venta-propiedad">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                      <p class="card-title mb-0 fwmedium"><img src="assets/img/icons/icon-casa.svg" width="16" height="16" alt="" /> Fondo de comercio</p>
+                      <p class="card-text description-card fwlight"><img src="assets/img/icons/icon-ubicacion-alt.svg" width="14" height="14" alt="" /> Charcas 1934, Palermo, Capital Federal</p>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <p class="card-text description-card pt-3 fwlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
                     <hr>
                     <div class="info-propiedad">
-                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
-                      <span><i class="fas fa-bath"></i>4</span>
-                      <span><i class="fas fa-bed"></i>2</span>
-                      <span><i class="fas fa-car"></i>1</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-mts.svg" alt="icono cantidad de metros" /> 280mt</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-banio.svg" alt="icono cantidad de baños" />4</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-habitacion.svg" alt="icono cantidad de habitaciones" />2</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-auto.svg" alt="icono cantidad de autos" />1</span>
                     </div>
                     <hr>   
                     <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
+                      <h5 class="card-title fwregular" style="margin: 0;">$200.000</h5>
+                      <p class="card-text fwregular" style="margin: 0;">VALOR DEL INMUEBLE</p>
                     </div>                   
                   </div>
                 </div>
@@ -962,25 +974,25 @@
               <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-venta">VENTA</span>
+                    <span class="badge badge-info badge-info-tipo badge-venta-propiedad">VENTA</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                      <p class="card-title mb-0 fwmedium"><img src="assets/img/icons/icon-casa.svg" width="16" height="16" alt="" /> Fondo de comercio</p>
+                      <p class="card-text description-card fwlight"><img src="assets/img/icons/icon-ubicacion-alt.svg" width="14" height="14" alt="" /> Charcas 1934, Palermo, Capital Federal</p>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <p class="card-text description-card pt-3 fwlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
                     <hr>
                     <div class="info-propiedad">
-                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
-                      <span><i class="fas fa-bath"></i>4</span>
-                      <span><i class="fas fa-bed"></i>2</span>
-                      <span><i class="fas fa-car"></i>1</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-mts.svg" alt="icono cantidad de metros" /> 280mt</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-banio.svg" alt="icono cantidad de baños" />4</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-habitacion.svg" alt="icono cantidad de habitaciones" />2</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-auto.svg" alt="icono cantidad de autos" />1</span>
                     </div>
                     <hr>   
                     <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
+                      <h5 class="card-title fwregular" style="margin: 0;">$200.000</h5>
+                      <p class="card-text fwregular" style="margin: 0;">VALOR DEL INMUEBLE</p>
                     </div>                   
                   </div>
                 </div>
@@ -988,25 +1000,25 @@
               <div class="col-xl-4 col-lg-6 col-md-12 mt-3">
                 <div class="card">
                   <div class="card-body container pos-relative">
-                    <span class="badge badge-info badge-info-tipo badge-alquiler">ALQUILER</span>
+                    <span class="badge badge-info badge-info-tipo badge-alquiler-propiedad">ALQUILER</span>
                     <img src="assets/img/casa1.jpg" alt="" class="img-fluid img-card">
                     <a href="propiedad-detalle1.html" class="no-style"><h5 class="card-title pt-3">Florencia Ruiz, Palermo</h5></a>
                     <div class="info-tipo">
-                      <p class="card-title mb-0"><i class="fas fa-home"></i> Fondo de comercio</p>
-                      <p class="card-text description-card"><i class="fas fa-map-marker-alt"></i> Charcas 1934, Palermo, Capital Federal</p>
+                      <p class="card-title mb-0 fwmedium"><img src="assets/img/icons/icon-casa.svg" width="16" height="16" alt="" /> Fondo de comercio</p>
+                      <p class="card-text description-card fwlight"><img src="assets/img/icons/icon-ubicacion-alt.svg" width="14" height="14" alt="" /> Charcas 1934, Palermo, Capital Federal</p>
                     </div>
-                    <p class="card-text description-card pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
+                    <p class="card-text description-card pt-3 fwlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ut possimus! Officiis eligendi eum placeat sunt accusamus reiciendis pariatur dolore!</p>
                     <hr>
                     <div class="info-propiedad">
-                      <span><i class="fas fa-ruler-combined"></i> 280mt</span>
-                      <span><i class="fas fa-bath"></i>4</span>
-                      <span><i class="fas fa-bed"></i>2</span>
-                      <span><i class="fas fa-car"></i>1</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-mts.svg" alt="icono cantidad de metros" /> 280mt</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-banio.svg" alt="icono cantidad de baños" />4</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-habitacion.svg" alt="icono cantidad de habitaciones" />2</span>
+                      <span class="fwlight"><img src="assets/img/icons/icon-auto.svg" alt="icono cantidad de autos" />1</span>
                     </div>
                     <hr>   
                     <div class="info-valor" >
-                      <h5 class="card-title" style="margin: 0;">$200.000</h5>
-                      <p class="card-text" style="margin: 0;">VALOR DEL INMUEBLE</p>
+                      <h5 class="card-title fwregular" style="margin: 0;">$200.000</h5>
+                      <p class="card-text fwregular" style="margin: 0;">VALOR DEL INMUEBLE</p>
                     </div>                   
                   </div>
                 </div>
@@ -1026,7 +1038,7 @@
 
 
                   <div class="btn-group" role="group" aria-label="Segundo grupo">
-                    <button type="button" class="btn btn-aplicar pag-ini"> <i class="fas fa-th-large color-secondary"></i> </button>
+                    <button type="button" class="btn btn-aplicar pag-ini"> <img src="assets/img/icons/icon-paginacion.svg" alt="" width="24" height="24"> </button>
                     <button type="button" class="btn btn-aplicar">15</button>
                     <button type="button" class="btn btn-aplicar cant-pag-active">30</button>
                     <button type="button" class="btn btn-aplicar pag-fin">50</button>
@@ -1058,7 +1070,7 @@
         </div>
         <div class="col-md-3 col-lg-3 offset-lg-1 footer-contact mt-4">
           <h3 class="color-primary">Contacto</h3>
-          <!-- <p><i class="fas fa-map-marker-alt"></i> Direccion de ejemplo 12 palermo</p> -->
+          <!-- <p><img src="assets/img/icons/icon-ubicacion-alt.svg" width="14" height="14" alt="" /> Direccion de ejemplo 12 palermo</p> -->
           <p class="color-text-secondary"><i class="fas fa-phone"></i> Telefono: <a href="tel:01134543456" class="no-style color-text-secondary">011-3454 3456</a></p>
           <p class="color-text-secondary"><i class="fas fa-envelope"></i> Email: <a href="mailto:example@domain.com" class="no-style color-text-secondary">example@domain.com</a></p>
         </div>
