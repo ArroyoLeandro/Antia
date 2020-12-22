@@ -65,6 +65,7 @@
         margin: 5px 5px 0;
         border-radius: 10px;
         font-size: 1rem;
+        font-weight: 400;
       }
       .friend .chat-msj {
         background-color: #e3e3e3;
@@ -72,6 +73,9 @@
       .me .chat-msj {
         background-color: #c8e0e4;
         order: -1;
+      }
+      .chat-msj small {
+        font-weight: 400;
       }
       .chat.friend small {
         margin-right: auto;
@@ -122,6 +126,7 @@
       @media (max-width: 575px) {
         .badge {
           font-size: 50%;
+          opacity: 0.8;
         }
         .chat-form-button {
           width: 100%;
@@ -156,19 +161,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="dashboard.html">Dashboard</a>
+            <a class="nav-link active fwregular" href="dashboard.html">Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="propiedad-listado.html">Propiedades</a>
+            <a class="nav-link fwregular" href="propiedad-listado.html">Propiedades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Solicitudes</a>
+            <a class="nav-link fwregular" href="#">Solicitudes</a>
           </li>
           <li class="nav-item pos-relative">
-            <a class="nav-link" href="#">Mensajes<i class="far notif posNotif"></i></a>
+            <a class="nav-link fwregular" href="#">Mensajes<i class="far notif posNotif"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto-listado.html">Contactos</a>
+            <a class="nav-link fwregular" href="contacto-listado.html">Contactos</a>
           </li>
         </ul>
 
@@ -178,10 +183,8 @@
             <li class="nav-item active d-flex">
               <div class="nav-link d-inline-block pos-relative m-1 pt-2">
                 <div class="search-container">
-                  <input type="text" name="search" id="search" placeholder="Search..." class="search-text" autocomplete="off" />
-                  <a href="#" class="search-icon">
-                    <i class="fas fa-search pt-2" style="cursor: pointer"></i>
-                  </a>
+                  <input type="text" name="search" id="search" placeholder="Search..." class="search-text fwregular" autocomplete="off" />
+                  <a href="#" class="search-icon"> <img src="assets/img/icons/icon-search.svg" alt="" class="icon-edit" /> </a>
                 </div>
               </div>
 
@@ -195,7 +198,7 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  <i class="far fa-bell pt-2"></i>
+                  <img src="assets/img/icons/icon-bell.svg" alt="" width="30" height="30" class="pt-2" />
                   <i class="far bell notif"></i>
                 </a>
                 <div class="dropdown-menu navegacion notificacionNavegacion">
@@ -230,25 +233,25 @@
 
               <div class="nav-item dropdown m-1 pt-2">
                 <a class="nav-link d-inline-block dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-cog pt-2"></i>
+                  <img src="assets/img/icons/icon-tool.svg" alt="" width="30" height="30" class="pt-2" />
                 </a>
                 <div class="dropdown-menu config navegacion">
-                  <a class="dropdown-item" href="configuracion-principal.html">Configuración general</a>
+                  <a class="dropdown-item fwregular" href="configuracion-principal.html">Configuración general</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="configuracion-editar.html">Configuración edición</a>
+                  <a class="dropdown-item fwregular" href="configuracion-editar.html">Configuración edición</a>
                 </div>
               </div>
             </li>
 
-            <li class="nav-item dropdown ml-4 mt-2">
+            <li class="nav-item dropdown ml-4 mt-3">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" />
-                <span class="mx-1">Norberto Riccitelli</span>
+                <span class="mx-1 fwregular text-perfil-header">Norberto Riccitelli <i class="fas fa-sort-down"></i></span>
               </a>
               <div class="dropdown-menu navegacion w-100">
-                <a class="dropdown-item" href="contacto-ficha.html">Perfil</a>
+                <a class="dropdown-item fwregular" href="contacto-ficha.html">Perfil</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                <a class="dropdown-item fwregular" href="#">Cerrar Sesión</a>
               </div>
             </li>
           </ul>
@@ -263,37 +266,39 @@
         <div class="row">
           <!-- titulo de seccion -->
           <div class="title-section mb-4 mb-md-0">
-            <span class="span-tittle mb-3" style="letter-spacing: 0.3rem">MENSAJE PERSONAL</span>
+            <span class="span-tittle mb-3 fwregular">MENSAJE PERSONAL</span>
           </div>
 
           <!-- ====== FICHA  ======-->
           <div class="col-md-4 mt-4 p-0" style="box-shadow: 5px 5px 10px #ccc">
             <div class="card contact-card">
               <div class="card-body mt-4">
-                <h5 class="card-title">Norberto Riccitelli</h5>
-                <p class="card-text">AGENTE INMOBILIARIO</p>
+                <h5 class="card-title fwregular">Norberto Riccitelli</h5>
+                <p class="card-text fwregular">AGENTE INMOBILIARIO</p>
                 <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile detalle" />
               </div>
               <div class="card-footer2" style="border: none"></div>
             </div>
             <div class="card" style="background-color: #f9f9f9; border: none; padding: 1rem; text-align: center; margin-top: -20%">
               <div class="ficha-card-info m-0 p-0">
-                <h5 class="card-title">Información</h5>
+                <h5 class="card-title fwregular">Información</h5>
                 <p class="color-text-secondary">
-                  <i class="fas fa-envelope mr-3" style="font-size: 1.4rem"></i>
+                  <img src="assets/img/icons/icon-email-alt.svg" alt="" class="icon-edit mr-3" />
                   <a href="mailto:example@domain.com" class="no-style color-text-secondary" style="font-size: 1rem"> example@domain.com</a>
                 </p>
                 <p class="color-text-secondary">
-                  <i class="fas fa-phone mr-3" style="font-size: 1.4rem; transform: rotateY(180deg)"></i>
+                  <img src="assets/img/icons/icon-telefono-alt.svg" alt="" class="icon-edit mr-3" />
+
                   <a href="tel:01134543456" class="no-style color-text-secondary">011-3454 3456</a>
                 </p>
                 <p class="color-text-secondary">
-                  <i class="fab fa-whatsapp mr-3" style="font-size: 1.4rem"></i>
+                  <img src="assets/img/icons/icon-whatsapp-alt.svg" alt="" class="icon-edit mr-3" />
+
                   <a href="https://api.whatsapp.com/send?phone=+5401134543456" class="no-style color-text-secondary">011-3454 3456</a>
-                  <a href="#" class="no-style color-primary float-right mr-4"><i class="fas fa-edit"></i></a>
+                  <a href="#" class="no-style color-primary float-right mr-4"> <img src="assets/img/icons/icon-editar.svg" alt="" class="icon-edit" /> </a>
                 </p>
                 <p class="color-text-secondary">
-                  <i class="fas fa-map-marker-alt mr-3" style="font-size: 1.4rem"></i>
+                  <img src="assets/img/icons/icon-ubicacion-alt.svg" alt="" class="icon-edit mr-3" />
                   <span class="no-style color-text-secondary">Charcas 1934, Palermo, Capital Federal</span>
                 </p>
               </div>
@@ -306,7 +311,7 @@
           <div class="col-md-8 mt-4 p-0 pl-md-3">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title color-text-secondary mb-4">Mensaje Privado</h5>
+                <h5 class="card-title color-text-secondary mb-4 fwregular">Mensaje Privado</h5>
                 <div class="row">
                   <div class="col-12">
                     <div class="chatbox">
@@ -320,7 +325,7 @@
                         </div>
                         <div class="chat me">
                           <div class="no-image bg-primary d-none d-lg-block">
-                            <h2 class="text-no-image text-white"><i class="fa fa-user" aria-hidden="true"></i></h2>
+                            <img src="assets/img/icons/icon-user-msj.svg" width="40" height="40" />
                           </div>
                           <p class="chat-msj">Lorem doloipsum ipsum amet..</p>
                           <small>18/03/2020 13:40 AM</small>
@@ -334,10 +339,10 @@
                         </div>
                         <div class="chat me">
                           <div class="no-image bg-primary d-none d-lg-block">
-                            <h2 class="text-no-image text-white"><i class="fa fa-user" aria-hidden="true"></i></h2>
+                            <img src="assets/img/icons/icon-danger-msj.svg" width="40" height="40" />
                           </div>
                           <p class="chat-msj">Lorem doloipsum ipsum amet..</p>
-                          <small class="text-danger font-weight-bold">ERROR AL ENVIAR - REINTENTAR</small>
+                          <small class="text-danger fwsemibold">ERROR AL ENVIAR - REINTENTAR</small>
                         </div>
                       </div>
                       <div class="card mt-3 d-flex align-items-center justify-content-between flex-column flex-sm-row p-2">
@@ -346,11 +351,11 @@
                             <textarea></textarea>
                           </div>
                           <div class="badge-list text-center text-sm-left">
-                            <span class="badge text-white p-1 bg-badge">
+                            <span class="badge text-white p-1 bg-badge fwregular">
                               Adj-imagen01
                               <a href="#" class="no-style ml-2 flt-right">X</a>
                             </span>
-                            <span class="badge text-white p-1 bg-badge">
+                            <span class="badge text-white p-1 bg-badge fwregular">
                               Adj-imagen01
                               <a href="#" class="no-style ml-2 flt-right">X</a>
                             </span>
@@ -358,8 +363,8 @@
                         </div>
                         <div class="chat-form-button d-flex justify-content-center align-items-center flex-row flex-sm-column flex-xl-row">
                           <div class="icons justify-content-between mx-lg-2 my-2 my-lg-0">
-                            <a href="#" class="no-style ml-2 flt-right"><i class="fas fa-paperclip color-primary" style="font-size: 1.2rem"></i></a>
-                            <a href="#" class="no-style ml-2 flt-right"><i class="fa fa-home color-primary" style="font-size: 1.2rem" aria-hidden="true"></i></a>
+                            <a href="#" class="no-style ml-2 flt-right"><img src="assets/img/icons/icon-clip-primary.svg" alt="" class="icon-edit" /></a>
+                            <a href="#" class="no-style ml-2 flt-right"><img src="assets/img/icons/icon-home-primary.svg" alt="" class="icon-edit" /></a>
                           </div>
                           <button type="button" class="btn btn-agregar">ENVIAR</button>
                         </div>

@@ -84,7 +84,7 @@
         .td-style{
             border: none !important;
             padding: .35rem !important;
-            font-weight: normal !important;
+            font-weight: 400 !important;
         }
 
 
@@ -93,10 +93,9 @@
 /* ======== Tabs card Mensaje ======== */
         .item-tab{
             color: var(--color-text-secondary);
-            font-weight: 700;
             background-color: #fff;
             text-align: center;
-            font-weight: normal !important;
+            font-weight: 400 !important;
             text-decoration: none !important;
         }
         .item-tab:hover{
@@ -104,7 +103,7 @@
         }
         .item-tab.active{
             border-bottom:2px solid var(--color-primary);
-            font-weight: bold !important;
+            font-weight: 600 !important;
         }
         .nav-tabs{
             display: flex;
@@ -180,7 +179,9 @@
             z-index: 3;
             transform: rotate(360deg);
         }
-            
+            td{
+              font-weight: 400 !important;
+            }
         </style>
 
 
@@ -205,19 +206,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link active" href="dashboard.html">Dashboard</a>
+        <a class="nav-link active fwregular" href="dashboard.html">Dashboard</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="propiedad-listado.html">Propiedades</a>
+        <a class="nav-link fwregular" href="propiedad-listado.html">Propiedades</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Solicitudes</a>
+        <a class="nav-link fwregular" href="#">Solicitudes</a>
       </li>
       <li class="nav-item pos-relative">
-        <a class="nav-link" href="#">Mensajes<i class="far notif posNotif"></i></a>
+        <a class="nav-link fwregular" href="#">Mensajes<i class="far notif posNotif"></i></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contacto-listado.html">Contactos</a>
+        <a class="nav-link fwregular" href="contacto-listado.html">Contactos</a>
       </li>
     </ul>
 
@@ -227,10 +228,8 @@
         <li class="nav-item active d-flex">
           <div class="nav-link d-inline-block pos-relative m-1 pt-2">
             <div class="search-container">
-              <input type="text" name="search" id="search" placeholder="Search..." class="search-text" autocomplete="off" />
-              <a href="#" class="search-icon">
-                <i class="fas fa-search pt-2" style="cursor: pointer"></i>
-              </a>
+              <input type="text" name="search" id="search" placeholder="Search..." class="search-text fwregular" autocomplete="off" />
+              <a href="#" class="search-icon"> <img src="assets/img/icons/icon-search.svg" alt="" class="icon-edit" /> </a>
             </div>
           </div>
 
@@ -244,7 +243,7 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <i class="far fa-bell pt-2"></i>
+              <img src="assets/img/icons/icon-bell.svg" alt="" width="30" height="30" class="pt-2" />
               <i class="far bell notif"></i>
             </a>
             <div class="dropdown-menu navegacion notificacionNavegacion">
@@ -279,31 +278,31 @@
 
           <div class="nav-item dropdown m-1 pt-2">
             <a class="nav-link d-inline-block dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-cog pt-2"></i>
+              <img src="assets/img/icons/icon-tool.svg" alt="" width="30" height="30" class="pt-2" />
             </a>
             <div class="dropdown-menu config navegacion">
-              <a class="dropdown-item" href="configuracion-principal.html">Configuración general</a>
+              <a class="dropdown-item fwregular" href="configuracion-principal.html">Configuración general</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="configuracion-editar.html">Configuración edición</a>
+              <a class="dropdown-item fwregular" href="configuracion-editar.html">Configuración edición</a>
             </div>
           </div>
         </li>
 
-        <li class="nav-item dropdown ml-4 mt-2">
+        <li class="nav-item dropdown ml-4 mt-3">
           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
             <img src="assets/img/perfil.jpg" alt="imagen de perfil" class="img-profile" />
-            <span class="mx-1">Norberto Riccitelli</span>
+            <span class="mx-1 fwregular text-perfil-header">Norberto Riccitelli <i class="fas fa-sort-down"></i></span>
           </a>
           <div class="dropdown-menu navegacion w-100">
-            <a class="dropdown-item" href="contacto-ficha.html">Perfil</a>
+            <a class="dropdown-item fwregular" href="contacto-ficha.html">Perfil</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Cerrar Sesión</a>
+            <a class="dropdown-item fwregular" href="#">Cerrar Sesión</a>
           </div>
         </li>
       </ul>
     </div>
   </div>
-</nav>    
+</nav>   
 <!-- ====== MAIN ======-->
     <div class="container-fluid" id="whatsapp">
       <!--====== CABECERA ======-->
@@ -311,7 +310,7 @@
         <div class="row">
           <!-- titulo de seccion -->
           <div class="title-section">
-              <span class="span-tittle">ANALISIS Y ESTADISTICAS</span>
+              <span class="span-tittle fwregular">ANALISIS Y ESTADISTICAS</span>
           </div>
 
 <div class="container">
@@ -319,17 +318,17 @@
         <div class="col-lg-6 mt-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title mb-4">Mensajes</h5>
+                    <h5 class="card-title mb-4 fwregular">Mensajes</h5>
                     <canvas id="mainChart" width="100%" height="50%"></canvas>
                     <table class="table mt-3">
                         <tbody style="display: flex; flex-direction: row; justify-content: flex-end;" >
                           <tr>
                             <td class="ball "></td>
-                            <td class="td-style">Aceptados</td>
+                            <td class="td-style fwregular">Aceptados</td>
                           </tr>
                           <tr>
                             <td class="ball info"></td>
-                            <td class="td-style">Rechazados</td>
+                            <td class="td-style fwregular">Rechazados</td>
                           </tr>                        
                         </tbody>
                       </table>
@@ -346,7 +345,7 @@
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <div class="date">
+                                            <div class="date fwregular">
                                                 <span>14 al 21 - MARZO</span>
                                             </div>
                                         </div>
@@ -360,9 +359,9 @@
                                                 <!-- circular inicio -->
                                                 <div class="circular second">
                                                     <div class="inner"></div>
-                                                    <div class="text">
-                                                        <h2 class="m-0">120</h2>
-                                                        <p class="m-0">Totales</p>
+                                                    <div class="text ">
+                                                        <h2 class="m-0 fwregular">120</h2>
+                                                        <p class="m-0 fwregular">Totales</p>
                                                     </div>
                                                     <div class="circle second">
                                                         <div class="bar left">
@@ -517,13 +516,13 @@
                 <div class="col-md-6 mt-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title mb-4">Propiedades</h5>
+                            <h5 class="card-title mb-4 fwregular">Propiedades</h5>
                             <!-- circular inicio -->
                             <div class="circular">
                                 <div class="inner"></div>
                                 <div class="text">
-                                    <h2 class="m-0">53</h2>
-                                    <p class="m-0">Activas</p>
+                                    <h2 class="m-0 fwregular">53</h2>
+                                    <p class="m-0 fwregular">Activas</p>
                                 </div>
                                 <div class="circle">
                                     <div class="bar left">
@@ -600,31 +599,31 @@
                 <div class="col-md-6 mt-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title mb-4">Contactos</h5>
+                            <h5 class="card-title mb-4 fwregular">Contactos</h5>
                             <canvas id="secondChart" width="100%" height="80%"></canvas>
 
                             <div class="contactos mt-4">
                                <div class="d-flex justify-content-between mb-4">
-                                   <div class="contactos-increm" style="font-size: .8rem; font-weight: 600;">Incremento mensual</div>
-                                   <div class="contactos-increm" style="font-size: .8rem; font-weight: 600;">Abril 2020</div>
+                                   <div class="contactos-increm fwregular">Incremento mensual</div>
+                                   <div class="contactos-increm fwregular">Abril 2020</div>
                                </div>
                                <div class="numb d-inline-block mr-1">
                                 <div class="d-flex">
-                                    <h2 style="margin: 0; padding:0;">120</h2>
-                                    <i class="fas fa-angle-up" style="padding: 5px 0 0 5px;font-size: 2.1rem; color:#40AF80"></i>
+                                    <h2 style="margin: 0; padding:0;" class="fwregular">120</h2>
+                                    <i class="fas fa-angle-up text-success " style="padding: 5px 0 0 5px;font-size: 2.1rem;"></i>
                                  </div>
-                                 <span style="margin: 0; padding:0; font-size:.8rem;">Agregados</span>
+                                 <span style="margin: 0; padding:0; font-size:.8rem;" class="fwregular">Agregados</span>
                                </div>
                                <div class="numb d-inline-block mx-4">
                                 <div class="d-flex">
-                                    <h2 style="margin: 0; padding:0;">1</h2>
-                                    <i class="fas fa-angle-down" style="padding: 5px 0 0 5px;font-size: 2.1rem; color:#E54333"></i>
+                                    <h2 style="margin: 0; padding:0;" class="fwregular">1</h2>
+                                    <i class="fas fa-angle-down text-danger" style="padding: 5px 0 0 5px;font-size: 2.1rem;"></i>
                                  </div>
-                                 <span style="margin: 0; padding:0; font-size:.8rem;">Eliminados</span>
+                                 <span style="margin: 0; padding:0; font-size:.8rem;" class="fwregular">Eliminados</span>
                                </div>
 
                                <div class="info-contact mt-4" style="font-size: .9rem;">
-                                   <span><b>+14,15% nuevos contactos </b>en relacion a su ultimo mes</span>
+                                   <span class="fwregular"><b class="fwsemibold">+14,15% nuevos contactos </b>en relacion a su ultimo mes</span>
                                </div>
                              
                             </div>
@@ -635,13 +634,13 @@
                 <div class="col-md-6 mt-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title mb-5">Solicitudes</h5>
+                            <h5 class="card-title mb-5 fwregular">Solicitudes</h5>
                             <!-- circular inicio -->
                             <div class="circular">
                                 <div class="inner"></div>
                                 <div class="text">
-                                    <h2 class="m-0">40</h2>
-                                    <p class="m-0">Activas</p>
+                                    <h2 class="m-0 fwregular">40</h2>
+                                    <p class="m-0 fwregular">Activas</p>
                                 </div>
                                 <div class="circle">
                                     <div class="bar left">
@@ -840,7 +839,8 @@ var graficoSecundario = new Chart(SecondChart, {
     options: {
         legend: {
             display: false
-        },
+        }
+        ,
         scales: {
                 xAxes: [{
                             gridLines: {
